@@ -35,11 +35,17 @@ const DarkTheme = createTheme({
         h1: {
             fontSize: "64px"
         },
+        h2: {
+            fontSize: "36px"
+        },
         h3: {
             fontSize: "24px"
         },
         h4: {
             fontSize: "20px"
+        },
+        h5: {
+            fontSize: "16px"
         },
         fontFamily: [
             'Raleway',
