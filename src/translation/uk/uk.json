@@ -1,0 +1,17 @@
+{
+    "common": {
+        "containers": {
+            "header": {
+                "home": "Головна",
+                "about-us": "Про нас",
+                "production": "Виробництво",
+                "services": "Послуги",
+                "contacts": "Контакти",
+                "gallery": "Галерея"
+            }
+        },
+        "pages": {
+            "metalwork-or-loft-style-furniture": "Обробка металу чи меблі в стилі лофт?"
+        }
+    }
+}

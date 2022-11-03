@@ -6,6 +6,13 @@ import App from './App';
 
 import './index.css';
 
+import "./translation/i18n"
+
+let isThemeSelected = localStorage.darkTheme;
+if (!isThemeSelected) {
+  localStorage.darkTheme = true;
+}
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );

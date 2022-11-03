@@ -6,8 +6,8 @@ const LightTheme = createTheme({
             xs: 0,
             sm: 600,
             md: 900,
-            lg: 1185,
-            xl: 1560,
+            lg: 1295,
+            xl: 1600
         },
     },
     palette: {
@@ -16,16 +16,42 @@ const LightTheme = createTheme({
             default: "#FCFDFF",
         },
         primary: {
-            main: "#005AAD"
+            main: "#EF5803"
         },
         text: {
             primary: "#111518"
         },
     },
+    components: {
+        MuiContainer: {
+            defaultProps: {
+                style: {
+                    padding: 0
+                }
+            }
+        },
+    },
     typography: {
+        h1: {
+            fontSize: "64px"
+        },
+        h2: {
+            fontSize: "36px"
+        },
         h3: {
+            fontSize: "24px"
+        },
+        h4: {
             fontSize: "20px"
-        }
+        },
+        h5: {
+            fontSize: "16px"
+        },
+        fontFamily: [
+            'Raleway',
+            'Jura',
+            "sans-serif"
+        ].join(',')
     },
 });
 

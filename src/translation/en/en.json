@@ -1,0 +1,14 @@
+{
+    "common": {
+        "containers": {
+            "header": {
+                "home": "Home",
+                "about-us": "About us",
+                "production": "Production",
+                "services": "Services",
+                "contacts": "Contacts",
+                "gallery": "Gallery"
+            }
+        }
+    }
+}
