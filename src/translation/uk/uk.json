@@ -21,7 +21,7 @@
                 "individual-approach": "Індивідуальний підхід",
                 "individual-approach-p": "Пропонуємо розробку вашого унікального виробу. Аналізуємо та проєктуємо.",
                 "own-production-areas": "Власні виробничі площі",
-                "own-production-areas-p": "Використовуємо своє обладнення, щоб виготовити ваш виріб.",
+                "own-production-areas-p": "Використовуємо своє обладнання, щоб виготовити ваш виріб.",
                 "high-precision-equipment": "Високоточне обладнання",
                 "high-precision-equipment-p": "Працюємо з обладненням різної складності. У тому числі з високоточним.",
                 "finished-products": "Готові вироби",
@@ -33,6 +33,7 @@
                 "building-metal-structures": "Будівельні металоконструкції",
                 "metal-products": "Вироби з металу",
                 "unusual-metal-structures": "Нетипові металоконструкції",
+                "learn-more": "Дізнатись більше",
                 "metal-cover": "Металічне накриття",
                 "metal-cover-first-p": "Виготовлення металічного накриття",
                 "metal-cover-second-p": "для віхідної частини павільйону",
@@ -43,7 +44,13 @@
                 "laser-cutting-of-metal-first-p": "Виготовлення деталей різної",
                 "laser-cutting-of-metal-second-p": "складності методом лазерної вирізки",
                 "reviews": "Відгуки",
-                "do-you-want-to-order-a-product": "Хочете замовити виріб або обговорити замовлення?"
+                "do-you-want-to-order-a-product": "Хочете замовити виріб або обговорити замовлення?",
+                "send": "Надіслати"
+            }
+        },
+        "components": {
+            "buttons": {
+                "more": "Більше"
             }
         }
     }

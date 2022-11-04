@@ -1,8 +1,10 @@
 import { Box, Typography } from "@mui/material"
+import { useTranslation } from "react-i18next";
 
 import arrow_right_light from "../../assets/icons/arrow-right-light.svg"
 
 export const MoreButton = () => {
+    const { t } = useTranslation();
     return (
         <Box
             sx={{
@@ -17,7 +19,7 @@ export const MoreButton = () => {
             }}
         >
             <Typography variant="h4" fontWeight="500" fontFamily="Raleway" sx={{ mb: "10px" }}>
-                Більше
+                {t("components.buttons.more")}
             </Typography>
             <img
                 src={arrow_right_light}

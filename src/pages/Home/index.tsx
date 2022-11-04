@@ -317,7 +317,7 @@ const Header = () => {
                                 fontSize: "20px"
                             }}
                         >
-                            Дізнатись більше
+                            {t("pages.home.learn-more")}
                         </Button>
                     </Box>
                 </Box>
@@ -486,7 +486,7 @@ const Header = () => {
                                     }}
                                     type="submit"
                                 >
-                                    Надіслати
+                                    {t("pages.home.send")}
                                 </Button>
                             </Box>
                         </Form>
