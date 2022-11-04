@@ -12,8 +12,6 @@ import {
 import { Form, FormikProvider, useFormik } from "formik";
 import * as Yup from "yup";
 
-import { HashLink } from 'react-router-hash-link';
-
 import LinkRouter from "../../components/LinkRouter";
 import { MoreButton } from "../../components/Buttons";
 
@@ -44,6 +42,7 @@ import instagram_medium_light from "../../assets/icons/instagram-medium-light.sv
 import facebook_medium_light from "../../assets/icons/facebook-medium-light.svg";
 import HeaderMenu from "../../components/HeaderMenu";
 import { useTranslation } from "react-i18next";
+import HashLinkRouter from "../../components/HashLinkRouter";
 
 
 interface IMenuItem {
@@ -81,7 +80,8 @@ const Header = () => {
         },
         {
             title: t("containers.header.production"),
-            link: "/"
+            link: "/#production",
+            isId: true
         },
         {
             title: t("containers.header.services"),
@@ -103,34 +103,35 @@ const Header = () => {
         },
         {
             title: t("containers.header.gallery"),
-            link: "/"
+            link: "/#gallery",
+            isId: true
         },
     ];
 
     const workWithUsInfos: Array<IWorkWithUsInfo> = [
         {
-            title: "Індивідуальний підхід",
-            description: "Пропонуємо розробку вашого унікального виробу. Аналізуємо та проєктуємо."
+            title: t("pages.home.individual-approach"),
+            description: t("pages.home.individual-approach-p")
         },
         {
-            title: "Власні виробничі площі",
-            description: "Використовуємо своє обладнення, щоб виготовити ваш виріб."
+            title: t("pages.home.own-production-areas"),
+            description: t("pages.home.own-production-areas-p")
         },
         {
-            title: "Високоточне обладнення",
-            description: "Працюємо з обладненням різної складності. У тому числі з високоточним."
+            title: t("pages.home.high-precision-equipment"),
+            description: t("pages.home.high-precision-equipment-p")
         },
         {
-            title: "Готові вироби",
-            description: "Пропонуємо виготовлення виробів за готовими вирізками."
+            title: t("pages.home.finished-products"),
+            description: t("pages.home.finished-products-p")
         },
         {
-            title: "Швидкі терміни",
-            description: "Вчасно виконуємо замовлення в обумовлені терміни, або раніше."
+            title: t("pages.home.fast-deadlines"),
+            description: t("pages.home.fast-deadlines-p")
         },
         {
-            title: "Доставка",
-            description: "Маємо власний транспорт, яким здійснюємо доставку ваших виробів в межах Києва."
+            title: t("pages.home.delivery"),
+            description: t("pages.home.delivery-p")
         },
     ]
 
@@ -188,9 +189,11 @@ const Header = () => {
                             {links.map((item, index) => {
                                 return (
                                     (item.isId == true
-                                        ? <HashLink key={`header_menu_item_${index}`} to={item.link}>
-                                            {item.title}
-                                        </HashLink>
+                                        ? <HashLinkRouter key={`header_menu_item_${index}`} underline="none" color="inherit" to={item.link} sx={{ mr: "30px" }}>
+                                            <Typography variant="h4" fontFamily="Jura" fontWeight="600">
+                                                {item.title}
+                                            </Typography>
+                                        </HashLinkRouter>
                                         : <LinkRouter key={`header_menu_item_${index}`} underline="none" color="inherit" to={item.link} sx={{ mr: "30px" }}>
                                             <Typography variant="h4" fontFamily="Jura" fontWeight="600">
                                                 {item.title}
@@ -203,10 +206,10 @@ const Header = () => {
                     </Box>
                     <Box sx={{ pl: "112px", mt: "186px", width: "630px" }}>
                         <Typography variant="h1" fontWeight="700" fontFamily="Raleway" sx={{ width: "630px" }}>
-                            Обробка металу чи меблі в стилі лофт?
+                            {t("pages.home.metalwork-or-loft-style-furniture")}
                         </Typography>
                         <Typography variant="h3" fontFamily="Raleway" sx={{ width: "445px", pt: "20px" }}>
-                            Різні види металоконструкцій,  дизайн декору, вхідні матеріали та інше.
+                            {t("pages.home.various-types-of-metal-structures")}
                         </Typography>
                         <Button
                             variant="contained"
@@ -219,16 +222,16 @@ const Header = () => {
                                 mt: "70px"
                             }}
                         >
-                            Розрахувати вартість
+                            {t("pages.home.calculate-the-cost")}
                         </Button>
                     </Box>
                 </Container>
             </Box>
             <Container component="main" sx={{ maxWidth: { lg: "lg", md: "md" } }}>
                 {/* Про нас */}
-                <Box component="section" id="about-us" sx={{ mt: "100px", px: "46px" }}>
+                <Box id="about-us" sx={{ mt: "100px", px: "46px" }}>
                     <Typography align="center" variant="h2" fontFamily="Jura" fontWeight="700">
-                        Про нас
+                        {t("containers.header.about-us")}
                     </Typography>
                     <Box sx={{ display: "flex", alignItems: "center", mt: "40px" }}>
                         <img
@@ -237,14 +240,10 @@ const Header = () => {
                         />
                         <Box sx={{ ml: "120px" }}>
                             <Typography variant="h4" fontFamily="Raleway">
-                                Ми готові запропонувати вам весь спектр послуг з виготовлення та транспортування металоконструкцій.
-                                Незважаючи на те, що багато підприємств намагаються будь-якими засобами нарощувати темпи виробництва,
-                                ми ретельно стежимо за якістю продукції, адже саме від цього залежить безпека та надійність.
+                                {t("pages.home.about-us-first-p")}
                                 <br />
                                 <br />
-                                Також ми, «СП Металлінвест», тісно співпрацюємо з провідними виробниками металопрокату та їх дилерами по всій Україні та регіонах,
-                                що дозволяє максимально оперативно купувати необхідні для виконання замовлень матеріали.
-                                Власна служба доставки здійснює доставку металоконструкцій, металопрокату, матеріалів, комплектуючих та виробів до об'єкта, де проводиться монтаж.
+                                {t("pages.home.about-us-second-p")}
                             </Typography>
                         </Box>
                     </Box>
@@ -252,7 +251,7 @@ const Header = () => {
                 {/* Чому варто працювати з нами? */}
                 <Box sx={{ mt: "150px", px: "159px" }}>
                     <Typography align="center" variant="h2" fontFamily="Jura" fontWeight="700">
-                        Чому варто працювати з нами?
+                        {t("pages.home.why-should-you-work-with-us")}
                     </Typography>
                     <Box sx={{ display: "flex", flexWrap: 'wrap', justifyContent: "space-between", mt: "50px" }}>
                         {workWithUsInfos.map((item, index) => {
@@ -270,14 +269,14 @@ const Header = () => {
                     </Box>
                 </Box>
                 {/* Виробництво */}
-                <Box sx={{ mt: "150px", px: "135.5px" }}>
+                <Box id="production" sx={{ mt: "150px", px: "135.5px" }}>
                     <Typography align="center" variant="h2" fontFamily="Jura" fontWeight="700">
-                        Виробництво
+                        {t("containers.header.production")}
                     </Typography>
                     <Box sx={{ display: "flex", justifyContent: "space-between", mt: "50px" }}>
                         <Box sx={{ width: "288px", height: "379px", p: "20px 10px 10px 10px", boxShadow: "2px 2px 10px #E55C0F" }}>
                             <Typography align="center" variant="h4" fontFamily="Raleway" fontWeight="500">
-                                Будівельні металоконструкції
+                                {t("pages.home.building-metal-structures")}
                             </Typography>
                             <img
                                 src={building_metal_structures}
@@ -287,7 +286,7 @@ const Header = () => {
                         </Box>
                         <Box sx={{ width: "325px", height: "394px", p: "20px 10px 10px 10px", boxShadow: "2px 2px 10px #E55C0F" }}>
                             <Typography align="center" variant="h4" fontFamily="Raleway" fontWeight="500">
-                                Вироби з металу
+                                {t("pages.home.metal-products")}
                             </Typography>
                             <img
                                 src={metal_products}
@@ -297,7 +296,7 @@ const Header = () => {
                         </Box>
                         <Box sx={{ width: "288px", height: "379px", p: "20px 10px 10px 10px", boxShadow: "2px 2px 10px #E55C0F" }}>
                             <Typography align="center" variant="h4" fontFamily="Raleway" fontWeight="500">
-                                Нетипові металоконструкції
+                                {t("pages.home.unusual-metal-structures")}
                             </Typography>
                             <img
                                 src={unusual_metal_structures}
@@ -323,9 +322,9 @@ const Header = () => {
                     </Box>
                 </Box>
                 {/* Галерея */}
-                <Box sx={{ mt: "150px", px: "2px" }}>
+                <Box id="gallery" sx={{ mt: "150px", px: "2px" }}>
                     <Typography align="center" variant="h2" fontFamily="Jura" fontWeight="700">
-                        Галерея
+                        {t("containers.header.gallery")}
                     </Typography>
                     <Box sx={{ display: "flex", mt: "50px" }}>
                         <img
@@ -335,10 +334,12 @@ const Header = () => {
                         <Box sx={{ mx: "50px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                             <Box>
                                 <Typography variant="h4" fontFamily="Jura" fontWeight="600">
-                                    Металічне накриття
+                                    {t("pages.home.metal-cover")}
                                 </Typography>
                                 <Typography variant="h5" fontFamily="Raleway" fontWeight="400" sx={{ mt: "10px" }}>
-                                    Виготовлення металічного накриття <br />для віхідної частини павільйону
+                                    {t("pages.home.metal-cover-first-p")}
+                                    <br />
+                                    {t("pages.home.metal-cover-second-p")}
                                 </Typography>
                             </Box>
                             <img
@@ -358,10 +359,12 @@ const Header = () => {
                         <Box sx={{ mx: "50px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                             <Box>
                                 <Typography variant="h4" fontFamily="Jura" fontWeight="600" align="right">
-                                    Арматура
+                                    {t("pages.home.armature")}
                                 </Typography>
                                 <Typography variant="h5" fontFamily="Raleway" fontWeight="400" align="right" sx={{ mt: "10px" }}>
-                                    Виготовлення арматурних виробів<br />різної складності
+                                    {t("pages.home.armature-first-p")}
+                                    <br />
+                                    {t("pages.home.armature-second-p")}
                                 </Typography>
                             </Box>
                             <img
@@ -383,10 +386,12 @@ const Header = () => {
                         <Box sx={{ mx: "50px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                             <Box>
                                 <Typography variant="h4" fontFamily="Jura" fontWeight="600">
-                                    Лазерна вирізка металу
+                                    {t("pages.home.laser-cutting-of-metal")}
                                 </Typography>
                                 <Typography variant="h5" fontFamily="Raleway" fontWeight="400" sx={{ mt: "10px" }}>
-                                    Виготовлення деталей різної<br /> складності методом лазерної вирізки
+                                    {t("pages.home.laser-cutting-of-metal-first-p")}
+                                    <br />
+                                    {t("pages.home.laser-cutting-of-metal-second-p")}
                                 </Typography>
                             </Box>
                             <img
@@ -403,7 +408,7 @@ const Header = () => {
                 {/* Відгуки */}
                 <Box sx={{ mt: "150px", px: "77.5px" }}>
                     <Typography align="center" variant="h2" fontFamily="Jura" fontWeight="700">
-                        Відгуки
+                        {t("pages.home.reviews")}
                     </Typography>
                     <img
                         src={reviews}
@@ -414,7 +419,7 @@ const Header = () => {
                 {/* Хочете замовити виріб або обговорити замовлення? */}
                 <Box sx={{ mt: "200px", px: "347.5px" }}>
                     <Typography align="center" variant="h2" fontFamily="Jura" fontWeight="700">
-                        Хочете замовити виріб або обговорити замовлення?
+                        {t("pages.home.do-you-want-to-order-a-product")}
                     </Typography>
                     <FormikProvider value={formik} >
                         <Form autoComplete="off" noValidate onSubmit={handleSubmit} >

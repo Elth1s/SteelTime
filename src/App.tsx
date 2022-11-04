@@ -7,7 +7,6 @@ import { Routes, Route } from 'react-router-dom';
 import DefaultLayout from './containers/DefaultLayout';
 
 import Home from './pages/Home';
-import TestLink from './pages/qwe';
 
 import DarkTheme from './UISettings/DarkTheme';
 import LightTheme from './UISettings/LightTheme';
@@ -46,7 +45,6 @@ const App = () => {
           <Routes>
 
             <Route path="/" element={<Home />} />
-            <Route path="/qwe" element={<TestLink />} />
             <Route element={<DefaultLayout />}>
             </Route>
 
