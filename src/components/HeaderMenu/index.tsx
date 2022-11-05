@@ -24,7 +24,7 @@ type Language = 'uk' | 'en' | 'de';
 
 export default function HeaderMenu() {
     const { palette } = useTheme();
-    const { i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const { darkTheme, setDarkTheme } = useThemeContext();
 
@@ -133,7 +133,7 @@ export default function HeaderMenu() {
                         </IconButton>
                     </Box>
                     <Typography variant="h4" fontFamily="Jura" fontWeight="700" sx={{ mt: "40px" }}>
-                        Соцмережі
+                        {t("components.header-menu.social-networks")}
                     </Typography>
                     <Box sx={{ display: "flex", mt: "10px", mb: "auto" }}>
                         <img
@@ -161,7 +161,7 @@ export default function HeaderMenu() {
                             style={{ marginRight: "10px" }}
                         />
                         <Typography variant="h4" fontFamily="Jura">
-                            {darkTheme ? "Світла тема" : "Темна тема"}
+                            {darkTheme ? t("components.header-menu.light-theme") : t("components.header-menu.dark-theme")}
                         </Typography>
                     </Box>
                 </Box>

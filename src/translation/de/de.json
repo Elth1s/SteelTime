@@ -8,12 +8,17 @@
                 "services": "Dienstleistungen",
                 "contacts": "Kontakte",
                 "gallery": "Galerie"
+            },
+            "footer": {
+                "contacts": "Kontakte",
+                "social-networks": "Soziale Netzwerke"
             }
         },
         "pages": {
             "home": {
                 "metalwork-or-loft-style-furniture": "Metallarbeiten oder Möbel im Loft-Stil?",
-                "various-types-of-metal-structures": "Verschiedene Arten von Metallkonstruktionen, Dekordesign, Einsatzmaterialien usw.",
+                "various-types-of-metal-structures-first": "Verschiedene Arten von Metallkonstruktionen,",
+                "various-types-of-metal-structures-second": "Dekordesign, Einsatzmaterialien usw.",
                 "calculate-the-cost": "Berechnen Sie die Kosten",
                 "about-us-first-p": "Wir sind bereit, Ihnen das gesamte Spektrum an Dienstleistungen für die Herstellung und den Transport von Metallkonstruktionen anzubieten. Trotz der Tatsache, dass viele Unternehmen versuchen, die Produktionsraten mit allen Mitteln zu erhöhen, überwachen wir die Qualität der Produkte sorgfältig, da Sicherheit und Zuverlässigkeit davon abhängen.",
                 "about-us-second-p": "Außerdem arbeiten wir, SP Metallinvest, eng mit führenden Herstellern von Walzmetallen und ihren Händlern in der ganzen Ukraine und Regionen zusammen, was uns ermöglicht, die für die Auftragserfüllung erforderlichen Materialien so schnell wie möglich zu kaufen. Unser eigener Lieferservice liefert Metallkonstruktionen, Walzmetalle, Materialien, Komponenten und Produkte an den Ort, an dem die Installation durchgeführt wird.",
@@ -51,7 +56,18 @@
         "components": {
             "buttons": {
                 "more": "Mehr"
+            },
+            "header-menu": {
+                "social-networks": "Soziale Netzwerke",
+                "light-theme": "Leichtes Thema",
+                "dark-theme": "Dunkles Thema"
             }
+        },
+        "validationProps": {
+            "name": "Name",
+            "phone": "Telefonnummer",
+            "email": "Email",
+            "message": "Nachricht"
         }
     }
 }

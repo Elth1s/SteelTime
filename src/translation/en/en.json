@@ -8,12 +8,17 @@
                 "services": "Services",
                 "contacts": "Contacts",
                 "gallery": "Gallery"
+            },
+            "footer": {
+                "contacts": "Contacts",
+                "social-networks": "Social networks"
             }
         },
         "pages": {
             "home": {
                 "metalwork-or-loft-style-furniture": "Metalwork or loft-style furniture?",
-                "various-types-of-metal-structures": "Various types of metal structures, decor design, input materials, etc.",
+                "various-types-of-metal-structures-first": "Various types of metal structures, decor",
+                "various-types-of-metal-structures-second": "design, input materials, etc.",
                 "calculate-the-cost": "Calculate the cost",
                 "about-us-first-p": "We are ready to offer you the full range of services for the manufacture and transportation of metal structures. Despite the fact that many enterprises try to increase production rates by any means, we carefully monitor the quality of products, because safety and reliability depend on this.",
                 "about-us-second-p": "Also, we, SP Metallinvest, closely cooperate with leading manufacturers of rolled metal and their dealers throughout Ukraine and regions, which allows us to purchase the materials necessary for the fulfillment of orders as quickly as possible. Our own delivery service delivers metal structures, rolled metal, materials, components and products to the facility where the installation is carried out.",
@@ -51,7 +56,18 @@
         "components": {
             "buttons": {
                 "more": "More"
+            },
+            "header-menu": {
+                "social-networks": "Social networks",
+                "light-theme": "Light theme",
+                "dark-theme": "Dark theme"
             }
+        },
+        "validationProps": {
+            "name": "Name",
+            "phone": "Phone number",
+            "email": "Email",
+            "message": "Message"
         }
     }
 }

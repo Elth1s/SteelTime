@@ -9,17 +9,17 @@ import {
     useTheme,
 } from "@mui/material";
 
+import { useTranslation } from "react-i18next";
 import { Form, FormikProvider, useFormik } from "formik";
 import * as Yup from "yup";
 
+import HeaderMenu from "../../components/HeaderMenu";
 import LinkRouter from "../../components/LinkRouter";
+import HashLinkRouter from "../../components/HashLinkRouter";
 import { MoreButton } from "../../components/Buttons";
 
 import homepage_header from "../../assets/backgrounds/homepage-header.png";
 import header_logo_light_svg from "../../assets/logos/header-logo-light.svg";
-import instagram_small_light_svg from "../../assets/icons/instagram-small-light.svg";
-import facebook_small_light_svg from "../../assets/icons/facebook-small-light.svg";
-import menu_light from "../../assets/icons/menu-light.svg";
 
 import abous_us from "../../assets/backgrounds/about-us.png";
 
@@ -40,17 +40,11 @@ import reviews from "../../assets/backgrounds/reviews.png"
 import footer_logo_light from "../../assets/logos/footer-logo-light.svg"
 import instagram_medium_light from "../../assets/icons/instagram-medium-light.svg";
 import facebook_medium_light from "../../assets/icons/facebook-medium-light.svg";
-import HeaderMenu from "../../components/HeaderMenu";
-import { useTranslation } from "react-i18next";
-import HashLinkRouter from "../../components/HashLinkRouter";
+
+import { IHeaderMenuItem } from "../../types/types";
+import HeaderDropdownMenu from "../../components/HeaderDropdownMenu";
 
 
-interface IMenuItem {
-    title: string,
-    link: string,
-    children?: Array<IMenuItem>,
-    isId?: boolean
-}
 
 interface IWorkWithUsInfo {
     title: string,
@@ -68,7 +62,7 @@ const Header = () => {
     const { palette } = useTheme();
     const { t } = useTranslation();
 
-    const links: Array<IMenuItem> = [
+    const links: Array<IHeaderMenuItem> = [
         {
             title: t("containers.header.home"),
             link: "/"
@@ -139,15 +133,25 @@ const Header = () => {
 
     const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
     const SendEmailSchema = Yup.object().shape({
-        name: Yup.string().required().min(6).max(50).label("Name"),
-        phone: Yup.string().required().matches(phoneRegExp, 'Phone is not valid').label("Phone"),
-        email: Yup.string().email().required().label("Email"),
-        message: Yup.string().required().min(10).max(150).label("Message"),
+        name: Yup.string()
+            .required(`${t("validationProps.name")} ${t("validationMessages.is-required-first")}`)
+            .label(t("validationProps.name")),
+        phone: Yup.string()
+            .required(`${t("validationProps.phone")} ${t("validationMessages.is-required-first")}`)
+            .matches(phoneRegExp, `${t("validationProps.phone")} ${t("validationMessages.is-not-valid-first")}`)
+            .label(t("validationProps.phone")),
+        email: Yup.string()
+            .required(`${t("validationProps.email")} ${t("validationMessages.is-required-second")}`)
+            .email(`${t("validationProps.email")} ${t("validationMessages.is-not-valid-second")}`)
+            .label(t("validationProps.email")),
+        message: Yup.string()
+            .required(`${t("validationProps.message")} ${t("validationMessages.is-required-third")}`)
+            .label(t("validationProps.message")),
     });
 
     const formik = useFormik({
         initialValues: sendEmailModel,
-        // validationSchema: SendEmailSchema,
+        validationSchema: SendEmailSchema,
         onSubmit: (values) => {
             try {
                 // emailjs.send("service_661asda", "template_z72bxrn", {
@@ -187,19 +191,26 @@ const Header = () => {
                         />
                         <Box sx={{ display: "flex", "&:last-child": { mr: 0 } }}>
                             {links.map((item, index) => {
-                                return (
-                                    (item.isId == true
-                                        ? <HashLinkRouter key={`header_menu_item_${index}`} underline="none" color="inherit" to={item.link} sx={{ mr: "30px" }}>
-                                            <Typography variant="h4" fontFamily="Jura" fontWeight="600">
-                                                {item.title}
-                                            </Typography>
-                                        </HashLinkRouter>
-                                        : <LinkRouter key={`header_menu_item_${index}`} underline="none" color="inherit" to={item.link} sx={{ mr: "30px" }}>
-                                            <Typography variant="h4" fontFamily="Jura" fontWeight="600">
-                                                {item.title}
-                                            </Typography>
-                                        </LinkRouter>)
-                                );
+                                if (item.link !== "") {
+                                    return (
+                                        (item.isId == true
+                                            ? <HashLinkRouter key={`header_menu_item_${index}`} underline="none" color="inherit" to={item.link} sx={{ mr: "30px" }}>
+                                                <Typography variant="h4" fontFamily="Jura" fontWeight="600">
+                                                    {item.title}
+                                                </Typography>
+                                            </HashLinkRouter>
+                                            : <LinkRouter key={`header_menu_item_${index}`} underline="none" color="inherit" to={item.link} sx={{ mr: "30px" }}>
+                                                <Typography variant="h4" fontFamily="Jura" fontWeight="600">
+                                                    {item.title}
+                                                </Typography>
+                                            </LinkRouter>)
+                                    );
+                                }
+                                else {
+                                    return (
+                                        <HeaderDropdownMenu {...item} />
+                                    )
+                                }
                             })}
                         </Box>
                         <HeaderMenu />
@@ -208,13 +219,14 @@ const Header = () => {
                         <Typography variant="h1" fontWeight="700" fontFamily="Raleway" sx={{ width: "630px" }}>
                             {t("pages.home.metalwork-or-loft-style-furniture")}
                         </Typography>
-                        <Typography variant="h3" fontFamily="Raleway" sx={{ width: "445px", pt: "20px" }}>
-                            {t("pages.home.various-types-of-metal-structures")}
+                        <Typography variant="h3" fontFamily="Raleway" sx={{ pt: "20px" }}>
+                            {t("pages.home.various-types-of-metal-structures-first")}
+                            <br />
+                            {t("pages.home.various-types-of-metal-structures-second")}
                         </Typography>
                         <Button
                             variant="contained"
                             sx={{
-                                width: "278px",
                                 height: "58px",
                                 borderRadius: 0,
                                 textTransform: "none",
@@ -429,7 +441,7 @@ const Header = () => {
                                         fullWidth
                                         variant="standard"
                                         type="text"
-                                        label="Name"
+                                        label={t("validationProps.name")}
                                         size="small"
                                         {...getFieldProps('name')}
                                         error={Boolean(touched.name && errors.name)}
@@ -441,7 +453,7 @@ const Header = () => {
                                         fullWidth
                                         variant="standard"
                                         type="text"
-                                        label="Phone"
+                                        label={t("validationProps.phone")}
                                         size="small"
                                         {...getFieldProps('phone')}
                                         error={Boolean(touched.phone && errors.phone)}
@@ -453,7 +465,7 @@ const Header = () => {
                                         fullWidth
                                         variant="standard"
                                         type="text"
-                                        label="Email"
+                                        label={t("validationProps.email")}
                                         size="small"
                                         {...getFieldProps('email')}
                                         error={Boolean(touched.email && errors.email)}
@@ -465,7 +477,7 @@ const Header = () => {
                                         fullWidth
                                         variant="standard"
                                         type="text"
-                                        label="Message"
+                                        label={t("validationProps.message")}
                                         size="small"
                                         {...getFieldProps('message')}
                                         error={Boolean(touched.message && errors.message)}
@@ -514,7 +526,7 @@ const Header = () => {
                         <Grid item xs={4} />
                         <Grid item xs={3}>
                             <Typography variant="h4" fontFamily="Jura" fontWeight="700">
-                                Контакти
+                                {t("containers.footer.contacts")}
                             </Typography>
                             <Typography variant="h4" fontFamily="Jura" fontWeight="600" sx={{ mt: "40px", mb: "10px" }}>
                                 + 380 98 2567 85
@@ -526,7 +538,7 @@ const Header = () => {
                         <Grid item xs={1} />
                         <Grid item xs={2}>
                             <Typography variant="h4" fontFamily="Jura" fontWeight="700" align="right">
-                                Соцмережі
+                                {t("containers.footer.social-networks")}
                             </Typography>
                             <Box sx={{ display: "flex", justifyContent: "end", mt: "40px" }}>
                                 <img
