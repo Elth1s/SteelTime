@@ -32,21 +32,6 @@ const DarkTheme = createTheme({
         },
     },
     typography: {
-        h1: {
-            fontSize: "64px"
-        },
-        h2: {
-            fontSize: "36px"
-        },
-        h3: {
-            fontSize: "24px"
-        },
-        h4: {
-            fontSize: "20px"
-        },
-        h5: {
-            fontSize: "16px"
-        },
         fontFamily: [
             'Raleway',
             'Jura',
@@ -54,5 +39,42 @@ const DarkTheme = createTheme({
         ].join(',')
     },
 });
+
+DarkTheme.typography.h1 = {
+    fontSize: "64px",
+    [DarkTheme.breakpoints.down('lg')]: {
+        fontSize: '32px',
+    },
+};
+DarkTheme.typography.h2 = {
+    fontSize: "36px",
+    [DarkTheme.breakpoints.down('lg')]: {
+        fontSize: '20px',
+    },
+};
+DarkTheme.typography.h3 = {
+    fontSize: "24px",
+    [DarkTheme.breakpoints.down('lg')]: {
+        fontSize: '16px',
+    },
+};
+DarkTheme.typography.h4 = {
+    fontSize: "22px",
+    [DarkTheme.breakpoints.down('lg')]: {
+    },
+};
+DarkTheme.typography.h5 = {
+    fontSize: "20px",
+    lineHeight: "23px",
+    [DarkTheme.breakpoints.down('lg')]: {
+        fontSize: '14px',
+    },
+};
+DarkTheme.typography.h6 = {
+    fontSize: "16px",
+    [DarkTheme.breakpoints.down('lg')]: {
+        fontSize: "14px",
+    },
+};
 
 export default DarkTheme;

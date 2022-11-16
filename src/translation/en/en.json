@@ -5,7 +5,13 @@
                 "home": "Home",
                 "about-us": "About us",
                 "production": "Production",
-                "services": "Services",
+                "services": {
+                    "title": "Services",
+                    "plasma-cutting-of-metal": "Plasma cutting of metal",
+                    "bending-of-reinforcement": "Bending of reinforcement",
+                    "lathe-works": "Lathe works",
+                    "metal-cutting-with-a-bandsaw": "Metal cutting with a bandsaw"
+                },
                 "contacts": "Contacts",
                 "gallery": "Gallery"
             },
@@ -51,6 +57,43 @@
                 "reviews": "Reviews",
                 "do-you-want-to-order-a-product": "Do you want to order a product or discuss an order?",
                 "send": "Send"
+            },
+            "production": {
+                "steel-building-structures": "Steel building structures",
+                "steel-building-structures-p": "Building metal structures of our production are used in industrial and civil construction of buildings and structures, workshops, warehouse complexes, shopping and entertainment centers and other structures.",
+                "building-metal-structures": "Building metal structures",
+                "building-metal-structures-p1": "Reinforcement frames and embedded products",
+                "building-metal-structures-p2": "Anchor blocks and foundation bolts",
+                "building-metal-structures-p3": "Support fasteners of tower cranes",
+                "building-metal-structures-p4": "Input group",
+                "non-standard-metal-structures-and-equipment": "Non-standard metal structures and equipment",
+                "designer-steel-products": "Designer steel products"
+            },
+            "plasma-cutting-of-metal": {
+                "first-p": "Processing of metal blanks up to 30 mm thick using plasma cutting.",
+                "second-p": "Precise and shaped cutting of metal without further improvement by grinding and other operations.",
+                "third-p": "The cutting tool is a plasma jet, which is created by an electric arc.",
+                "fourth-p": "The cut is heated by a plasma beam to the highest temperatures (up to 30,000 degrees), while the air or gas supply speed is up to 1.5 thousand m/s.",
+                "fifth-p": "We process ferrous and non-ferrous metals and alloys with high precision according to any cut configuration, sketches and customer wishes."
+            },
+            "metal-cutting-with-a-bandsaw": {
+                "first-p": "We offer artificial cutting of rolled metal on a semi-automatic guillotine machine «Mit1-03N» with a band saw",
+                "second-p": "Rotation, forward movement, lifting of the machine frame at an angle and clamping of the processed workpiece are carried out with the help of hydraulic systems.",
+                "third-p": "Characteristic features of the machine are accuracy with a minimum error of up to 0.1 mm, the possibility of cutting at an angle, a clean cut - the absence of burrs, chips and melting of the edges.",
+                "fourth-p": "With the help of a machine with a band saw, it is possible to process profiled, graded, shaped rolled metal - pipes, channels, corners, I-beams, circles, squares, fittings, etc.",
+                "fifth-p": "The use of blanks made of steel of various grades, non-ferrous metals, light alloys, and cast iron is allowed."
+            },
+            "bending-of-reinforcement": {
+                "first-p": "For the assembly of various metal structures, steel smooth and ribbed reinforcement, which is given the necessary shape, is often used.",
+                "second-p": "We have at our disposal special equipment with numerical software control, on which you can quickly and accurately give the armature any shape.",
+                "third-p": "The entire process is controlled by a computer program, which has in its arsenal a huge number of typical types of bending of metal rods.",
+                "fourth-p": "After the end of bending, there is no need to correct the corners, the distance between the ends is minimal and ready for further welding work, the ribs of the reinforcement are not deformed, the integrity of the bar is not violated. ",
+                "fifth-p": "If the customer needs an unusual configuration, our specialists will program it according to the provided sketches or drawings."
+            },
+            "lathe-works": {
+                "first-p": "We perform, on specialized turning equipment, mechanical processing of workpieces of any complexity to order - threading, countersinking, facing, chamfering, grooving, grooving, drilling holes and other works. ",
+                "second-p": "The equipment allows processing of both external and internal surfaces of the workpiece with high accuracy. As a result, the client receives an absolutely smooth part of the given shape. In addition, in our company, you can order milling of grooves, flat and helical surfaces, and others.",
+                "third-p": "In the course of work, quality control and compliance with certain requirements for manufactured metal products are carried out."
             }
         },
         "components": {

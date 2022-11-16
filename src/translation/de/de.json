@@ -5,7 +5,13 @@
                 "home": "Heimat",
                 "about-us": "Über uns",
                 "production": "Produktion",
-                "services": "Dienstleistungen",
+                "services": {
+                    "title": "Dienstleistungen",
+                    "plasma-cutting-of-metal": "Plasmaschneiden von Metall",
+                    "bending-of-reinforcement": "Biegen der Bewehrung",
+                    "lathe-works": "Drehmaschine funktioniert",
+                    "metal-cutting-with-a-bandsaw": "Metallschneiden mit einer Bandsäge"
+                },
                 "contacts": "Kontakte",
                 "gallery": "Galerie"
             },
@@ -51,6 +57,43 @@
                 "reviews": "Bewertungen",
                 "do-you-want-to-order-a-product": "Möchten Sie ein Produkt bestellen oder eine Bestellung besprechen?",
                 "send": "Senden"
+            },
+            "production": {
+                "steel-building-structures": "Baukonstruktionen aus Stahl",
+                "steel-building-structures-p": "Baumetallkonstruktionen unserer Produktion werden im Industrie- und Zivilbau von Gebäuden und Konstruktionen, Werkstätten, Lagerkomplexen, Einkaufs- und Unterhaltungszentren und anderen Konstruktionen verwendet.",
+                "building-metal-structures": "Aufbau von Metallkonstruktionen",
+                "building-metal-structures-p1": "Verstärkungsrahmen und eingebettete Produkte",
+                "building-metal-structures-p2": "Ankerblöcke und Fundamentschrauben",
+                "building-metal-structures-p3": "Stützbefestigungen von Turmdrehkranen",
+                "building-metal-structures-p4": "Eingangsgruppe",
+                "non-standard-metal-structures-and-equipment": "Nicht standardmäßige Metallkonstruktionen und -ausrüstungen",
+                "designer-steel-products": "Designerprodukte aus Stahl"
+            },
+            "plasma-cutting-of-metal": {
+                "first-p": "Bearbeitung von bis zu 30 mm dicken Metallplatinen durch Plasmaschneiden.",
+                "second-p": "Präzises und geformtes Schneiden von Metall ohne weitere Verbesserung durch Schleifen und andere Operationen.",
+                "third-p": "Das Schneidwerkzeug ist ein Plasmastrahl, der durch einen Lichtbogen erzeugt wird.",
+                "fourth-p": "Der Schnitt wird durch einen Plasmastrahl auf höchste Temperaturen (bis zu 30.000 Grad) erhitzt, während die Luft- oder Gaszufuhrgeschwindigkeit bis zu 1,5 Tausend m/s beträgt.",
+                "fifth-p": "Wir bearbeiten Eisen- und Nichteisenmetalle und -legierungen mit hoher Präzision nach beliebigen Schnittbildern, Skizzen und Kundenwünschen."
+            },
+            "metal-cutting-with-a-bandsaw": {
+                "first-p": "Wir bieten künstliches Schneiden von Walzmetall auf einer halbautomatischen Guillotine-Maschine «Mit1-03N» mit einer Bandsäge an",
+                "second-p": "Rotation, Vorwärtsbewegung, schräges Anheben des Maschinengestells und Spannen des bearbeiteten Werkstücks erfolgen mit Hilfe von Hydrauliksystemen.",
+                "third-p": "Charakteristische Merkmale der Maschine sind Genauigkeit mit einem minimalen Fehler von bis zu 0,1 mm, die Möglichkeit, in einem Winkel zu schneiden, ein sauberer Schnitt - das Fehlen von Graten, Spänen und Schmelzen der Kanten.",
+                "fourth-p": "Mit Hilfe einer Maschine mit Bandsäge ist es möglich, profiliertes, gradiertes, geformtes Walzmetall zu bearbeiten - Rohre, Kanäle, Ecken, I-Träger, Kreise, Quadrate, Formstücke usw.",
+                "fifth-p": "Die Verwendung von Rohlingen aus Stahl verschiedener Güten, NE-Metallen, Leichtmetalllegierungen und Gusseisen ist zulässig."
+            },
+            "bending-of-reinforcement": {
+                "first-p": "Für die Montage verschiedener Metallkonstruktionen wird häufig eine glatte und gerippte Stahlbewehrung verwendet, die die erforderliche Form erhält.",
+                "second-p": "Wir verfügen über eine spezielle Ausrüstung mit numerischer Softwaresteuerung, auf der Sie dem Anker schnell und genau jede Form geben können.",
+                "third-p": "Der gesamte Prozess wird von einem Computerprogramm gesteuert, das eine Vielzahl typischer Arten des Biegens von Metallstangen in seinem Arsenal hat.",
+                "fourth-p": "Nach dem Ende des Biegens müssen die Ecken nicht korrigiert werden, der Abstand zwischen den Enden ist minimal und bereit für weitere Schweißarbeiten, die Rippen der Verstärkung werden nicht verformt, die Integrität des Stabes wird nicht verletzt.",
+                "fifth-p": "Wenn der Kunde eine ungewöhnliche Konfiguration benötigt, programmieren unsere Spezialisten diese gemäß den bereitgestellten Skizzen oder Zeichnungen."
+            },
+            "lathe-works": {
+                "first-p": "Auf spezialisierten Drehmaschinen führen wir auf Bestellung mechanische Bearbeitung von Werkstücken beliebiger Komplexität durch - Gewindeschneiden, Senken, Planen, Fasen, Nuten, Nuten, Bohren von Löchern und andere Arbeiten. ",
+                "second-p": "Die Ausrüstung ermöglicht die Bearbeitung sowohl der Außen- als auch der Innenflächen des Werkstücks mit hoher Genauigkeit. Als Ergebnis erhält der Kunde ein absolut glattes Teil der vorgegebenen Form. Darüber hinaus können Sie in unserem Unternehmen das Fräsen von Nuten, flachen und spiralförmigen Oberflächen und anderen bestellen.",
+                "third-p": "Im Laufe der Arbeit werden Qualitätskontrollen und die Einhaltung bestimmter Anforderungen an hergestellte Metallprodukte durchgeführt."
             }
         },
         "components": {

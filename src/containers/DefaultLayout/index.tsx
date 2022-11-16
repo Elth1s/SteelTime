@@ -1,12 +1,20 @@
 import { Box, Container } from "@mui/material";
 
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 
 import Header from "./Header";
 import Footer from "./Footer";
 
+import "../../index.css"
+
 const DefaultLayout = () => {
+
+    useEffect(() => {
+        document.body.className = "body-default-container-style"
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <Box
             sx={{
@@ -16,11 +24,11 @@ const DefaultLayout = () => {
                 width: "100%"
             }}
         >
-            {/* <Header /> */}
+            <Header />
             <Container component="main" sx={{ maxWidth: { lg: "lg", md: "md" } }}>
                 <Outlet />
             </Container>
-            {/* <Footer /> */}
+            <Footer />
         </Box>
     );
 }

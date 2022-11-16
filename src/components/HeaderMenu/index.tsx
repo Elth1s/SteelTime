@@ -9,16 +9,21 @@ import {
 
 import * as React from "react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import { LanguageButtonStyle } from "./styled";
 
 import menu_light from "../../assets/icons/menu-light.svg";
+import menu_dark from "../../assets/icons/menu-dark.svg";
 import close_orange from "../../assets/icons/close-orange.svg";
 import facebook_small_light from "../../assets/icons/facebook-small-light.svg";
+import facebook_small_dark from "../../assets/icons/facebook-small-dark.svg";
 import instagram_small_light from "../../assets/icons/instagram-small-light.svg";
+import instagram_small_dark from "../../assets/icons/instagram-small-dark.svg";
 import sun_light from "../../assets/icons/sun-light.png";
+import moon_dark from "../../assets/icons/moon-dark.png";
+
 import { useThemeContext } from "../../UISettings/ThemeContext";
-import { useTranslation } from "react-i18next";
 
 type Language = 'uk' | 'en' | 'de';
 
@@ -29,9 +34,9 @@ export default function HeaderMenu() {
     const { darkTheme, setDarkTheme } = useThemeContext();
 
     const [languages, setLanguages] = React.useState({
-        uk: i18n.language == "uk-UA" || i18n.language == "uk",
-        en: i18n.language == "en-US" || i18n.language == "en",
-        de: i18n.language == "de"
+        uk: i18n.language === "uk-UA" || i18n.language === "uk",
+        en: i18n.language === "en-US" || i18n.language === "en",
+        de: i18n.language === "de"
     });
     const [isOpen, setIsOpen] = useState(false);
 
@@ -51,9 +56,9 @@ export default function HeaderMenu() {
 
     const changeLanguage = (language: Language) => {
         let newLanguages = {
-            uk: language == "uk",
-            en: language == "en",
-            de: language == "de"
+            uk: language === "uk",
+            en: language === "en",
+            de: language === "de"
         }
         setLanguages(newLanguages)
         i18n.changeLanguage(language)
@@ -68,6 +73,8 @@ export default function HeaderMenu() {
         <>
             <IconButton
                 sx={{
+                    width: { lg: "50px", xs: "45px" },
+                    height: { lg: "39px", xs: "34px" },
                     "&:hover": {
                         background: "transparent"
                     },
@@ -80,7 +87,8 @@ export default function HeaderMenu() {
                 onClick={toggleDrawer(true)}
             >
                 <img
-                    src={menu_light}
+                    style={{ width: "100%", height: "100%" }}
+                    src={palette.mode === "dark" ? menu_light : menu_dark}
                     alt="menu"
                 />
             </IconButton>
@@ -132,17 +140,17 @@ export default function HeaderMenu() {
                             />
                         </IconButton>
                     </Box>
-                    <Typography variant="h4" fontFamily="Jura" fontWeight="700" sx={{ mt: "40px" }}>
+                    <Typography variant="h5" fontFamily="Jura" fontWeight="700" sx={{ mt: "40px" }}>
                         {t("components.header-menu.social-networks")}
                     </Typography>
                     <Box sx={{ display: "flex", mt: "10px", mb: "auto" }}>
                         <img
-                            src={instagram_small_light}
+                            src={palette.mode === "dark" ? instagram_small_light : instagram_small_dark}
                             alt="instagram"
                             style={{ marginRight: "10px", cursor: "pointer" }}
                         />
                         <img
-                            src={facebook_small_light}
+                            src={palette.mode === "dark" ? facebook_small_light : facebook_small_dark}
                             alt="facebook"
                             style={{ cursor: "pointer" }}
                         />
@@ -156,11 +164,11 @@ export default function HeaderMenu() {
                         onClick={handleThemeChange}
                     >
                         <img
-                            src={sun_light}
+                            src={darkTheme ? sun_light : moon_dark}
                             alt="sun_light"
                             style={{ marginRight: "10px" }}
                         />
-                        <Typography variant="h4" fontFamily="Jura">
+                        <Typography variant="h5" fontFamily="Jura">
                             {darkTheme ? t("components.header-menu.light-theme") : t("components.header-menu.dark-theme")}
                         </Typography>
                     </Box>
