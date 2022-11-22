@@ -20,7 +20,7 @@ import LinkRouter from "../../components/LinkRouter";
 import HashLinkRouter from "../../components/HashLinkRouter";
 import { MoreButton } from "../../components/Buttons";
 
-import homepage_header from "../../assets/backgrounds/homepage-header.png";
+import homepage_header from "../../assets/backgrounds/homepage-header.jpg";
 import homepage_header_dark from "../../assets/backgrounds/homepage-header-dark.png";
 import header_logo_light from "../../assets/logos/header-logo-light.svg";
 import header_logo_dark from "../../assets/logos/header-logo-dark.svg";

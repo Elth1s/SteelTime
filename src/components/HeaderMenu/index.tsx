@@ -99,7 +99,8 @@ export default function HeaderMenu() {
                 PaperProps={{
                     elevation: 0,
                     sx: {
-                        background: "transparent"
+                        background: "transparent",
+                        height: "450px"
                     }
                 }}
             >
