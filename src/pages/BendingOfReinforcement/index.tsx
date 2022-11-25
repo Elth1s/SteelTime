@@ -3,10 +3,10 @@ import { useTranslation } from "react-i18next"
 
 import sequence_of_actions from "../../assets/icons/sequence-of-actions-bending-of-reinforcement.svg"
 
-import bending_of_reinforcement_first from "../../assets/backgrounds/bending-of-reinforcement-first.png"
-import bending_of_reinforcement_second from "../../assets/backgrounds/bending-of-reinforcement-second.png"
-import bending_of_reinforcement_third from "../../assets/backgrounds/bending-of-reinforcement-third.png"
-import bending_of_reinforcement_fourth from "../../assets/backgrounds/bending-of-reinforcement-fourth.png"
+import bending_of_reinforcement_first from "../../assets/backgrounds/production/bending-of-reinforcement-first.png"
+import bending_of_reinforcement_second from "../../assets/backgrounds/production/bending-of-reinforcement-second.png"
+import bending_of_reinforcement_third from "../../assets/backgrounds/production/bending-of-reinforcement-third.png"
+import bending_of_reinforcement_fourth from "../../assets/backgrounds/production/bending-of-reinforcement-fourth.png"
 
 const BendingOfReinforcement = () => {
     const { t } = useTranslation();
@@ -26,19 +26,19 @@ const BendingOfReinforcement = () => {
                         />
                     </Box>
                     <Box sx={{ ml: "20px", width: "490px" }}>
-                        <Typography variant="h5" fontFamily="Raleway" sx={{ mb: "40px" }}>
+                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "40px" }}>
                             {t("pages.bending-of-reinforcement.first-p")}
                         </Typography>
-                        <Typography variant="h5" fontFamily="Raleway" sx={{ mb: "40px" }}>
+                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "40px" }}>
                             {t("pages.bending-of-reinforcement.second-p")}
                         </Typography>
-                        <Typography variant="h5" fontFamily="Raleway" sx={{ mb: "40px" }}>
+                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "40px" }}>
                             {t("pages.bending-of-reinforcement.third-p")}
                         </Typography>
-                        <Typography variant="h5" fontFamily="Raleway" sx={{ mb: "40px" }}>
+                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "40px" }}>
                             {t("pages.bending-of-reinforcement.fourth-p")}
                         </Typography>
-                        <Typography variant="h5" fontFamily="Raleway">
+                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway">
                             {t("pages.bending-of-reinforcement.fifth-p")}
                         </Typography>
                     </Box>

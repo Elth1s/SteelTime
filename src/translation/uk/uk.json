@@ -67,7 +67,27 @@
                 "building-metal-structures-p3": "Опорні кріплення баштових кранів",
                 "building-metal-structures-p4": "Вхідна група",
                 "non-standard-metal-structures-and-equipment": "Нестандартні металоконструкції та обладнання",
-                "designer-steel-products": "Дизайнерські сталеві вироби"
+                "designer-steel-products": "Дизайнерські сталеві вироби",
+                "designer-steel-products-p1": "Металевий декор вигідно виглядає в будь-яких стилях: будь то класика або hi-tech. Наприклад, ви можете замовити елегантний столик або витіюватий свічник, які підкреслять витонченість інтер’єру.",
+                "designer-steel-products-p2": "Меблі та перегородки в стилі лофт",
+                "furnace": "Піч “буржуйка”",
+                "furnace-h": "Металева піч, від виробника.",
+                "furnace-p1": "Висота 550 мм",
+                "furnace-p2": "Діаметр 400 мм",
+                "furnace-p3": "Вага 40 кг",
+                "furnace-p4": "Варильна поверхня",
+                "protective-container-for-generator": "Захисний контейнер для генератора",
+                "protective-container-for-generator-h1": "Габаритні розміри:",
+                "protective-container-for-generator-h1-p1": "Довжина - 1000 мм",
+                "protective-container-for-generator-h1-p2": "Висота - 1000 (1100) мм",
+                "protective-container-for-generator-h1-p3": "Ширина - 1000 мм",
+                "protective-container-for-generator-h1-p4": "Під бензинові генератори потужністю від 6 до 8 кВт",
+                "protective-container-for-generator-h2": "Комплектація:",
+                "protective-container-for-generator-h2-p1": "Перфорація для забезпечення вентиляції та для оптимального охолодження моторного відсіку",
+                "protective-container-for-generator-h2-p2": "Ґрунтування та фарбування 80 мкм, колір згідно RAL.",
+                "protective-container-for-generator-h2-p3": "Для доступу до генератора (заливання палива та обслуговування)  зверху та з лицьової сторони передбачені дверцята",
+                "protective-container-for-generator-h3": "Пакування: стрейч плівка + гофрокартон.",
+                "protective-container-for-generator-h4": "Доставлення: перевізником по містах України."
             },
             "plasma-cutting-of-metal": {
                 "first-p": "Обробка металевих заготовок товщиною до 30мм за допомогою плазмової різки.",
@@ -98,7 +118,9 @@
         },
         "components": {
             "buttons": {
-                "more": "Більше"
+                "more": "Більше",
+                "order": "Замовити",
+                "details": "Детальніше"
             },
             "header-menu": {
                 "social-networks": "Соцмережі",

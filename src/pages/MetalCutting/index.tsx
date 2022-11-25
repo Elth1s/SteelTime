@@ -3,10 +3,10 @@ import { useTranslation } from "react-i18next"
 
 import sequence_of_actions from "../../assets/icons/sequence-of-actions-metal-cutting-a-bandsaw.svg"
 
-import metal_cutting_a_bandsaw_first from "../../assets/backgrounds/metal-cutting-a-bandsaw-first.png"
-import metal_cutting_a_bandsaw_second from "../../assets/backgrounds/metal-cutting-a-bandsaw-second.png"
-import metal_cutting_a_bandsaw_third from "../../assets/backgrounds/metal-cutting-a-bandsaw-third.png"
-import metal_cutting_a_bandsaw_fourth from "../../assets/backgrounds/metal-cutting-a-bandsaw-fourth.png"
+import metal_cutting_a_bandsaw_first from "../../assets/backgrounds/production/metal-cutting-a-bandsaw-first.png"
+import metal_cutting_a_bandsaw_second from "../../assets/backgrounds/production/metal-cutting-a-bandsaw-second.png"
+import metal_cutting_a_bandsaw_third from "../../assets/backgrounds/production/metal-cutting-a-bandsaw-third.png"
+import metal_cutting_a_bandsaw_fourth from "../../assets/backgrounds/production/metal-cutting-a-bandsaw-fourth.png"
 
 const MetalCutting = () => {
     const { t } = useTranslation();
@@ -26,19 +26,19 @@ const MetalCutting = () => {
                         />
                     </Box>
                     <Box sx={{ ml: "20px", width: "522px" }}>
-                        <Typography variant="h5" fontFamily="Raleway" sx={{ mb: "40px" }}>
+                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "40px" }}>
                             {t("pages.metal-cutting-with-a-bandsaw.first-p")}
                         </Typography>
-                        <Typography variant="h5" fontFamily="Raleway" sx={{ mb: "40px" }}>
+                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "40px" }}>
                             {t("pages.metal-cutting-with-a-bandsaw.second-p")}
                         </Typography>
-                        <Typography variant="h5" fontFamily="Raleway" sx={{ mb: "40px" }}>
+                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "40px" }}>
                             {t("pages.metal-cutting-with-a-bandsaw.third-p")}
                         </Typography>
-                        <Typography variant="h5" fontFamily="Raleway" sx={{ mb: "40px" }}>
+                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "40px" }}>
                             {t("pages.metal-cutting-with-a-bandsaw.fourth-p")}
                         </Typography>
-                        <Typography variant="h5" fontFamily="Raleway">
+                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway">
                             {t("pages.metal-cutting-with-a-bandsaw.fifth-p")}
                         </Typography>
                     </Box>

@@ -29,7 +29,7 @@ const DarkTheme = createTheme({
                     padding: 0
                 }
             }
-        },
+        }
     },
     typography: {
         fontFamily: [

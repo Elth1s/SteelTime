@@ -98,7 +98,8 @@
         },
         "components": {
             "buttons": {
-                "more": "More"
+                "more": "More",
+                "order": "Order"
             },
             "header-menu": {
                 "social-networks": "Social networks",

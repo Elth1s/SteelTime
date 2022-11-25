@@ -12,6 +12,7 @@ import LatheWorks from './pages/LatheWorks';
 import MetalCutting from './pages/MetalCutting';
 import PlasmaCuttingOfMetal from './pages/PlasmaCuttingOfMetal';
 import Production from './pages/Production';
+import ProductionOrder from './pages/Production/order';
 
 import DarkTheme from './UISettings/DarkTheme';
 import LightTheme from './UISettings/LightTheme';
@@ -52,6 +53,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route element={<DefaultLayout />}>
               <Route path="/production" element={<Production />} />
+              <Route path="/production/order" element={<ProductionOrder />} />
               <Route path="/plasma-cutting" element={<PlasmaCuttingOfMetal />} />
               <Route path="/metal-cutting-a-bandsaw" element={<MetalCutting />} />
               <Route path="/bending-of-reinforcement" element={<BendingOfReinforcement />} />
