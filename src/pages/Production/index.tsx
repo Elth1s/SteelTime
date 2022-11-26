@@ -1,12 +1,12 @@
 import { Box, Grid, Typography } from "@mui/material"
 import { useTranslation } from "react-i18next"
 
-
-import steel_building_structures from "../../assets/backgrounds/steel-building-structures.png"
-import designer_steel_products from "../../assets/backgrounds/designer-steel-products.png"
-import furnace from "../../assets/backgrounds/furnace.png"
-import protective_container_for_generator from "../../assets/backgrounds/protective-container-for-generator.png"
 import { DetailsButton, OrderButton } from "../../components/Buttons"
+
+import steel_building_structures from "../../assets/backgrounds/production/steel-building-structures.png"
+import designer_steel_products from "../../assets/backgrounds/production/designer-steel-products.png"
+import furnace from "../../assets/backgrounds/production/furnace.png"
+import protective_container_for_generator from "../../assets/backgrounds/production/protective-container-for-generator.png"
 
 const Production = () => {
     const { t } = useTranslation();
@@ -97,7 +97,7 @@ const Production = () => {
                 </Box>
                 <Box sx={{ display: "flex", mt: "80px" }}>
                     <OrderButton marginRight="30px" />
-                    <DetailsButton link="" />
+                    <DetailsButton link="furnace" />
                 </Box>
             </Grid>
             {/* Захисний контейнер для генератора */}

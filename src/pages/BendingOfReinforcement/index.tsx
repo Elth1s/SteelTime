@@ -3,10 +3,10 @@ import { useTranslation } from "react-i18next"
 
 import sequence_of_actions from "../../assets/icons/sequence-of-actions-bending-of-reinforcement.svg"
 
-import bending_of_reinforcement_first from "../../assets/backgrounds/production/bending-of-reinforcement-first.png"
-import bending_of_reinforcement_second from "../../assets/backgrounds/production/bending-of-reinforcement-second.png"
-import bending_of_reinforcement_third from "../../assets/backgrounds/production/bending-of-reinforcement-third.png"
-import bending_of_reinforcement_fourth from "../../assets/backgrounds/production/bending-of-reinforcement-fourth.png"
+import bending_of_reinforcement_first from "../../assets/backgrounds/services/bending-of-reinforcement-first.png"
+import bending_of_reinforcement_second from "../../assets/backgrounds/services/bending-of-reinforcement-second.png"
+import bending_of_reinforcement_third from "../../assets/backgrounds/services/bending-of-reinforcement-third.png"
+import bending_of_reinforcement_fourth from "../../assets/backgrounds/services/bending-of-reinforcement-fourth.png"
 
 const BendingOfReinforcement = () => {
     const { t } = useTranslation();

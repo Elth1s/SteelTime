@@ -3,10 +3,10 @@ import { useTranslation } from "react-i18next"
 
 import sequence_of_actions from "../../assets/icons/sequence-of-actions-plasma-cutting.svg"
 
-import plasma_cutting_of_metal_first from "../../assets/backgrounds/production/plasma-cutting-of-metal-first.png"
-import plasma_cutting_of_metal_second from "../../assets/backgrounds/production/plasma-cutting-of-metal-second.png"
-import plasma_cutting_of_metal_third from "../../assets/backgrounds/production/plasma-cutting-of-metal-third.png"
-import plasma_cutting_of_metal_fourth from "../../assets/backgrounds/production/plasma-cutting-of-metal-fourth.png"
+import plasma_cutting_of_metal_first from "../../assets/backgrounds/services/plasma-cutting-of-metal-first.png"
+import plasma_cutting_of_metal_second from "../../assets/backgrounds/services/plasma-cutting-of-metal-second.png"
+import plasma_cutting_of_metal_third from "../../assets/backgrounds/services/plasma-cutting-of-metal-third.png"
+import plasma_cutting_of_metal_fourth from "../../assets/backgrounds/services/plasma-cutting-of-metal-fourth.png"
 
 const PlasmaCuttingOfMetal = () => {
     const { t } = useTranslation();

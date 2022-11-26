@@ -65,6 +65,8 @@ export const OrderButton: FC<ProductionProps> = ({ marginRight }) => {
 export const DetailsButton: FC<ProductionProps> = ({ link }) => {
     const { t } = useTranslation();
 
+    const navigate = useNavigate();
+
     return (
         <Button
             variant="contained"
@@ -73,6 +75,12 @@ export const DetailsButton: FC<ProductionProps> = ({ link }) => {
                 borderRadius: 0,
                 textTransform: "none",
                 fontSize: "16px"
+            }}
+            onClick={() => {
+                if (link) {
+                    navigate(link)
+                    window.scrollTo(0, 0);
+                }
             }}
         >
             {t("components.buttons.details")}

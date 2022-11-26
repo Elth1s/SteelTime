@@ -3,8 +3,8 @@ import { useTranslation } from "react-i18next"
 
 import sequence_of_actions from "../../assets/icons/sequence-of-actions-lathe-works.svg"
 
-import lathe_works_first from "../../assets/backgrounds/production/lathe-works-first.png"
-import lathe_works_second from "../../assets/backgrounds/production/lathe-works-second.png"
+import lathe_works_first from "../../assets/backgrounds/services/lathe-works-first.png"
+import lathe_works_second from "../../assets/backgrounds/services/lathe-works-second.png"
 
 const LatheWorks = () => {
     const { t } = useTranslation();
