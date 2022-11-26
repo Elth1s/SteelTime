@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material"
+import { Box, Grid, Typography, useTheme } from "@mui/material"
 import { useTranslation } from "react-i18next"
 
 import { DetailsButton, OrderButton } from "../../components/Buttons"
@@ -7,9 +7,11 @@ import steel_building_structures from "../../assets/backgrounds/production/steel
 import designer_steel_products from "../../assets/backgrounds/production/designer-steel-products.png"
 import furnace from "../../assets/backgrounds/production/furnace.png"
 import protective_container_for_generator from "../../assets/backgrounds/production/protective-container-for-generator.png"
+import LinkRouter from "../../components/LinkRouter"
 
 const Production = () => {
     const { t } = useTranslation();
+    const { palette } = useTheme();
     return (
         <Grid container rowSpacing="50px" columnSpacing="33px" sx={{ mt: "183px", mb: "284px" }}>
             {/* Сталеві будівельні конструкції */}
@@ -26,26 +28,38 @@ const Production = () => {
                 <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mt: "15px" }}>
                     {t("pages.production.steel-building-structures-p")}
                 </Typography>
-                <Typography variant="h4" fontWeight="500" fontFamily="Jura" sx={{ mt: "50px" }}>
-                    {t("pages.production.building-metal-structures")}
-                </Typography>
+                <LinkRouter underline="always" color="inherit" to="building-metal-structures" onClick={() => window.scrollTo(0, 0)} sx={{ "&:hover": { color: palette.primary.main } }}>
+                    <Typography variant="h4" fontWeight="500" fontFamily="Jura" sx={{ mt: "50px" }}>
+                        {t("pages.production.building-metal-structures")}
+                    </Typography>
+                </LinkRouter>
                 <Box sx={{ ml: "20px", mt: "20px" }}>
-                    <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "10px" }}>
-                        {t("pages.production.building-metal-structures-p1")}
-                    </Typography>
-                    <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "10px" }}>
-                        {t("pages.production.building-metal-structures-p2")}
-                    </Typography>
-                    <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "10px" }}>
-                        {t("pages.production.building-metal-structures-p3")}
-                    </Typography>
-                    <Typography variant="h5" fontWeight="400" fontFamily="Raleway" >
-                        {t("pages.production.building-metal-structures-p4")}
-                    </Typography>
+                    <LinkRouter underline="always" color="inherit" to="reinforcement-frames-and-embedded-products" onClick={() => window.scrollTo(0, 0)} sx={{ "&:hover": { color: palette.primary.main } }}>
+                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "10px" }}>
+                            {t("pages.production.building-metal-structures-p1")}
+                        </Typography>
+                    </LinkRouter>
+                    <LinkRouter underline="always" color="inherit" to="anchor-blocks-and-foundation-bolts" onClick={() => window.scrollTo(0, 0)} sx={{ "&:hover": { color: palette.primary.main } }}>
+                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "10px" }}>
+                            {t("pages.production.building-metal-structures-p2")}
+                        </Typography>
+                    </LinkRouter>
+                    <LinkRouter underline="always" color="inherit" to="support-fasteners-of-tower-cranes" onClick={() => window.scrollTo(0, 0)} sx={{ "&:hover": { color: palette.primary.main } }}>
+                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "10px" }}>
+                            {t("pages.production.building-metal-structures-p3")}
+                        </Typography>
+                    </LinkRouter>
+                    <LinkRouter underline="always" color="inherit" to="input-goup" onClick={() => window.scrollTo(0, 0)} sx={{ "&:hover": { color: palette.primary.main } }}>
+                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" >
+                            {t("pages.production.building-metal-structures-p4")}
+                        </Typography>
+                    </LinkRouter>
                 </Box>
-                <Typography variant="h4" fontWeight="500" fontFamily="Jura" sx={{ mt: "70px", mb: "50px" }}>
-                    {t("pages.production.non-standard-metal-structures-and-equipment")}
-                </Typography>
+                <LinkRouter underline="always" color="inherit" to="non-standard-metal-structures-and-equipment" onClick={() => window.scrollTo(0, 0)} sx={{ "&:hover": { color: palette.primary.main } }}>
+                    <Typography variant="h4" fontWeight="500" fontFamily="Jura" sx={{ mt: "70px", mb: "50px" }}>
+                        {t("pages.production.non-standard-metal-structures-and-equipment")}
+                    </Typography>
+                </LinkRouter>
                 <OrderButton />
             </Grid>
             {/* Дизайнерські сталеві вироби */}
@@ -56,9 +70,11 @@ const Production = () => {
                 <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mt: "15px" }}>
                     {t("pages.production.designer-steel-products-p1")}
                 </Typography>
-                <Typography variant="h4" fontWeight="400" fontFamily="Raleway" sx={{ my: "50px" }}>
-                    {t("pages.production.designer-steel-products-p2")}
-                </Typography>
+                <LinkRouter underline="always" color="inherit" to="loft-style-furniture-and-partitions" onClick={() => window.scrollTo(0, 0)} sx={{ "&:hover": { color: palette.primary.main } }}>
+                    <Typography variant="h4" fontWeight="400" fontFamily="Raleway" sx={{ my: "50px" }}>
+                        {t("pages.production.designer-steel-products-p2")}
+                    </Typography>
+                </LinkRouter>
                 <OrderButton />
             </Grid>
             <Grid item xs={6}>
@@ -144,7 +160,7 @@ const Production = () => {
                 </Typography>
                 <Box sx={{ display: "flex", mt: "70px" }}>
                     <OrderButton marginRight="30px" />
-                    <DetailsButton link="" />
+                    <DetailsButton link="protective-container-for-generator" />
                 </Box>
             </Grid>
             <Grid item xs={6}>
@@ -153,7 +169,7 @@ const Production = () => {
                     alt="protective_container_for_generator"
                 />
             </Grid>
-        </Grid>
+        </Grid >
     )
 }
 

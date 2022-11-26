@@ -210,7 +210,12 @@ const Header = () => {
                                 borderRadius: 0,
                                 textTransform: "none",
                                 fontSize: { lg: "24px", xs: "15px" },
-                                mt: { lg: "70px", xs: "40px" }
+                                mt: { lg: "70px", xs: "40px" },
+                                "&:hover": {
+                                    background: "transparent",
+                                    border: `1px solid ${palette.primary.main}`,
+                                    color: palette.primary.main
+                                }
                             }}
                         >
                             {t("pages.home.calculate-the-cost")}

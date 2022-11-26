@@ -12,8 +12,16 @@ import LatheWorks from './pages/LatheWorks';
 import MetalCutting from './pages/MetalCutting';
 import PlasmaCuttingOfMetal from './pages/PlasmaCuttingOfMetal';
 import Production from './pages/Production';
+import AnchorBlocksAndFoundationBolts from './pages/Production/AnchorBlocksAndFoundationBolts';
+import BuildingMetalStructures from './pages/Production/BuildingMetalStructures';
 import Furnace from './pages/Production/Furnace';
+import InputGroup from './pages/Production/InputGroup';
+import LoftStyleFurnitureAndPartitions from './pages/Production/LoftStyleFurnitureAndPartitions';
+import NonStandardMetalStructuresAndEquipment from './pages/Production/NonStandardMetalStructuresAndEquipment';
 import ProductionOrder from './pages/Production/order';
+import ProtectiveContainerForGenerator from './pages/Production/ProtectiveContainerForGenerator';
+import ReinforcementFramesAndEmbeddedProducts from './pages/Production/ReinforcementFramesAndEmbeddedProducts';
+import SupportFastenersOfTowerCranes from './pages/Production/SupportFastenersOfTowerCranes';
 
 import DarkTheme from './UISettings/DarkTheme';
 import LightTheme from './UISettings/LightTheme';
@@ -30,6 +38,7 @@ const App = () => {
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(localStorage.darkTheme === "true");
 
   useEffect(() => {
+
 
   }, []);
 
@@ -55,7 +64,15 @@ const App = () => {
             <Route element={<DefaultLayout />}>
               <Route path="/production" element={<Production />} />
               <Route path="/production/order" element={<ProductionOrder />} />
+              <Route path="/production/building-metal-structures" element={<BuildingMetalStructures />} />
+              <Route path="/production/reinforcement-frames-and-embedded-products" element={<ReinforcementFramesAndEmbeddedProducts />} />
+              <Route path="/production/anchor-blocks-and-foundation-bolts" element={<AnchorBlocksAndFoundationBolts />} />
+              <Route path="/production/support-fasteners-of-tower-cranes" element={<SupportFastenersOfTowerCranes />} />
+              <Route path="/production/input-goup" element={<InputGroup />} />
+              <Route path="/production/non-standard-metal-structures-and-equipment" element={<NonStandardMetalStructuresAndEquipment />} />
+              <Route path="/production/loft-style-furniture-and-partitions" element={<LoftStyleFurnitureAndPartitions />} />
               <Route path="/production/furnace" element={<Furnace />} />
+              <Route path="/production/protective-container-for-generator" element={<ProtectiveContainerForGenerator />} />
               <Route path="/plasma-cutting" element={<PlasmaCuttingOfMetal />} />
               <Route path="/metal-cutting-a-bandsaw" element={<MetalCutting />} />
               <Route path="/bending-of-reinforcement" element={<BendingOfReinforcement />} />
