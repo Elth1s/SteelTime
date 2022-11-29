@@ -112,7 +112,8 @@ const Header = () => {
         },
         {
             title: t("containers.header.contacts"),
-            link: "/"
+            link: "/#contacts",
+            isId: true
         },
         {
             title: t("containers.header.gallery"),
@@ -159,8 +160,27 @@ const Header = () => {
                 backgroundSize: "cover",
                 boxShadow: `0px 0px 15px ${hexToRgb("#EF5803")}`
             }}>
-                <Container sx={{ maxWidth: { lg: "1270px", xs: "350px" }, height: "960px" }}>
-                    <Box key="navbar" sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", pt: { lg: "74px", xs: "52px" } }}>
+                <Container
+                    sx={{
+                        maxWidth: {
+                            lg: "1270px",
+                            xs: "350px"
+                        },
+                        height: "960px"
+                    }}
+                >
+                    <Box
+                        key="navbar"
+                        sx={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                            pt: {
+                                lg: "74px",
+                                xs: "52px"
+                            }
+                        }}
+                    >
                         <LinkRouter underline="none" color="inherit" to="/" sx={{ height: { lg: "43px", xs: "32px" } }}>
                             <img
                                 style={{ width: "100%", height: "100%" }}
@@ -559,6 +579,7 @@ const Header = () => {
                 </Box>
             </Container>
             <Box
+                id="contacts"
                 component="footer"
                 sx={{
                     mt: { lg: "153px", xs: "77px" },

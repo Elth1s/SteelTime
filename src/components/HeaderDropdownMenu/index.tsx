@@ -26,7 +26,7 @@ const HeaderDropdownMenu: FC<IHeaderMenuItem> = (item) => {
                         tooltip: {
                             sx: {
                                 background: palette.background.default,
-                                p: "20px 33px 11px 27px",
+                                p: "20px 20px 11px 27px",
                                 color: "inherit",
                                 borderRadius: 0,
                                 display: open ? "block" : "none"
@@ -42,11 +42,10 @@ const HeaderDropdownMenu: FC<IHeaderMenuItem> = (item) => {
                                         underline="none"
                                         color={onHoveredIndex === index ? "primary" : "inherit"}
                                         to={item.link}
-                                        sx={{ width: "250px" }}
                                         onMouseEnter={() => onHover(index)}
                                         onClick={() => setOpen(false)}
                                     >
-                                        <Typography variant="h5" fontFamily="Jura" fontWeight="600" sx={{ mb: "15px" }}>
+                                        <Typography component="h5" fontSize="20px" fontFamily="Jura" fontWeight="600" sx={{ mb: "15px" }}>
                                             {item.title}
                                         </Typography>
                                     </LinkRouter>
@@ -55,8 +54,8 @@ const HeaderDropdownMenu: FC<IHeaderMenuItem> = (item) => {
                         </Box>
                     }
                 >
-                    <Box sx={{ display: "flex", alignItems: "center", mr: "30px", cursor: "pointer" }} onMouseEnter={() => setOpen(true)}>
-                        <Typography variant="h5" fontFamily="Jura" fontWeight="600" color={item.isSelected ? "primary" : "inherit"} sx={{ mr: "10px" }}>
+                    <Box sx={{ display: "flex", alignItems: "center", mr: { lg: "30px", xs: "0px" }, mb: { lg: "0px", xs: "5px" }, cursor: "pointer" }} onMouseEnter={() => setOpen(true)}>
+                        <Typography component="h5" fontSize="20px" fontFamily="Jura" fontWeight="600" color={item.isSelected ? "primary" : "inherit"} sx={{ mr: "10px" }}>
                             {item.title}
                         </Typography>
                         <img

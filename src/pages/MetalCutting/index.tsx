@@ -12,12 +12,12 @@ const MetalCutting = () => {
     const { t } = useTranslation();
 
     return (
-        <Box sx={{ mt: "103px", mb: "274px" }}>
+        <Box sx={{ mt: { lg: "103px", xs: "46px" }, mb: { lg: "274px", xs: "31px" } }}>
             <Typography variant="h2" fontWeight="700" fontFamily="Jura" align="center">
                 {t("containers.header.services.metal-cutting-with-a-bandsaw")}
             </Typography>
-            <Grid container sx={{ mt: "60px" }}>
-                <Grid item xs={6} sx={{ display: "flex", height: "fit-content" }}>
+            <Grid container sx={{ mt: { lg: "60px", xs: "30px" } }}>
+                <Grid item xs={12} lg={6} sx={{ display: "flex", height: "fit-content" }}>
                     <Box>
                         <img
                             style={{ height: "100%" }}
@@ -43,8 +43,8 @@ const MetalCutting = () => {
                         </Typography>
                     </Box>
                 </Grid>
-                <Grid item xs={6}>
-                    <Grid container spacing="26px">
+                <Grid item xs={12} lg={6}>
+                    <Grid container spacing="26px" sx={{ display: { lg: "flex", xs: "none" } }}>
                         <Grid item xs={6}>
                             <img
                                 src={metal_cutting_a_bandsaw_first}
@@ -70,6 +70,32 @@ const MetalCutting = () => {
                             />
                         </Grid>
                     </Grid>
+                    <Box sx={{ display: { lg: "none", xs: "block" }, pt: "30px" }}>
+                        <Box sx={{ width: "300px", height: "200px", mb: "25px", mx: "auto" }}>
+                            <img
+                                src={metal_cutting_a_bandsaw_first}
+                                alt="metal_cutting_a_bandsaw_first"
+                            />
+                        </Box>
+                        <Box sx={{ width: "300px", height: "200px", mb: "25px", mx: "auto" }}>
+                            <img
+                                src={metal_cutting_a_bandsaw_second}
+                                alt="metal_cutting_a_bandsaw_second"
+                            />
+                        </Box>
+                        <Box sx={{ width: "300px", height: "200px", mb: "25px", mx: "auto" }}>
+                            <img
+                                src={metal_cutting_a_bandsaw_third}
+                                alt="metal_cutting_a_bandsaw_third"
+                            />
+                        </Box>
+                        <Box sx={{ width: "300px", height: "200px", mx: "auto" }}>
+                            <img
+                                src={metal_cutting_a_bandsaw_fourth}
+                                alt="metal_cutting_a_bandsaw_fourth"
+                            />
+                        </Box>
+                    </Box>
                 </Grid>
             </Grid>
         </Box>

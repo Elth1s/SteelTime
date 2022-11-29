@@ -9,6 +9,7 @@ import {
 
 import * as React from "react";
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import { LanguageButtonStyle } from "./styled";
@@ -25,6 +26,11 @@ import moon_dark from "../../assets/icons/moon-dark.png";
 
 import { useThemeContext } from "../../UISettings/ThemeContext";
 
+import { IHeaderMenuItem } from "../../types/types";
+import HashLinkRouter from "../HashLinkRouter";
+import LinkRouter from "../LinkRouter";
+import HeaderDropdownMenu from "../HeaderDropdownMenu";
+
 type Language = 'uk' | 'en' | 'de';
 
 export default function HeaderMenu() {
@@ -32,6 +38,58 @@ export default function HeaderMenu() {
     const { t, i18n } = useTranslation();
 
     const { darkTheme, setDarkTheme } = useThemeContext();
+
+    const location = useLocation();
+
+    const links: Array<IHeaderMenuItem> = [
+        {
+            title: t("containers.header.home"),
+            link: "/"
+        },
+        {
+            title: t("containers.header.about-us"),
+            link: "/#about-us",
+            isId: true
+        },
+        {
+            title: t("containers.header.production"),
+            link: "/production",
+            isSelected: location.pathname === "/production"
+        },
+        {
+            title: t("containers.header.services.title"),
+            link: "",
+            isSelected: location.pathname === "/plasma-cutting" || location.pathname === "/bending-of-reinforcement" || location.pathname === "/lathe-works" || location.pathname === "/metal-cutting-a-bandsaw",
+            children: [
+                {
+                    title: t("containers.header.services.plasma-cutting-of-metal"),
+                    link: "/plasma-cutting"
+                },
+                {
+                    title: t("containers.header.services.bending-of-reinforcement"),
+                    link: "/bending-of-reinforcement"
+                },
+                {
+                    title: t("containers.header.services.lathe-works"),
+                    link: "/lathe-works"
+                },
+                {
+                    title: t("containers.header.services.metal-cutting-with-a-bandsaw"),
+                    link: "/metal-cutting-a-bandsaw"
+                }
+            ]
+        },
+        {
+            title: t("containers.header.contacts"),
+            link: "/#contacts",
+            isId: true
+        },
+        {
+            title: t("containers.header.gallery"),
+            link: "/#gallery",
+            isId: true
+        },
+    ];
 
     const [languages, setLanguages] = React.useState({
         uk: i18n.language === "uk-UA" || i18n.language === "uk",
@@ -100,14 +158,14 @@ export default function HeaderMenu() {
                     elevation: 0,
                     sx: {
                         background: "transparent",
-                        height: "450px"
+                        height: { lg: "450px", xs: "auto" }
                     }
                 }}
             >
                 <Box
                     sx={{
-                        width: "288px",
-                        height: "400px",
+                        width: "300px",
+                        height: { lg: "400px", xs: "auto" },
                         background: palette.background.default,
                         m: "15px 20px",
                         p: "34px 22px 31px 21px",
@@ -141,7 +199,31 @@ export default function HeaderMenu() {
                             />
                         </IconButton>
                     </Box>
-                    <Typography variant="h5" fontFamily="Jura" fontWeight="700" sx={{ mt: "40px" }}>
+                    <Box sx={{ display: { lg: "none", xs: "block" }, mt: "46px" }}>
+                        {links.map((item, index) => {
+                            if (item.link !== "") {
+                                return (
+                                    (item.isId === true
+                                        ? <HashLinkRouter key={`header_menu_item_${index}`} underline="none" color="inherit" to={item.link} onClick={toggleDrawer(false)}>
+                                            <Typography component="h5" fontSize="20px" fontFamily="Jura" fontWeight="600" sx={{ mb: "5px" }}>
+                                                {item.title}
+                                            </Typography>
+                                        </HashLinkRouter>
+                                        : <LinkRouter key={`header_menu_item_${index}`} underline="none" color={item.isSelected ? "primary" : "inherit"} to={item.link} >
+                                            <Typography component="h5" fontSize="20px" fontFamily="Jura" fontWeight="600" sx={{ mb: "5px" }}>
+                                                {item.title}
+                                            </Typography>
+                                        </LinkRouter>)
+                                );
+                            }
+                            else {
+                                return (
+                                    <HeaderDropdownMenu key={`header_menu_item_${index}`} {...item} />
+                                )
+                            }
+                        })}
+                    </Box>
+                    <Typography component="h5" fontSize="20px" fontFamily="Jura" fontWeight="700" sx={{ mt: { lg: "40px", xs: "64px" } }}>
                         {t("components.header-menu.social-networks")}
                     </Typography>
                     <Box sx={{ display: "flex", mt: "10px", mb: "auto" }}>
@@ -160,7 +242,7 @@ export default function HeaderMenu() {
                         sx={{
                             display: "flex",
                             cursor: "pointer",
-                            mt: "180px"
+                            mt: { lg: "180px", xs: "35px" }
                         }}
                         onClick={handleThemeChange}
                     >
@@ -169,7 +251,7 @@ export default function HeaderMenu() {
                             alt="sun_light"
                             style={{ marginRight: "10px" }}
                         />
-                        <Typography variant="h5" fontFamily="Jura">
+                        <Typography component="h5" fontSize="20px" fontFamily="Jura" fontWeight="400">
                             {darkTheme ? t("components.header-menu.light-theme") : t("components.header-menu.dark-theme")}
                         </Typography>
                     </Box>

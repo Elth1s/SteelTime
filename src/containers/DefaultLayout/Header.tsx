@@ -63,7 +63,8 @@ const Header = () => {
         },
         {
             title: t("containers.header.contacts"),
-            link: "/"
+            link: "/#contacts",
+            isId: true
         },
         {
             title: t("containers.header.gallery"),
@@ -73,14 +74,30 @@ const Header = () => {
     ];
 
     return (
-        <Container component="header" sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mt: "74px", maxWidth: { lg: "lg", md: "md" } }}>
-            <LinkRouter underline="none" color="inherit" to="/" sx={{ height: "43px" }}>
+        <Container
+            component="header"
+            sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                mt: {
+                    lg: "74px",
+                    xs: "52px"
+                },
+                maxWidth: {
+                    lg: "1270px",
+                    xs: "350px"
+                }
+            }}
+        >
+            <LinkRouter underline="none" color="inherit" to="/" sx={{ height: { lg: "43px", xs: "32px" } }}>
                 <img
+                    style={{ width: "100%", height: "100%" }}
                     src={palette.mode === "dark" ? header_logo_light : header_logo_dark}
                     alt="logo"
                 />
             </LinkRouter>
-            <Box sx={{ display: "flex", "&:last-child": { mr: 0 } }}>
+            <Box sx={{ display: { lg: "flex", xs: "none" }, "&:last-child": { mr: 0 } }}>
                 {links.map((item, index) => {
                     if (item.link !== "") {
                         return (
