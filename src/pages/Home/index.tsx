@@ -33,20 +33,28 @@ import unusual_metal_structures from "../../assets/backgrounds/home/unusual-meta
 import unusual_metal_structures_small from "../../assets/backgrounds/home/unusual-metal-structures-small.png"
 
 import metal_cover_1 from "../../assets/backgrounds/home/metal-cover-1.png"
+import metal_cover_medium_1 from "../../assets/backgrounds/home/metal-cover-medium-1.png"
 import metal_cover_small_1 from "../../assets/backgrounds/home/metal-cover-small-1.png"
 import metal_cover_2 from "../../assets/backgrounds/home/metal-cover-2.png"
+import metal_cover_medium_2 from "../../assets/backgrounds/home/metal-cover-medium-2.png"
 import metal_cover_small_2 from "../../assets/backgrounds/home/metal-cover-small-2.png"
 import armature_1 from "../../assets/backgrounds/home/armature-1.png"
+import armature_medium_1 from "../../assets/backgrounds/home/armature-medium-1.png"
 import armature_small_1 from "../../assets/backgrounds/home/armature-small-1.png"
 import armature_2 from "../../assets/backgrounds/home/armature-2.png"
+import armature_medium_2 from "../../assets/backgrounds/home/armature-medium-2.png"
 import armature_small_2 from "../../assets/backgrounds/home/armature-small-2.png"
 import laser_cutting_of_metal_1 from "../../assets/backgrounds/home/laser-cutting-of-metal-1.png"
+import laser_cutting_of_metal_medium_1 from "../../assets/backgrounds/home/laser-cutting-of-metal-medium-1.png"
 import laser_cutting_of_metal_small_1 from "../../assets/backgrounds/home/laser-cutting-of-metal-small-1.png"
 import laser_cutting_of_metal_2 from "../../assets/backgrounds/home/laser-cutting-of-metal-2.png"
+import laser_cutting_of_metal_medium_2 from "../../assets/backgrounds/home/laser-cutting-of-metal-medium-2.png"
 import laser_cutting_of_metal_small_2 from "../../assets/backgrounds/home/laser-cutting-of-metal-small-2.png"
 
 import reviews_dark from "../../assets/backgrounds/home/reviews-dark.png"
 import reviews_light from "../../assets/backgrounds/home/reviews-light.png"
+import reviews_dark_medium from "../../assets/backgrounds/home/reviews-dark-medium.png"
+import reviews_light_medium from "../../assets/backgrounds/home/reviews-light-medium.png"
 import reviews_dark_small from "../../assets/backgrounds/home/reviews-dark-small.png"
 import reviews_light_small from "../../assets/backgrounds/home/reviews-light-small.png"
 
@@ -533,7 +541,7 @@ const Header = () => {
                     {/* md */}
                     <Box sx={{ display: { lg: "none", md: "flex", xs: "none" }, mt: "50px" }}>
                         <img
-                            src={metal_cover_1}
+                            src={metal_cover_medium_1}
                             alt="metal_cover_first"
                         />
                         <Box sx={{ mx: "50px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
@@ -548,7 +556,7 @@ const Header = () => {
                                 </Typography>
                             </Box>
                             <img
-                                src={metal_cover_2}
+                                src={metal_cover_medium_2}
                                 alt="metal_cover_second"
                                 style={{ marginTop: "auto" }}
                             />
@@ -557,7 +565,7 @@ const Header = () => {
                             <MoreButton />
                         </Box>
                     </Box>
-                    <Box sx={{ display: { lg: "none", md: "none", xs: "none" }, mt: "100px" }}>
+                    <Box sx={{ display: { lg: "none", md: "flex", xs: "none" }, mt: "100px" }}>
                         <Box sx={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "end" }}>
                             <MoreButton />
                         </Box>
@@ -573,20 +581,20 @@ const Header = () => {
                                 </Typography>
                             </Box>
                             <img
-                                src={armature_2}
+                                src={armature_medium_2}
                                 alt="armature_second"
                                 style={{ marginTop: "auto" }}
                             />
                         </Box>
                         <img
-                            src={armature_1}
+                            src={armature_medium_1}
                             alt="armature_first"
                         />
                     </Box>
-                    <Box sx={{ display: { lg: "none", md: "none", xs: "none" }, mt: "100px" }}>
+                    <Box sx={{ display: { lg: "none", md: "flex", xs: "none" }, mt: "100px" }}>
                         <Box sx={{ width: "400", height: "300px" }}>
                             <img
-                                src={laser_cutting_of_metal_1}
+                                src={laser_cutting_of_metal_medium_1}
                                 alt="laser_cutting_of_metal_first"
                             />
                         </Box>
@@ -602,7 +610,7 @@ const Header = () => {
                                 </Typography>
                             </Box>
                             <img
-                                src={laser_cutting_of_metal_2}
+                                src={laser_cutting_of_metal_medium_2}
                                 alt="laser_cutting_of_metal_second"
                                 style={{ marginTop: "auto" }}
                             />
@@ -681,14 +689,21 @@ const Header = () => {
                     <Typography align="center" variant="h2" fontFamily="Jura" fontWeight="700">
                         {t("pages.home.reviews")}
                     </Typography>
-                    <Box sx={{ display: { lg: "block", xs: "none" } }}>
+                    <Box sx={{ display: { lg: "block", md: "none", xs: "none" } }}>
                         <img
                             src={palette.mode === "dark" ? reviews_dark : reviews_light}
                             alt="reviews"
                             style={{ marginTop: "50px" }}
                         />
                     </Box>
-                    <Box sx={{ display: { lg: "none", xs: "flex" }, justifyContent: "center" }}>
+                    <Box sx={{ display: { lg: "none", md: "block", xs: "none" } }}>
+                        <img
+                            src={palette.mode === "dark" ? reviews_dark_medium : reviews_light_medium}
+                            alt="reviews"
+                            style={{ marginTop: "50px" }}
+                        />
+                    </Box>
+                    <Box sx={{ display: { lg: "none", md: "none", xs: "flex" }, justifyContent: "center" }}>
                         <img
                             src={palette.mode === "dark" ? reviews_dark_small : reviews_light_small}
                             alt="reviews"
@@ -713,7 +728,7 @@ const Header = () => {
                 }}
             >
                 <Container sx={{ maxWidth: { lg: "1270px", md: "910px", xs: "350px" } }}>
-                    {/* lg */}
+                    {/* lg,md */}
                     <Grid container sx={{ display: { lg: "flex", md: "flex", xs: "none" }, px: "5px" }}>
                         <Grid item xs={2}>
                             <Box sx={{ width: { lg: "150px", md: "100px" } }}>

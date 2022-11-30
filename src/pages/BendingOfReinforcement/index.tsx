@@ -8,21 +8,23 @@ import bending_of_reinforcement_first_small from "../../assets/backgrounds/servi
 import bending_of_reinforcement_second from "../../assets/backgrounds/services/bending-of-reinforcement-second.png"
 import bending_of_reinforcement_second_small from "../../assets/backgrounds/services/bending-of-reinforcement-second-small.png"
 import bending_of_reinforcement_third from "../../assets/backgrounds/services/bending-of-reinforcement-third.png"
+import bending_of_reinforcement_third_medium from "../../assets/backgrounds/services/bending-of-reinforcement-third-medium.png"
 import bending_of_reinforcement_third_small from "../../assets/backgrounds/services/bending-of-reinforcement-third-small.png"
 import bending_of_reinforcement_fourth from "../../assets/backgrounds/services/bending-of-reinforcement-fourth.png"
+import bending_of_reinforcement_fourth_medium from "../../assets/backgrounds/services/bending-of-reinforcement-fourth-medium.png"
 import bending_of_reinforcement_fourth_small from "../../assets/backgrounds/services/bending-of-reinforcement-fourth-small.png"
 
 const BendingOfReinforcement = () => {
     const { t } = useTranslation();
 
     return (
-        <Box sx={{ mt: { lg: "103px", xs: "60px" }, mb: { lg: "176px", xs: "25px" } }}>
+        <Box sx={{ mt: { lg: "103px", md: "80px", xs: "60px" }, mb: { lg: "176px", md: "80px", xs: "25px" } }}>
             <Typography variant="h2" fontWeight="700" fontFamily="Jura" align="center">
                 {t("containers.header.services.bending-of-reinforcement")}
             </Typography>
-            <Grid container sx={{ mt: { lg: "60px", xs: "42px" } }}>
-                <Grid item xs={12} lg={6} sx={{ display: "flex", height: "fit-content" }}>
-                    <Box>
+            <Grid container columns={{ lg: 12, md: 8, xs: 12 }} sx={{ mt: { lg: "60px", md: "60px", xs: "42px" } }}>
+                <Grid item xs={12} md={5} lg={6} sx={{ display: "flex", height: "fit-content" }}>
+                    <Box sx={{ height: { lg: "auto", md: "475px", xs: "auto" } }}>
                         <img
                             style={{ height: "100%" }}
                             src={sequence_of_actions}
@@ -30,16 +32,16 @@ const BendingOfReinforcement = () => {
                         />
                     </Box>
                     <Box sx={{ ml: "20px", width: "490px" }}>
-                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "40px" }}>
+                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: { lg: "40px", xs: "30px" } }}>
                             {t("pages.bending-of-reinforcement.first-p")}
                         </Typography>
-                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "40px" }}>
+                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: { lg: "40px", xs: "30px" } }}>
                             {t("pages.bending-of-reinforcement.second-p")}
                         </Typography>
-                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "40px" }}>
+                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: { lg: "40px", xs: "30px" } }}>
                             {t("pages.bending-of-reinforcement.third-p")}
                         </Typography>
-                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "40px" }}>
+                        <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: { lg: "40px", xs: "30px" } }}>
                             {t("pages.bending-of-reinforcement.fourth-p")}
                         </Typography>
                         <Typography variant="h5" fontWeight="400" fontFamily="Raleway">
@@ -47,15 +49,15 @@ const BendingOfReinforcement = () => {
                         </Typography>
                     </Box>
                 </Grid>
-                <Grid item xs={12} lg={6}>
-                    <Grid container spacing="26px" sx={{ display: { lg: "flex", xs: "none" } }}>
-                        <Grid item lg={6}>
+                <Grid item xs={12} lg={6} sx={{ display: { lg: "block", md: "none", xs: "block" } }}>
+                    <Grid container spacing="26px" sx={{ display: { lg: "flex", md: "none", xs: "none" } }}>
+                        <Grid item lg={6} >
                             <img
                                 src={bending_of_reinforcement_first}
                                 alt="bending_of_reinforcement_first"
                             />
                         </Grid>
-                        <Grid item lg={6}>
+                        <Grid item lg={6} >
                             <img
                                 src={bending_of_reinforcement_second}
                                 alt="bending_of_reinforcement_second"
@@ -74,7 +76,7 @@ const BendingOfReinforcement = () => {
                             />
                         </Grid>
                     </Grid>
-                    <Box sx={{ display: { lg: "none", xs: "block" }, pt: "30px" }}>
+                    <Box sx={{ display: { lg: "none", md: "none", xs: "block" }, pt: "30px" }}>
                         <Box sx={{ width: "300px", height: "200px", mb: "25px", mx: "auto" }}>
                             <img
                                 src={bending_of_reinforcement_first_small}
@@ -99,6 +101,38 @@ const BendingOfReinforcement = () => {
                                 alt="bending_of_reinforcement_fourth"
                             />
                         </Box>
+                    </Box>
+                </Grid>
+                <Grid item md={3} sx={{ display: { lg: "none", md: "block", xs: "none" } }}>
+                    <Grid container spacing="26px" sx={{ ml: "auto" }}>
+                        <Grid item md={12} >
+                            <img
+                                src={bending_of_reinforcement_first_small}
+                                alt="bending_of_reinforcement_first"
+                            />
+                        </Grid>
+                        <Grid item md={12} >
+                            <img
+                                src={bending_of_reinforcement_second_small}
+                                alt="bending_of_reinforcement_second"
+                            />
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <Grid item md={8} sx={{ display: { lg: "none", md: "flex", xs: "none" }, justifyContent: "space-around", mt: "60px" }}>
+                    <Box sx={{ width: "400px" }}>
+                        <img
+                            src={bending_of_reinforcement_third_medium}
+                            alt="bending_of_reinforcement_third"
+                            style={{ width: "100%" }}
+                        />
+                    </Box>
+                    <Box sx={{ width: "400px" }}>
+                        <img
+                            src={bending_of_reinforcement_fourth_medium}
+                            alt="bending_of_reinforcement_fourth"
+                            style={{ width: "100%" }}
+                        />
                     </Box>
                 </Grid>
             </Grid>

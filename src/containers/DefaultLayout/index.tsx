@@ -25,7 +25,7 @@ const DefaultLayout = () => {
             }}
         >
             <Header />
-            <Container component="main" sx={{ maxWidth: { lg: "lg", xs: "350px" } }}>
+            <Container component="main" sx={{ maxWidth: { lg: "lg", md: "910px", xs: "350px" } }}>
                 <Outlet />
             </Container>
             <Footer />

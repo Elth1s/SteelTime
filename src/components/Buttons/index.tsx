@@ -23,7 +23,7 @@ export const MoreButton = () => {
                 justifyContent: "center"
             }}
         >
-            <Typography variant="h5" fontWeight="500" fontFamily="Raleway" sx={{ mb: "10px" }}>
+            <Typography variant="h5" fontSize="20px" fontWeight="500" fontFamily="Raleway" sx={{ mb: "10px" }}>
                 {t("components.buttons.more")}
             </Typography>
             <img

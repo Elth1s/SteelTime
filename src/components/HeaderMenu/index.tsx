@@ -196,6 +196,8 @@ export default function HeaderMenu() {
                                             underline="none"
                                             color="inherit"
                                             to={item.link}
+                                            onClick={() => { setIsOpen(false); setIsOpenServices(false) }
+                                            }
                                         >
                                             <Typography component="h5" fontSize="20px" fontFamily="Jura" fontWeight="600" sx={{ mt: "15px" }}>
                                                 {item.title}

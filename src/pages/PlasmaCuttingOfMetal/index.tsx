@@ -16,12 +16,12 @@ const PlasmaCuttingOfMetal = () => {
     const { t } = useTranslation();
 
     return (
-        <Box sx={{ mt: { lg: "103px", xs: "60px" }, mb: { lg: "343px", xs: "103px" } }}>
+        <Box sx={{ mt: { lg: "103px", md: "80px", xs: "60px" }, mb: { lg: "343px", md: "80px", xs: "103px" } }}>
             <Typography variant="h2" fontWeight="700" fontFamily="Jura" align="center">
                 {t("containers.header.services.plasma-cutting-of-metal")}
             </Typography>
-            <Grid container sx={{ mt: { lg: "60px", xs: "40px" } }}>
-                <Grid item xs={12} lg={6} sx={{ display: "flex", height: "fit-content" }}>
+            <Grid container columns={{ lg: 12, md: 8, xs: 12 }} sx={{ mt: { lg: "60px", md: "60px", xs: "40px" } }}>
+                <Grid item xs={12} md={5} lg={6} sx={{ display: "flex", height: "fit-content" }}>
                     <Box>
                         <img
                             style={{ height: "100%" }}
@@ -51,34 +51,34 @@ const PlasmaCuttingOfMetal = () => {
                         </Box>
                     </Box>
                 </Grid>
-                <Grid item xs={12} lg={6}>
-                    <Grid container spacing="26px" sx={{ display: { lg: "flex", xs: "none" } }}>
-                        <Grid item lg={6}>
+                <Grid item xs={12} md={3} lg={6}>
+                    <Grid container rowSpacing="15px" columnSpacing={{ lg: "0px", md: "5px" }} sx={{ display: { lg: "flex", md: "flex", xs: "none" }, ml: { lg: "0px", md: "auto" } }}>
+                        <Grid item lg={6} md={12} sx={{ ml: { lg: "0px", md: "10px" } }}>
                             <img
                                 src={plasma_cutting_of_metal_first}
                                 alt="plasma_cutting_of_metal_first"
                             />
                         </Grid>
-                        <Grid item lg={6}>
+                        <Grid item lg={6} md={12} sx={{ ml: { lg: "0px", md: "10px" } }}>
                             <img
                                 src={plasma_cutting_of_metal_second}
                                 alt="plasma_cutting_of_metal_second"
                             />
                         </Grid>
-                        <Grid item lg={6}>
+                        <Grid item lg={6} sx={{ display: { lg: "flex", md: "none", xs: "none" } }}>
                             <img
                                 src={plasma_cutting_of_metal_third}
                                 alt="plasma_cutting_of_metal_third"
                             />
                         </Grid>
-                        <Grid item lg={6}>
+                        <Grid item lg={6} sx={{ display: { lg: "flex", md: "none", xs: "none" } }}>
                             <img
                                 src={plasma_cutting_of_metal_fourth}
                                 alt="plasma_cutting_of_metal_fourth"
                             />
                         </Grid>
                     </Grid>
-                    <Box sx={{ display: { lg: "none", xs: "block" }, pt: "30px" }}>
+                    <Box sx={{ display: { lg: "none", md: "none", xs: "block" }, pt: "30px" }}>
                         <Box sx={{ width: "300px", height: "200px", mb: "25px", mx: "auto" }}>
                             <img
                                 src={plasma_cutting_of_metal_first_small}
@@ -103,6 +103,22 @@ const PlasmaCuttingOfMetal = () => {
                                 alt="plasma_cutting_of_metal_fourth"
                             />
                         </Box>
+                    </Box>
+                </Grid>
+                <Grid item md={8} sx={{ display: { lg: "none", md: "flex", xs: "none" }, justifyContent: "space-around", mt: "60px" }}>
+                    <Box sx={{ width: "400px" }}>
+                        <img
+                            src={plasma_cutting_of_metal_third}
+                            alt="plasma_cutting_of_metal_third"
+                            style={{ width: "100%" }}
+                        />
+                    </Box>
+                    <Box sx={{ width: "400px" }}>
+                        <img
+                            src={plasma_cutting_of_metal_fourth}
+                            alt="plasma_cutting_of_metal_fourth"
+                            style={{ width: "100%" }}
+                        />
                     </Box>
                 </Grid>
             </Grid>

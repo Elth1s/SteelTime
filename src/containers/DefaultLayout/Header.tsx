@@ -86,11 +86,12 @@ const Header = () => {
                 },
                 maxWidth: {
                     lg: "1270px",
+                    md: "910px",
                     xs: "350px"
                 }
             }}
         >
-            <LinkRouter underline="none" color="inherit" to="/" sx={{ height: { lg: "43px", xs: "32px" } }}>
+            <LinkRouter underline="none" color="inherit" to="/" sx={{ height: { lg: "43px", md: "43px", xs: "32px" } }}>
                 <img
                     style={{ width: "100%", height: "100%" }}
                     src={palette.mode === "dark" ? header_logo_light : header_logo_dark}

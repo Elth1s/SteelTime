@@ -25,19 +25,22 @@ const Footer = () => {
             component="footer"
             sx={{
                 pt: { lg: "20px", xs: "10px" },
-                pb: { lg: "130px", xs: "30px" },
+                pb: { lg: "130px", md: "85px", xs: "30px" },
                 borderTop: `1px solid ${palette.text.primary}`,
                 background: palette.background.default
             }}
         >
-            <Container sx={{ maxWidth: { lg: "1270px", md: "350px" } }}>
+            <Container sx={{ maxWidth: { lg: "1270px", md: "910px", xs: "350px" } }}>
                 {/* lg */}
-                <Grid container sx={{ display: { lg: "flex", xs: "none" }, px: "5px" }}>
+                <Grid container sx={{ display: { lg: "flex", md: "flex", xs: "none" }, px: "5px" }}>
                     <Grid item xs={2}>
-                        <img
-                            src={palette.mode === "dark" ? footer_logo_light : footer_logo_dark}
-                            alt="footer_logo_light"
-                        />
+                        <Box sx={{ width: { lg: "150px", md: "100px" } }}>
+                            <img
+                                src={palette.mode === "dark" ? footer_logo_light : footer_logo_dark}
+                                alt="footer_logo_light"
+                                style={{ width: "100%" }}
+                            />
+                        </Box>
                     </Grid>
                     <Grid item xs={4} />
                     <Grid item xs={3}>
@@ -71,7 +74,7 @@ const Footer = () => {
                     </Grid>
                 </Grid>
                 {/* xs */}
-                <Grid container columns={5} sx={{ display: { lg: "none", xs: "flex" } }}>
+                <Grid container columns={5} sx={{ display: { lg: "none", md: "none", xs: "flex" } }}>
                     <Grid item xs={3}>
                         <Typography variant="h2" fontFamily="Jura" fontWeight="700">
                             {t("containers.footer.contacts")}
