@@ -49,25 +49,41 @@ const LoftStyleFurnitureAndPartitions = () => {
 
     return (
         <>
-            <img
-                src={arrow_left_orange}
-                alt="arrow_left_orange"
-                style={{ marginTop: "80px", cursor: "pointer" }}
-                onClick={() => {
-                    navigate("/production")
-                    window.scrollTo(0, 0);
-                }}
-            />
-            <Typography variant="h2" fontWeight="600" fontFamily="Jura" align="center" sx={{ mt: "20px", mb: "37px" }}>
+            <Box sx={{ display: "flex", mt: { lg: "80px", xs: "50px" } }}>
+                <img
+                    src={arrow_left_orange}
+                    alt="arrow_left_orange"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                        navigate("/production")
+                        window.scrollTo(0, 0);
+                    }}
+                />
+            </Box>
+            <Typography variant="h2" fontWeight="600" fontFamily="Jura" align="center" sx={{ mt: { lg: "20px", xs: "40px" }, mb: { lg: "37px", xs: "30px" } }}>
                 {t("pages.production.designer-steel-products-p2")}
             </Typography>
-            <Typography component="p" variant="h5" fontWeight="500" fontFamily="Raleway">
-                {t("pages.loft-style-furniture-and-partitions.loft-style-furniture-and-partitions-p")}
+            <Typography variant="h5" fontWeight="400" fontFamily="Raleway">
+                <Typography variant="inherit" fontWeight="inherit" fontFamily="inherit" color="primary" display="inline">{t("pages.loft-style-furniture-and-partitions.name")}</Typography> {t("pages.loft-style-furniture-and-partitions.loft-style-furniture-and-partitions-p")}
             </Typography>
-            <Box sx={{ display: "flex", flexWrap: "wrap", "&>*:nth-of-type(2n)": { mr: "0px" }, justifyContent: "center", mt: "100px" }}>
+            <Box sx={{ ml: "25px", mt: "10px" }}>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.loft-style-furniture-and-partitions.loft-style-furniture-and-partitions-p1")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.loft-style-furniture-and-partitions.loft-style-furniture-and-partitions-p1")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.loft-style-furniture-and-partitions.loft-style-furniture-and-partitions-p1")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.loft-style-furniture-and-partitions.loft-style-furniture-and-partitions-p1")}
+                </Typography>
+            </Box>
+            <Box sx={{ display: "flex", flexWrap: "wrap", "&>*:nth-of-type(2n)": { mr: "0px" }, justifyContent: "center", mt: { lg: "100px", xs: "30px" } }}>
                 {images.map((item, index) => {
                     return (
-                        <Box sx={{ width: "629px", height: "511px", mb: "36px", mr: "36px" }}>
+                        <Box key={`image_${index}`} sx={{ width: { lg: "629px", xs: "346px" }, height: { lg: "511px", xs: "281px" }, mb: { lg: "36px", xs: "10px" }, mr: { lg: "36px", xs: "0px" } }}>
                             <img
                                 style={{ width: "100%", height: "100%" }}
                                 src={item}
@@ -77,7 +93,7 @@ const LoftStyleFurnitureAndPartitions = () => {
                     )
                 })}
             </Box>
-            <Box sx={{ mt: "176px", mb: "221px", px: "347px" }}>
+            <Box sx={{ mt: { lg: "176px", xs: "80px" }, mb: { lg: "221px", xs: "80px" }, px: { lg: "347px", xs: "19px" } }}>
                 <AskOrOrderForm />
             </Box>
         </>

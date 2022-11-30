@@ -63,27 +63,56 @@ const NonStandardMetalStructuresAndEquipment = () => {
 
     return (
         <>
-            <img
-                src={arrow_left_orange}
-                alt="arrow_left_orange"
-                style={{ marginTop: "80px", cursor: "pointer" }}
-                onClick={() => {
-                    navigate("/production")
-                    window.scrollTo(0, 0);
-                }}
-            />
-            <Typography variant="h2" fontWeight="600" fontFamily="Jura" align="center" sx={{ mt: "20px", mb: "37px" }}>
+            <Box sx={{ display: "flex", mt: { lg: "80px", xs: "50px" } }}>
+                <img
+                    src={arrow_left_orange}
+                    alt="arrow_left_orange"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                        navigate("/production")
+                        window.scrollTo(0, 0);
+                    }}
+                />
+            </Box>
+            <Typography variant="h2" fontWeight="600" fontFamily="Jura" align="center" sx={{ width: "330px", mx: "auto", mt: { lg: "20px", xs: "40px" }, mb: { lg: "37px", xs: "30px" } }}>
                 {t("pages.production.non-standard-metal-structures-and-equipment")}
             </Typography>
-            <Typography component="p" variant="h5" fontWeight="500" fontFamily="Raleway">
-                {t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-p1")}
-                <br />
-                {t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-p2")}
+            <Typography variant="h5" fontWeight="400" fontFamily="Raleway">
+                {t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-pf")} <Typography variant="inherit" fontWeight="inherit" fontFamily="inherit" color="primary" display="inline">{t("pages.non-standard-metal-structures-and-equipment.name")}</Typography> {t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-ps")}
             </Typography>
-            <Box sx={{ display: "flex", flexWrap: "wrap", "&>*:nth-of-type(2n)": { mr: "0px" }, mt: "80px" }}>
+            <Box sx={{ ml: "25px", mt: "10px" }}>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-p1")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-p2")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mt: "10px", display: "list-item" }}>
+                    {t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-p3")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-p4")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-p5")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mt: "10px", display: "list-item" }}>
+                    {t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-p6")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-p7")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mt: "10px", display: "list-item" }}>
+                    {t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-p8")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-p9")}
+                </Typography>
+            </Box>
+            <Box sx={{ display: "flex", flexWrap: "wrap", "&>*:nth-of-type(2n)": { mr: "0px" }, mt: { lg: "80px", xs: "50px" } }}>
                 {images.map((item, index) => {
                     return (
-                        <Box sx={{ width: "629px", height: "511px", mb: "36px", mr: "36px" }}>
+                        <Box key={`image_${index}`} sx={{ width: { lg: "629px", xs: "346px" }, height: { lg: "511px", xs: "281px" }, mb: { lg: "36px", xs: "10px" }, mr: { lg: "36px", xs: "0px" } }}>
                             <img
                                 style={{ width: "100%", height: "100%" }}
                                 src={item}
@@ -93,7 +122,7 @@ const NonStandardMetalStructuresAndEquipment = () => {
                     )
                 })}
             </Box>
-            <Box sx={{ mt: "148px", mb: "171px", px: "347px" }}>
+            <Box sx={{ mt: { lg: "148px", xs: "80px" }, mb: { lg: "171px", xs: "80px" }, px: { lg: "347px", xs: "19px" } }}>
                 <AskOrOrderForm />
             </Box>
         </>

@@ -23,15 +23,17 @@ const SupportFastenersOfTowerCranes = () => {
 
     return (
         <>
-            <img
-                src={arrow_left_orange}
-                alt="arrow_left_orange"
-                style={{ marginTop: "80px", cursor: "pointer" }}
-                onClick={() => {
-                    navigate("/production")
-                    window.scrollTo(0, 0);
-                }}
-            />
+            <Box sx={{ display: "flex", mt: { lg: "80px", xs: "50px" } }}>
+                <img
+                    src={arrow_left_orange}
+                    alt="arrow_left_orange"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                        navigate("/production")
+                        window.scrollTo(0, 0);
+                    }}
+                />
+            </Box>
             <Typography variant="h2" fontWeight="600" fontFamily="Jura" align="center" sx={{ width: { lg: "100%", xs: "198px" }, mx: "auto", mt: { lg: "20px", xs: "40px" }, mb: { lg: "37px", xs: "30px" } }}>
                 {t("pages.production.building-metal-structures-p3")}
             </Typography>
