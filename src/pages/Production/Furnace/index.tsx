@@ -31,19 +31,21 @@ const Furnace = () => {
 
     return (
         <>
-            <img
-                src={arrow_left_orange}
-                alt="arrow_left_orange"
-                style={{ marginTop: "80px", cursor: "pointer" }}
-                onClick={() => {
-                    navigate("/production")
-                    window.scrollTo(0, 0);
-                }}
-            />
-            <Typography variant="h2" fontWeight="600" fontFamily="Jura" align="center" sx={{ mt: "20px", mb: "37px" }}>
+            <Box sx={{ display: "flex", mt: { lg: "80px", xs: "50px" } }}>
+                <img
+                    src={arrow_left_orange}
+                    alt="arrow_left_orange"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                        navigate("/production")
+                        window.scrollTo(0, 0);
+                    }}
+                />
+            </Box>
+            <Typography variant="h2" fontWeight="600" fontFamily="Jura" align="center" sx={{ mt: { lg: "20px", xs: "43px" }, mb: { lg: "37px", xs: "45px" } }}>
                 {t("pages.production.furnace")}
             </Typography>
-            <Typography variant="h5" fontWeight="400" fontFamily="Raleway" display="inline">
+            <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: { lg: "inline", xs: "none" } }}>
                 <Typography variant="inherit" fontWeight="inherit" fontFamily="inherit" color="primary" display="inline">{t("pages.furnace.name")}</Typography> {t("pages.furnace.furnace-p1")}
                 <br />
                 <br />
@@ -51,10 +53,27 @@ const Furnace = () => {
                 <br />
                 <Typography variant="inherit" lineHeight="35px" fontWeight="inherit" fontFamily="inherit" display="inline" >{t("pages.furnace.furnace-p3")}</Typography>
             </Typography>
-            <Box sx={{ display: "flex", flexWrap: "wrap", "&>*:nth-of-type(2n)": { mr: "0px" }, mt: "108px" }}>
+            <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: { lg: "none", xs: "inline" } }}>
+                <Typography variant="inherit" fontWeight="inherit" fontFamily="inherit" color="primary" display="inline">{t("pages.furnace.name")}</Typography> {t("pages.furnace.furnace-p1")}
+            </Typography>
+            <Box sx={{ display: { lg: "none", xs: "block" }, ml: "25px", mt: "25px" }}>
+                <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "10px", display: "list-item" }}>
+                    {t("pages.production.furnace-p1")}
+                </Typography>
+                <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "10px", display: "list-item" }}>
+                    {t("pages.production.furnace-p2")}
+                </Typography>
+                <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mb: "10px", display: "list-item" }}>
+                    {t("pages.production.furnace-p3")}
+                </Typography>
+                <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.production.furnace-p4")}
+                </Typography>
+            </Box>
+            <Box sx={{ display: "flex", flexWrap: "wrap", "&>*:nth-of-type(2n)": { mr: "0px" }, mt: { lg: "108px", xs: "20px" } }}>
                 {images.map((item, index) => {
                     return (
-                        <Box sx={{ width: "629px", height: "511px", mb: "36px", mr: "36px" }}>
+                        <Box key={`image_${index}`} sx={{ width: { lg: "629px", xs: "346px" }, height: { lg: "511px", xs: "281px" }, mb: { lg: "36px", xs: "10px" }, mr: { lg: "36px", xs: "0px" } }}>
                             <img
                                 style={{ width: "100%", height: "100%" }}
                                 src={item}
@@ -64,7 +83,7 @@ const Furnace = () => {
                     )
                 })}
             </Box>
-            <Box sx={{ mt: "173px", mb: "211px", px: "347px" }}>
+            <Box sx={{ mt: { lg: "125px", xs: "80px" }, mb: { lg: "195px", xs: "80px" }, px: { lg: "347px", xs: "19px" } }}>
                 <AskOrOrderForm />
             </Box>
         </>

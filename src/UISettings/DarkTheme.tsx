@@ -55,19 +55,20 @@ DarkTheme.typography.h2 = {
 DarkTheme.typography.h3 = {
     fontSize: "24px",
     [DarkTheme.breakpoints.down('lg')]: {
-        fontSize: '16px',
+        fontSize: '20px',
     },
 };
 DarkTheme.typography.h4 = {
     fontSize: "22px",
     [DarkTheme.breakpoints.down('lg')]: {
+        fontSize: '16px',
     },
 };
 DarkTheme.typography.h5 = {
     fontSize: "20px",
     lineHeight: "23px",
     [DarkTheme.breakpoints.down('lg')]: {
-        fontSize: '14px',
+        fontSize: '14.5px',
     },
 };
 DarkTheme.typography.h6 = {

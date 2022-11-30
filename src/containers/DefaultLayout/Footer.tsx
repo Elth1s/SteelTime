@@ -76,10 +76,10 @@ const Footer = () => {
                         <Typography variant="h2" fontFamily="Jura" fontWeight="700">
                             {t("containers.footer.contacts")}
                         </Typography>
-                        <Typography variant="h3" fontFamily="Jura" fontWeight="600" sx={{ mt: "20px", mb: "5px" }}>
+                        <Typography variant="h4" fontFamily="Jura" fontWeight="600" sx={{ mt: "20px", mb: "5px" }}>
                             + 380 98 2567 85
                         </Typography>
-                        <Typography variant="h3" fontFamily="Raleway" fontWeight="500">
+                        <Typography variant="h4" fontFamily="Raleway" fontWeight="500">
                             metalinvest@gmail.com
                         </Typography>
                     </Grid>

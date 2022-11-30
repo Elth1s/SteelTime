@@ -10,16 +10,18 @@ const ProductionOrder = () => {
 
     return (
         <>
-            <img
-                src={arrow_left_orange}
-                alt="arrow_left_orange"
-                style={{ marginTop: "80px", cursor: "pointer" }}
-                onClick={() => {
-                    navigate("/production")
-                    window.scrollTo(0, 0);
-                }}
-            />
-            <Box sx={{ mt: "125px", mb: "195px", px: "347px" }}>
+            <Box sx={{ display: "flex", mt: { lg: "80px", xs: "50px" } }}>
+                <img
+                    src={arrow_left_orange}
+                    alt="arrow_left_orange"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                        navigate("/production")
+                        window.scrollTo(0, 0);
+                    }}
+                />
+            </Box>
+            <Box sx={{ mt: { lg: "125px", xs: "45px" }, mb: { lg: "195px", xs: "187px" }, px: { lg: "347px", xs: "19px" } }}>
                 <AskOrOrderForm />
             </Box>
         </>

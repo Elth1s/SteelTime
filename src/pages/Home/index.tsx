@@ -218,7 +218,12 @@ const Header = () => {
                         <Typography variant="h1" fontWeight="700" fontFamily="Raleway" sx={{ width: { lg: "630px", xs: "312px" } }}>
                             {t("pages.home.metalwork-or-loft-style-furniture")}
                         </Typography>
-                        <Typography variant="h3" fontWeight="400" fontFamily="Raleway" sx={{ pt: { lg: "20px", xs: "10px" } }}>
+                        <Typography variant="h3" fontWeight="400" fontFamily="Raleway" sx={{ display: { xs: "none" }, pt: { lg: "20px", xs: "10px" } }}>
+                            {t("pages.home.various-types-of-metal-structures-first")}
+                            <br />
+                            {t("pages.home.various-types-of-metal-structures-second")}
+                        </Typography>
+                        <Typography variant="h4" fontWeight="400" fontFamily="Raleway" sx={{ display: { lg: "none" }, pt: { lg: "20px", xs: "10px" } }}>
                             {t("pages.home.various-types-of-metal-structures-first")}
                             <br />
                             {t("pages.home.various-types-of-metal-structures-second")}

@@ -43,25 +43,41 @@ const ReinforcementFramesAndEmbeddedProducts = () => {
 
     return (
         <>
-            <img
-                src={arrow_left_orange}
-                alt="arrow_left_orange"
-                style={{ marginTop: "80px", cursor: "pointer" }}
-                onClick={() => {
-                    navigate("/production")
-                    window.scrollTo(0, 0);
-                }}
-            />
-            <Typography variant="h2" fontWeight="600" fontFamily="Jura" align="center" sx={{ mt: "20px", mb: "37px" }}>
+            <Box sx={{ display: "flex", mt: { lg: "80px", xs: "50px" } }}>
+                <img
+                    src={arrow_left_orange}
+                    alt="arrow_left_orange"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                        navigate("/production")
+                        window.scrollTo(0, 0);
+                    }}
+                />
+            </Box>
+            <Typography variant="h2" fontWeight="600" fontFamily="Jura" align="center" sx={{ width: { lg: "100%", xs: "210px" }, mx: "auto", mt: { lg: "20px", xs: "40px" }, mb: { lg: "37px", xs: "30px" } }}>
                 {t("pages.production.building-metal-structures-p1")}
             </Typography>
-            <Typography component="p" variant="h5" fontWeight="500" fontFamily="Raleway">
-                {t("pages.reinforcement-frames-and-embedded-products.reinforcement-frames-and-embedded-products-p")}
+            <Typography variant="h5" fontWeight="400" fontFamily="Raleway" >
+                <Typography variant="inherit" fontWeight="inherit" fontFamily="inherit" color="primary" display="inline">{t("pages.reinforcement-frames-and-embedded-products.name")}</Typography> {t("pages.reinforcement-frames-and-embedded-products.reinforcement-frames-and-embedded-products-p")}
             </Typography>
-            <Box sx={{ display: "flex", flexWrap: "wrap", "&>*:nth-of-type(2n)": { mr: "0px" }, mt: "80px" }}>
+            <Box sx={{ ml: "25px", mt: "10px" }}>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.reinforcement-frames-and-embedded-products.reinforcement-frames-and-embedded-products-p1")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.reinforcement-frames-and-embedded-products.reinforcement-frames-and-embedded-products-p2")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.reinforcement-frames-and-embedded-products.reinforcement-frames-and-embedded-products-p3")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.reinforcement-frames-and-embedded-products.reinforcement-frames-and-embedded-products-p4")}
+                </Typography>
+            </Box>
+            <Box sx={{ display: "flex", flexWrap: "wrap", "&>*:nth-of-type(2n)": { mr: "0px" }, mt: { lg: "80px", xs: "50px" } }}>
                 {images.map((item, index) => {
                     return (
-                        <Box sx={{ width: "629px", height: "511px", mb: "36px", mr: "36px" }}>
+                        <Box key={`image_${index}`} sx={{ width: { lg: "629px", xs: "346px" }, height: { lg: "511px", xs: "281px" }, mb: { lg: "36px", xs: "10px" }, mr: { lg: "36px", xs: "0px" } }}>
                             <img
                                 style={{ width: "100%", height: "100%" }}
                                 src={item}
@@ -71,7 +87,7 @@ const ReinforcementFramesAndEmbeddedProducts = () => {
                     )
                 })}
             </Box>
-            <Box sx={{ mt: "153px", mb: "281px", px: "347px" }}>
+            <Box sx={{ mt: { lg: "153px", xs: "80px" }, mb: { lg: "281px", xs: "80px" }, px: { lg: "347px", xs: "19px" } }}>
                 <AskOrOrderForm />
             </Box>
         </>

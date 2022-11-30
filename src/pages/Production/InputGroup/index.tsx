@@ -47,25 +47,41 @@ const InputGroup = () => {
 
     return (
         <>
-            <img
-                src={arrow_left_orange}
-                alt="arrow_left_orange"
-                style={{ marginTop: "80px", cursor: "pointer" }}
-                onClick={() => {
-                    navigate("/production")
-                    window.scrollTo(0, 0);
-                }}
-            />
-            <Typography variant="h2" fontWeight="600" fontFamily="Jura" align="center" sx={{ mt: "20px", mb: "37px" }}>
+            <Box sx={{ display: "flex", mt: { lg: "80px", xs: "50px" } }}>
+                <img
+                    src={arrow_left_orange}
+                    alt="arrow_left_orange"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                        navigate("/production")
+                        window.scrollTo(0, 0);
+                    }}
+                />
+            </Box>
+            <Typography variant="h2" fontWeight="600" fontFamily="Jura" align="center" sx={{ mt: { lg: "20px", xs: "40px" }, mb: { lg: "37px", xs: "30px" } }}>
                 {t("pages.production.building-metal-structures-p4")}
             </Typography>
-            <Typography component="p" variant="h5" fontWeight="500" fontFamily="Raleway">
-                {t("pages.input-group.input-group-p")}
+            <Typography variant="h5" fontWeight="400" fontFamily="Raleway">
+                <Typography variant="inherit" fontWeight="inherit" fontFamily="inherit" color="primary" display="inline">{t("pages.input-group.name")}</Typography> {t("pages.input-group.input-group-p")}
             </Typography>
-            <Box sx={{ display: "flex", flexWrap: "wrap", "&>*:nth-of-type(2n)": { mr: "0px" }, mt: "50px" }}>
+            <Box sx={{ ml: "25px", mt: "10px" }}>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.input-group.input-group-p1")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.input-group.input-group-p2")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.input-group.input-group-p3")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.input-group.input-group-p4")}
+                </Typography>
+            </Box>
+            <Box sx={{ display: "flex", flexWrap: "wrap", "&>*:nth-of-type(2n)": { mr: "0px" }, mt: { lg: "50px", xs: "30px" } }}>
                 {images.map((item, index) => {
                     return (
-                        <Box sx={{ width: "629px", height: "511px", mb: "36px", mr: "36px" }}>
+                        <Box key={`image_${index}`} sx={{ width: { lg: "629px", xs: "346px" }, height: { lg: "511px", xs: "281px" }, mb: { lg: "36px", xs: "10px" }, mr: { lg: "36px", xs: "0px" } }}>
                             <img
                                 style={{ width: "100%", height: "100%" }}
                                 src={item}
@@ -75,7 +91,7 @@ const InputGroup = () => {
                     )
                 })}
             </Box>
-            <Box sx={{ mt: "222px", mb: "280px", px: "347px" }}>
+            <Box sx={{ mt: { lg: "222px", xs: "80px" }, mb: { lg: "280px", xs: "80px" }, px: { lg: "347px", xs: "19px" } }}>
                 <AskOrOrderForm />
             </Box>
         </>

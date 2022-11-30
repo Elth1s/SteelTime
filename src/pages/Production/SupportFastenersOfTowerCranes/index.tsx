@@ -32,16 +32,33 @@ const SupportFastenersOfTowerCranes = () => {
                     window.scrollTo(0, 0);
                 }}
             />
-            <Typography variant="h2" fontWeight="600" fontFamily="Jura" align="center" sx={{ mt: "20px", mb: "37px" }}>
+            <Typography variant="h2" fontWeight="600" fontFamily="Jura" align="center" sx={{ width: { lg: "100%", xs: "198px" }, mx: "auto", mt: { lg: "20px", xs: "40px" }, mb: { lg: "37px", xs: "30px" } }}>
                 {t("pages.production.building-metal-structures-p3")}
             </Typography>
-            <Typography component="p" variant="h5" fontWeight="500" fontFamily="Raleway">
-                {t("pages.support-fasteners-of-tower-cranes.support-fasteners-of-tower-cranes-p")}
+            <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: { lg: "block", xs: "none" } }}>
+                {t("pages.support-fasteners-of-tower-cranes.support-fasteners-of-tower-cranes-pf")}<Typography variant="inherit" fontWeight="inherit" fontFamily="inherit" color="primary" display="inline"> {t("pages.support-fasteners-of-tower-cranes.name")}</Typography> {t("pages.support-fasteners-of-tower-cranes.support-fasteners-of-tower-cranes-ps")}
             </Typography>
-            <Box sx={{ display: "flex", flexWrap: "wrap", "&>*:nth-of-type(2n)": { mr: "0px" }, mt: "100px" }}>
+            <Typography variant="h6" fontWeight="400" fontFamily="Raleway" sx={{ display: { lg: "none", xs: "block" } }}>
+                {t("pages.support-fasteners-of-tower-cranes.support-fasteners-of-tower-cranes-pf")}<Typography variant="inherit" fontWeight="inherit" fontFamily="inherit" color="primary" display="inline"> {t("pages.support-fasteners-of-tower-cranes.name")}</Typography> {t("pages.support-fasteners-of-tower-cranes.support-fasteners-of-tower-cranes-ps")}
+            </Typography>
+            <Box sx={{ ml: "25px", mt: "10px" }}>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.support-fasteners-of-tower-cranes.support-fasteners-of-tower-cranes-p1")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.support-fasteners-of-tower-cranes.support-fasteners-of-tower-cranes-p2")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.support-fasteners-of-tower-cranes.support-fasteners-of-tower-cranes-p3")}
+                </Typography>
+                <Typography component="p" variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.support-fasteners-of-tower-cranes.support-fasteners-of-tower-cranes-p4")}
+                </Typography>
+            </Box>
+            <Box sx={{ display: "flex", flexWrap: "wrap", "&>*:nth-of-type(2n)": { mr: "0px" }, mt: { lg: "100px", xs: "50px" } }}>
                 {images.map((item, index) => {
                     return (
-                        <Box sx={{ width: "629px", height: "511px", mb: "36px", mr: "36px" }}>
+                        <Box key={`image_${index}`} sx={{ width: { lg: "629px", xs: "346px" }, height: { lg: "511px", xs: "281px" }, mb: { lg: "36px", xs: "10px" }, mr: { lg: "36px", xs: "0px" } }}>
                             <img
                                 style={{ width: "100%", height: "100%" }}
                                 src={item}
@@ -51,7 +68,7 @@ const SupportFastenersOfTowerCranes = () => {
                     )
                 })}
             </Box>
-            <Box sx={{ mt: "198px", mb: "221px", px: "347px" }}>
+            <Box sx={{ mt: { lg: "198px", xs: "80px" }, mb: { lg: "221px", xs: "80px" }, px: { lg: "347px", xs: "19px" } }}>
                 <AskOrOrderForm />
             </Box>
         </>

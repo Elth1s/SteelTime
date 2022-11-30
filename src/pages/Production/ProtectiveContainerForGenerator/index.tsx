@@ -41,50 +41,53 @@ const ProtectiveContainerForGenerator = () => {
 
     return (
         <>
-            <img
-                src={arrow_left_orange}
-                alt="arrow_left_orange"
-                style={{ marginTop: "80px", cursor: "pointer" }}
-                onClick={() => {
-                    navigate("/production")
-                    window.scrollTo(0, 0);
-                }}
-            />
-            <Typography variant="h2" fontWeight="600" fontFamily="Jura" align="center" sx={{ mt: "20px" }}>
+            <Box sx={{ display: "flex", mt: { lg: "80px", xs: "50px" } }}>
+                <img
+                    src={arrow_left_orange}
+                    alt="arrow_left_orange"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                        navigate("/production")
+                        window.scrollTo(0, 0);
+                    }}
+                />
+            </Box>
+            <Typography variant="h2" fontWeight="600" fontFamily="Jura" align="center" sx={{ width: { lg: "100%", xs: "226px" }, mx: "auto", mt: { lg: "20px", xs: "40px" } }}>
                 {t("pages.production.protective-container-for-generator")}
             </Typography>
-            <Typography variant="h5" fontWeight="600" fontFamily="Raleway" sx={{ mt: "37px" }}>
+            <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mt: "37px" }}>
                 {t("pages.production.protective-container-for-generator-h1")}
-                <br />
-                <br />
-                {t("pages.production.protective-container-for-generator-h1-p1")}
-                {t("pages.production.protective-container-for-generator-h1-p2")}
-                {t("pages.production.protective-container-for-generator-h1-p3")}
-                {t("pages.production.protective-container-for-generator-h1-p4")}
             </Typography>
-            <Typography variant="h5" fontWeight="600" fontFamily="Raleway" sx={{ mt: "37px" }}>
+            <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mt: "10px" }}>
+                {t("pages.production.protective-container-for-generator-h1-p1")}<br />
+                {t("pages.production.protective-container-for-generator-h1-p2")}<br />
+                {t("pages.production.protective-container-for-generator-h1-p3")}<br />
+                {t("pages.production.protective-container-for-generator-h1-p4")}<br />
+            </Typography>
+            <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mt: { lg: "37px", xs: "20px" } }}>
                 {t("pages.production.protective-container-for-generator-h2")}
             </Typography>
-            <Box>
-                <Box sx={{ ml: "35px" }}>
-                    <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
-                        {t("pages.production.protective-container-for-generator-h1-p1")}
-                    </Typography>
-                    <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
-                        {t("pages.production.protective-container-for-generator-h1-p2")}
-                    </Typography>
-                    <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
-                        {t("pages.production.protective-container-for-generator-h1-p3")}
-                    </Typography>
-                    <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
-                        {t("pages.production.protective-container-for-generator-h1-p4")}
-                    </Typography>
-                </Box>
+            <Box sx={{ ml: "25px", mt: "10px" }}>
+                <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.production.protective-container-for-generator-h2-p1")}
+                </Typography>
+                <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.production.protective-container-for-generator-h2-p2")}
+                </Typography>
+                <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ display: "list-item" }}>
+                    {t("pages.production.protective-container-for-generator-h2-p3")}
+                </Typography>
             </Box>
-            <Box sx={{ display: "flex", flexWrap: "wrap", "&>*:nth-of-type(2n)": { mr: "0px" }, mt: "80px" }}>
+            <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mt: "15px" }}>
+                {t("pages.production.protective-container-for-generator-h3")}
+            </Typography>
+            <Typography variant="h5" fontWeight="400" fontFamily="Raleway" sx={{ mt: "15px" }}>
+                {t("pages.production.protective-container-for-generator-h4")}
+            </Typography>
+            <Box sx={{ display: "flex", flexWrap: "wrap", "&>*:nth-of-type(2n)": { mr: "0px" }, mt: { lg: "80px", xs: "30px" } }}>
                 {images.map((item, index) => {
                     return (
-                        <Box sx={{ width: "629px", height: "511px", mb: "36px", mr: "36px" }}>
+                        <Box key={`image_${index}`} sx={{ width: { lg: "629px", xs: "346px" }, height: { lg: "511px", xs: "281px" }, mb: { lg: "36px", xs: "10px" }, mr: { lg: "36px", xs: "0px" } }}>
                             <img
                                 style={{ width: "100%", height: "100%" }}
                                 src={item}
@@ -94,7 +97,7 @@ const ProtectiveContainerForGenerator = () => {
                     )
                 })}
             </Box>
-            <Box sx={{ mt: "193px", mb: "115px", px: "347px" }}>
+            <Box sx={{ mt: { lg: "193px", xs: "80px" }, mb: { lg: "115px", xs: "80px" }, px: { lg: "347px", xs: "19px" } }}>
                 <AskOrOrderForm />
             </Box>
         </>
