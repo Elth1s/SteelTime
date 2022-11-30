@@ -192,7 +192,7 @@ export default function HeaderMenu() {
                                 {links[3].children?.map((item, index) => {
                                     return (
                                         <LinkRouter
-                                            key={`header_tooltip_item_${index}`}
+                                            key={`header_tooltip_item_pv_${index}`}
                                             underline="none"
                                             color="inherit"
                                             to={item.link}
@@ -253,6 +253,7 @@ export default function HeaderMenu() {
                                     else {
                                         return (
                                             <Box
+                                                key={`change_menu_items_${index}`}
                                                 sx={{
                                                     display: "flex",
                                                     alignItems: "center",

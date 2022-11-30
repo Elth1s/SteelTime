@@ -5,7 +5,7 @@ const LightTheme = createTheme({
         values: {
             xs: 0,
             sm: 600,
-            md: 900,
+            md: 920,
             lg: 1295,
             xl: 1600
         },
@@ -55,19 +55,20 @@ LightTheme.typography.h2 = {
 LightTheme.typography.h3 = {
     fontSize: "24px",
     [LightTheme.breakpoints.down('lg')]: {
-        fontSize: '16px',
+        fontSize: '20px',
     },
 };
 LightTheme.typography.h4 = {
     fontSize: "22px",
     [LightTheme.breakpoints.down('lg')]: {
+        fontSize: '16px',
     },
 };
 LightTheme.typography.h5 = {
     fontSize: "20px",
     lineHeight: "23px",
     [LightTheme.breakpoints.down('lg')]: {
-        fontSize: '14px',
+        fontSize: '14.5px',
     },
 };
 LightTheme.typography.h6 = {

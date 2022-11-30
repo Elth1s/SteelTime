@@ -67,7 +67,7 @@ const AskOrOrderForm = () => {
 
     return (
         <>
-            <Typography align="center" variant="h2" fontFamily="Jura" fontWeight="700">
+            <Typography align="center" variant="h2" fontFamily="Jura" fontWeight="700" sx={{ px: { lg: "0px", md: "75px" } }}>
                 {t("pages.home.do-you-want-to-order-a-product")}
             </Typography>
             <FormikProvider value={formik} >
