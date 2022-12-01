@@ -304,6 +304,7 @@ export default function HeaderMenu() {
                                     src={palette.mode === "dark" ? facebook_small_light : facebook_small_dark}
                                     alt="facebook"
                                     style={{ cursor: "pointer" }}
+                                    onClick={() => window.open("https://www.facebook.com/steeltimellc")}
                                 />
                             </Box>
                             <Box

@@ -191,6 +191,9 @@
                 "order": "Замовити",
                 "details": "Детальніше"
             },
+            "tooltips": {
+                "copied": "Скопійовано"
+            },
             "header-menu": {
                 "social-networks": "Соцмережі",
                 "light-theme": "Світла тема",

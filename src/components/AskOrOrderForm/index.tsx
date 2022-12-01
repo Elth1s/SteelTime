@@ -11,6 +11,8 @@ import { Form, FormikProvider, useFormik } from "formik";
 import * as Yup from "yup";
 
 import { useTranslation } from "react-i18next";
+import CompleteForm from "../CompleteForm";
+import { useState } from "react";
 
 
 interface ISendEmail {
@@ -22,6 +24,8 @@ interface ISendEmail {
 
 const AskOrOrderForm = () => {
     const { t } = useTranslation();
+
+    const [open, setOpen] = useState(false);
 
     const sendEmailModel: ISendEmail = { name: '', phone: '', email: '', message: '' };
 
@@ -54,6 +58,8 @@ const AskOrOrderForm = () => {
                     email: values.email,
                     message: values.message,
                 }, "1iJ6GF35nBLPxGys3");
+                displayCompleteIcon()
+                resetForm();
             }
             catch (ex) {
                 console.log(ex)
@@ -63,7 +69,16 @@ const AskOrOrderForm = () => {
         }
     });
 
-    const { errors, touched, handleSubmit, getFieldProps } = formik;
+    const displayCompleteIcon = () => {
+        if (!open) {
+            setOpen(true); // show tooltip
+            setTimeout(() => {
+                setOpen(false); // remove/hide tooltip
+            }, 1000);
+        }
+    };
+
+    const { errors, touched, handleSubmit, getFieldProps, resetForm } = formik;
 
     return (
         <>
@@ -140,6 +155,7 @@ const AskOrOrderForm = () => {
                     </Box>
                 </Form>
             </FormikProvider>
+            <CompleteForm open={open} />
         </>
     )
 }

@@ -4,11 +4,14 @@ import {
     Container,
     Grid,
     hexToRgb,
+    keyframes,
+    styled,
+    Tooltip,
     Typography,
     useTheme,
 } from "@mui/material";
 
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -30,6 +33,9 @@ import instagram_medium_light from "../../assets/icons/instagram-medium-light.sv
 import instagram_medium_dark from "../../assets/icons/instagram-medium-dark.svg";
 import facebook_medium_light from "../../assets/icons/facebook-medium-light.svg";
 import facebook_medium_dark from "../../assets/icons/facebook-medium-dark.svg";
+
+import arrow_down_small_dark from "../../assets/icons/arrow-down-small-dark.svg";
+import arrow_down_small_light from "../../assets/icons/arrow-down-small-light.svg";
 
 import {
     about_us,
@@ -74,10 +80,30 @@ interface IWorkWithUsInfo {
     description: string
 }
 
+const myKeyframe = keyframes`
+from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+`;
+
+const StyledImg = styled((props: any) => <img {...props} />)(({ theme }) => ({
+    ":hover": {
+        animation: `${myKeyframe} 2s forwards ease`
+    },
+    cursor: "pointer"
+}));
+
 const Header = () => {
-    const { palette, breakpoints } = useTheme();
+    const { palette } = useTheme();
     const { t } = useTranslation();
     const navigate = useNavigate();
+
+    const [isTooltipOpen, setIsTooltipOpen] = useState(false)
+
+    const aboutUsRef = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
         document.body.className = "body-home-style"
@@ -157,6 +183,15 @@ const Header = () => {
             description: t("pages.home.delivery-p")
         },
     ]
+
+    const displayPhoneToolTip = () => {
+        if (!isTooltipOpen) {
+            setIsTooltipOpen(true); // show tooltip
+            setTimeout(() => {
+                setIsTooltipOpen(false); // remove/hide tooltip
+            }, 3000);
+        }
+    };
 
     return (
         <>
@@ -256,11 +291,23 @@ const Header = () => {
                             {t("pages.home.calculate-the-cost")}
                         </Button>
                     </Box>
+                    <Box sx={{ display: { lg: "flex", md: "none", xs: "none" }, justifyContent: "center", mt: "178px" }}>
+                        <StyledImg
+                            src={palette.mode === "dark" ? arrow_down_small_light : arrow_down_small_dark}
+                            alt="arrow"
+                            onClick={() => {
+                                if (aboutUsRef !== null && aboutUsRef.current !== null)
+                                    aboutUsRef.current.scrollIntoView({
+                                        behavior: "smooth",
+                                    });
+                            }}
+                        />
+                    </Box>
                 </Container>
             </Box>
             <Container component="main" sx={{ maxWidth: { lg: "1270px", md: "910px", xs: "350px" } }}>
                 {/* Про нас */}
-                <Box id="about-us" sx={{ mt: { lg: "100px", md: "80px", xs: "60px" }, px: { lg: "46px", md: "80px" } }}>
+                <Box id="about-us" ref={aboutUsRef} sx={{ mt: { lg: "100px", md: "80px", xs: "60px" }, px: { lg: "46px", md: "80px" } }}>
                     <Typography align="center" variant="h2" fontFamily="Jura" fontWeight="700">
                         {t("containers.header.about-us")}
                     </Typography>
@@ -496,12 +543,12 @@ const Header = () => {
                             />
                         </Box>
                         <Box sx={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "end" }}>
-                            <MoreButton />
+                            <MoreButton link="production/non-standard-metal-structures-and-equipment" />
                         </Box>
                     </Box>
                     <Box sx={{ display: { lg: "flex", md: "none", xs: "none" }, mt: "100px" }}>
                         <Box sx={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "end" }}>
-                            <MoreButton />
+                            <MoreButton link="production/reinforcement-frames-and-embedded-products" />
                         </Box>
                         <Box sx={{ mx: "50px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                             <Box>
@@ -552,7 +599,7 @@ const Header = () => {
                             />
                         </Box>
                         <Box sx={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "end" }}>
-                            <MoreButton />
+                            <MoreButton link="production/building-metal-structures" />
                         </Box>
                     </Box>
                     {/* md */}
@@ -581,12 +628,12 @@ const Header = () => {
                             />
                         </Box>
                         <Box sx={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "end" }}>
-                            <MoreButton />
+                            <MoreButton link="production/non-standard-metal-structures-and-equipment" />
                         </Box>
                     </Box>
                     <Box sx={{ display: { lg: "none", md: "flex", xs: "none" }, mt: "100px" }}>
                         <Box sx={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "end" }}>
-                            <MoreButton />
+                            <MoreButton link="production/reinforcement-frames-and-embedded-products" />
                         </Box>
                         <Box sx={{ mx: "50px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                             <Box>
@@ -639,7 +686,7 @@ const Header = () => {
                             />
                         </Box>
                         <Box sx={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "end" }}>
-                            <MoreButton />
+                            <MoreButton link="production/building-metal-structures" />
                         </Box>
                     </Box>
                     {/* xs */}
@@ -664,6 +711,8 @@ const Header = () => {
                             src={metal_cover_small_2}
                             alt="metal_cover_small_2"
                             loading="lazy"
+                            style={{ cursor: "pointer" }}
+                            onClick={() => navigate("production/non-standard-metal-structures-and-equipment")}
                         />
                     </Box>
                     <Box sx={{ display: { lg: "none", md: "none", xs: "block" }, mt: "50px" }}>
@@ -687,6 +736,8 @@ const Header = () => {
                             src={armature_small_2}
                             alt="armature_small_2"
                             loading="lazy"
+                            style={{ cursor: "pointer" }}
+                            onClick={() => navigate("production/reinforcement-frames-and-embedded-products")}
                         />
                     </Box>
                     <Box sx={{ display: { lg: "none", md: "none", xs: "block" }, mt: "50px" }}>
@@ -710,6 +761,8 @@ const Header = () => {
                             src={laser_cutting_of_metal_small_2}
                             alt="laser_cutting_of_metal_small_2"
                             loading="lazy"
+                            style={{ cursor: "pointer" }}
+                            onClick={() => navigate("production/building-metal-structures")}
                         />
                     </Box>
                 </Box>
@@ -776,9 +829,40 @@ const Header = () => {
                             <Typography variant="h5" fontFamily="Jura" fontWeight="700">
                                 {t("containers.footer.contacts")}
                             </Typography>
-                            <Typography variant="h5" fontFamily="Jura" fontWeight="600" sx={{ mt: "40px", mb: "10px" }}>
-                                + 380 67 2345 442
-                            </Typography>
+                            <Tooltip
+                                open={isTooltipOpen}
+                                componentsProps={{
+                                    tooltip: {
+                                        sx: {
+                                            background: palette.background.default,
+                                            color: "inherit",
+                                            borderRadius: 0,
+                                            fontSize: "16px",
+                                            fontFamily: "Jura"
+                                        },
+                                    },
+                                }}
+                                PopperProps={{
+                                    modifiers: [
+                                        {
+                                            name: "offset",
+                                            options: {
+                                                offset: [-50, 0],
+                                            },
+                                        },
+                                    ],
+                                }}
+                                placement="bottom"
+                                title={t("components.tooltips.copied")}
+                                onClick={() => {
+                                    displayPhoneToolTip();
+                                    navigator.clipboard.writeText("+380672345442")
+                                }}
+                            >
+                                <Typography variant="h3" fontFamily="Jura" fontWeight="600" sx={{ mt: "20px", mb: "5px", cursor: "pointer" }} >
+                                    + 380 67 2345 442
+                                </Typography>
+                            </Tooltip>
                             <Typography variant="h5" fontFamily="Raleway" fontWeight="500">
                                 steeltime.c@gmail.com
                             </Typography>
@@ -809,9 +893,40 @@ const Header = () => {
                             <Typography variant="h2" fontFamily="Jura" fontWeight="700">
                                 {t("containers.footer.contacts")}
                             </Typography>
-                            <Typography variant="h3" fontFamily="Jura" fontWeight="600" sx={{ mt: "20px", mb: "5px" }}>
-                                + 380 67 2345 442
-                            </Typography>
+                            <Tooltip
+                                open={isTooltipOpen}
+                                componentsProps={{
+                                    tooltip: {
+                                        sx: {
+                                            background: palette.background.default,
+                                            color: "inherit",
+                                            borderRadius: 0,
+                                            fontSize: "16px",
+                                            fontFamily: "Jura"
+                                        },
+                                    },
+                                }}
+                                PopperProps={{
+                                    modifiers: [
+                                        {
+                                            name: "offset",
+                                            options: {
+                                                offset: [-50, 0],
+                                            },
+                                        },
+                                    ],
+                                }}
+                                placement="bottom"
+                                title={t("components.tooltips.copied")}
+                                onClick={() => {
+                                    displayPhoneToolTip();
+                                    navigator.clipboard.writeText("+380672345442")
+                                }}
+                            >
+                                <Typography variant="h3" fontFamily="Jura" fontWeight="600" sx={{ mt: "20px", mb: "5px", cursor: "pointer" }} >
+                                    + 380 67 2345 442
+                                </Typography>
+                            </Tooltip>
                             <Typography variant="h3" fontFamily="Raleway" fontWeight="500">
                                 steeltime.c@gmail.com
                             </Typography>

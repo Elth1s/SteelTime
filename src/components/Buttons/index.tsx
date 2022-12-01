@@ -6,9 +6,13 @@ import arrow_right_dark from "../../assets/icons/arrow-right-dark.svg"
 import { FC } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const MoreButton = () => {
+interface MoreButtonProps {
+    link: string
+}
+export const MoreButton: FC<MoreButtonProps> = ({ link }) => {
     const { t } = useTranslation();
     const { palette } = useTheme();
+    const navigate = useNavigate();
 
     return (
         <Box
@@ -20,8 +24,10 @@ export const MoreButton = () => {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                justifyContent: "center"
+                justifyContent: "center",
+                cursor: "pointer"
             }}
+            onClick={() => navigate(link)}
         >
             <Typography variant="h5" fontSize="20px" fontWeight="500" fontFamily="Raleway" sx={{ mb: "10px" }}>
                 {t("components.buttons.more")}
