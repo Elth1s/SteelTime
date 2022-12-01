@@ -6,20 +6,23 @@ import { useTranslation } from "react-i18next";
 
 import { useNavigate } from "react-router-dom"
 
-import input_group_1 from "../../../assets/backgrounds/production/input-group-1.png"
-import input_group_2 from "../../../assets/backgrounds/production/input-group-2.png"
-import input_group_3 from "../../../assets/backgrounds/production/input-group-3.png"
-import input_group_4 from "../../../assets/backgrounds/production/input-group-4.png"
-import input_group_5 from "../../../assets/backgrounds/production/input-group-5.png"
-import input_group_6 from "../../../assets/backgrounds/production/input-group-6.png"
-import input_group_7 from "../../../assets/backgrounds/production/input-group-7.png"
-import input_group_8 from "../../../assets/backgrounds/production/input-group-8.png"
-import input_group_9 from "../../../assets/backgrounds/production/input-group-9.png"
-import input_group_10 from "../../../assets/backgrounds/production/input-group-10.png"
-import input_group_11 from "../../../assets/backgrounds/production/input-group-11.png"
-import input_group_12 from "../../../assets/backgrounds/production/input-group-12.png"
-import input_group_13 from "../../../assets/backgrounds/production/input-group-13.png"
-import input_group_14 from "../../../assets/backgrounds/production/input-group-14.png"
+import {
+    input_group_1,
+    input_group_2,
+    input_group_3,
+    input_group_4,
+    input_group_5,
+    input_group_6,
+    input_group_7,
+    input_group_8,
+    input_group_9,
+    input_group_10,
+    input_group_11,
+    input_group_12,
+    input_group_13,
+    input_group_14
+} from "../../../assets/backgrounds/production"
+
 import arrow_left_orange from "../../../assets/icons/arrow-left-orange.svg"
 import AskOrOrderForm from "../../../components/AskOrOrderForm";
 

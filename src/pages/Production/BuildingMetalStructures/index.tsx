@@ -6,8 +6,11 @@ import { useTranslation } from "react-i18next";
 
 import { useNavigate } from "react-router-dom"
 
-import building_metal_structures_1 from "../../../assets/backgrounds/production/building-metal-structures-1.png"
-import building_metal_structures_2 from "../../../assets/backgrounds/production/building-metal-structures-2.png"
+import {
+    building_metal_structures_1,
+    building_metal_structures_2
+} from "../../../assets/backgrounds/production"
+
 import arrow_left_orange from "../../../assets/icons/arrow-left-orange.svg"
 import AskOrOrderForm from "../../../components/AskOrOrderForm";
 

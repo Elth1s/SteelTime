@@ -6,6 +6,7 @@ import {
     Button
 } from "@mui/material";
 
+import emailjs from '@emailjs/browser';
 import { Form, FormikProvider, useFormik } from "formik";
 import * as Yup from "yup";
 
@@ -47,13 +48,12 @@ const AskOrOrderForm = () => {
         validationSchema: SendEmailSchema,
         onSubmit: (values) => {
             try {
-                // emailjs.send("service_661asda", "template_z72bxrn", {
-                //     name: values.name,
-                //     phone: values.phone,
-                //     email: values.email,
-                //     message: values.message,
-                // }, "lxE0AqKUTzAtFuvbb");
-                // toast.success("The message has been sent")
+                emailjs.send("service_wo53sfi", "template_u43mirn", {
+                    name: values.name,
+                    phone: values.phone,
+                    email: values.email,
+                    message: values.message,
+                }, "1iJ6GF35nBLPxGys3");
             }
             catch (ex) {
                 console.log(ex)

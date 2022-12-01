@@ -4,14 +4,16 @@ import { useTranslation } from "react-i18next"
 import { DetailsButton, OrderButton } from "../../components/Buttons"
 import LinkRouter from "../../components/LinkRouter"
 
-import steel_building_structures from "../../assets/backgrounds/production/steel-building-structures.png"
-import steel_building_structures_small from "../../assets/backgrounds/production/steel-building-structures-small.png"
-import designer_steel_products from "../../assets/backgrounds/production/designer-steel-products.png"
-import designer_steel_products_small from "../../assets/backgrounds/production/designer-steel-products-small.png"
-import furnace from "../../assets/backgrounds/production/furnace.png"
-import furnace_small from "../../assets/backgrounds/production/furnace-small.png"
-import protective_container_for_generator from "../../assets/backgrounds/production/protective-container-for-generator.png"
-import protective_container_for_generator_small from "../../assets/backgrounds/production/protective-container-for-generator-small.png"
+import {
+    steel_building_structures,
+    steel_building_structures_small,
+    designer_steel_products,
+    designer_steel_products_small,
+    furnace,
+    furnace_small,
+    protective_container_for_generator,
+    protective_container_for_generator_small
+} from "../../assets/backgrounds/production"
 
 const Production = () => {
     const { t } = useTranslation();
@@ -48,12 +50,14 @@ const Production = () => {
                         style={{ width: "100%" }}
                         src={steel_building_structures}
                         alt="steel_building_structures"
+                        loading="lazy"
                     />
                 </Box>
                 <Box sx={{ display: { lg: "none", md: "none", xs: "block" } }}>
                     <img
                         src={steel_building_structures_small}
                         alt="steel_building_structures"
+                        loading="lazy"
                     />
                 </Box>
             </Grid>
@@ -65,10 +69,10 @@ const Production = () => {
                     {t("pages.production.steel-building-structures-p")}
                 </Typography>
                 <LinkRouter underline="always" color="inherit" to="building-metal-structures" onClick={() => window.scrollTo(0, 0)} sx={{ "&:hover": { color: palette.primary.main } }}>
-                    <Typography variant="h4" fontWeight="500" fontFamily="Jura" sx={{ display: { lg: "block", xs: "none" }, mt: { lg: "50px", md: "5px", xs: "30px" } }}>
+                    <Typography variant="h4" fontWeight="500" fontFamily="Jura" sx={{ display: { lg: "block", md: "block", xs: "none" }, mt: { lg: "50px", md: "5px", xs: "30px" } }}>
                         {t("pages.production.building-metal-structures")}
                     </Typography>
-                    <Typography variant="h3" fontWeight="500" fontFamily="Jura" sx={{ display: { lg: "none", xs: "block" }, mt: { lg: "50px", md: "5px", xs: "30px" } }}>
+                    <Typography variant="h3" fontWeight="500" fontFamily="Jura" sx={{ display: { lg: "none", md: "none", xs: "block" }, mt: { lg: "50px", md: "5px", xs: "30px" } }}>
                         {t("pages.production.building-metal-structures")}
                     </Typography>
                 </LinkRouter>
@@ -111,6 +115,7 @@ const Production = () => {
                 <img
                     src={designer_steel_products_small}
                     alt="designer_steel_products"
+                    loading="lazy"
                 />
             </Grid>
             <Grid item lg={6} md={6} xs={12} sx={{ my: "auto" }}>
@@ -121,10 +126,10 @@ const Production = () => {
                     {t("pages.production.designer-steel-products-p1")}
                 </Typography>
                 <LinkRouter underline="always" color="inherit" to="loft-style-furniture-and-partitions" onClick={() => window.scrollTo(0, 0)} sx={{ "&:hover": { color: palette.primary.main } }}>
-                    <Typography variant="h4" fontWeight="400" fontFamily="Raleway" sx={{ display: { lg: "block", xs: "none" }, my: "50px" }}>
+                    <Typography variant="h4" fontWeight="400" fontFamily="Raleway" sx={{ display: { lg: "block", md: "block", xs: "none" }, my: "50px" }}>
                         {t("pages.production.designer-steel-products-p2")}
                     </Typography>
-                    <Typography variant="h3" fontWeight="400" fontFamily="Raleway" sx={{ display: { lg: "none", xs: "block" }, mt: "30px", mb: "50px" }}>
+                    <Typography variant="h3" fontWeight="400" fontFamily="Raleway" sx={{ display: { lg: "none", md: "none", xs: "block" }, mt: "30px", mb: "50px" }}>
                         {t("pages.production.designer-steel-products-p2")}
                     </Typography>
                 </LinkRouter>
@@ -138,6 +143,7 @@ const Production = () => {
                         style={{ width: "100%" }}
                         src={designer_steel_products}
                         alt="designer_steel_products"
+                        loading="lazy"
                     />
                 </Box>
             </Grid>
@@ -148,12 +154,14 @@ const Production = () => {
                         style={{ width: "100%" }}
                         src={furnace}
                         alt="furnace"
+                        loading="lazy"
                     />
                 </Box>
                 <Box sx={{ display: { lg: "none", md: "none", xs: "block" } }}>
                     <img
                         src={furnace_small}
                         alt="furnace"
+                        loading="lazy"
                     />
                 </Box>
             </Grid>
@@ -191,6 +199,7 @@ const Production = () => {
                 <img
                     src={protective_container_for_generator_small}
                     alt="protective_container_for_generator"
+                    loading="lazy"
                 />
             </Grid>
             <Grid item lg={6} md={6} xs={12}>
@@ -245,6 +254,7 @@ const Production = () => {
                         style={{ width: "100%", height: "100%" }}
                         src={protective_container_for_generator}
                         alt="protective_container_for_generator"
+                        loading="lazy"
                     />
                 </Box>
             </Grid>

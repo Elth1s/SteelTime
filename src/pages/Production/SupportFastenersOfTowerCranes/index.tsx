@@ -6,8 +6,11 @@ import { useTranslation } from "react-i18next";
 
 import { useNavigate } from "react-router-dom"
 
-import support_fasteners_of_tower_cranes_1 from "../../../assets/backgrounds/production/support-fasteners-of-tower-cranes-1.png"
-import support_fasteners_of_tower_cranes_2 from "../../../assets/backgrounds/production/support-fasteners-of-tower-cranes-2.png"
+import {
+    support_fasteners_of_tower_cranes_1,
+    support_fasteners_of_tower_cranes_2
+} from "../../../assets/backgrounds/production"
+
 import arrow_left_orange from "../../../assets/icons/arrow-left-orange.svg"
 import AskOrOrderForm from "../../../components/AskOrOrderForm";
 

@@ -51,24 +51,28 @@ const MetalCutting = () => {
                             <img
                                 src={metal_cutting_a_bandsaw_first}
                                 alt="metal_cutting_a_bandsaw_first"
+                                loading="lazy"
                             />
                         </Grid>
                         <Grid item lg={6} md={12}>
                             <img
                                 src={metal_cutting_a_bandsaw_second}
                                 alt="metal_cutting_a_bandsaw_second"
+                                loading="lazy"
                             />
                         </Grid>
                         <Grid item lg={6} sx={{ display: { lg: "flex", md: "none", xs: "none" } }}>
                             <img
                                 src={metal_cutting_a_bandsaw_third}
                                 alt="metal_cutting_a_bandsaw_third"
+                                loading="lazy"
                             />
                         </Grid>
                         <Grid item lg={6} sx={{ display: { lg: "flex", md: "none", xs: "none" } }}>
                             <img
                                 src={metal_cutting_a_bandsaw_fourth}
                                 alt="metal_cutting_a_bandsaw_fourth"
+                                loading="lazy"
                             />
                         </Grid>
                     </Grid>
@@ -77,24 +81,28 @@ const MetalCutting = () => {
                             <img
                                 src={metal_cutting_a_bandsaw_first}
                                 alt="metal_cutting_a_bandsaw_first"
+                                loading="lazy"
                             />
                         </Box>
                         <Box sx={{ width: "300px", height: "200px", mb: "25px", mx: "auto" }}>
                             <img
                                 src={metal_cutting_a_bandsaw_second}
                                 alt="metal_cutting_a_bandsaw_second"
+                                loading="lazy"
                             />
                         </Box>
                         <Box sx={{ width: "300px", height: "200px", mb: "25px", mx: "auto" }}>
                             <img
                                 src={metal_cutting_a_bandsaw_third}
                                 alt="metal_cutting_a_bandsaw_third"
+                                loading="lazy"
                             />
                         </Box>
                         <Box sx={{ width: "300px", height: "200px", mx: "auto" }}>
                             <img
                                 src={metal_cutting_a_bandsaw_fourth}
                                 alt="metal_cutting_a_bandsaw_fourth"
+                                loading="lazy"
                             />
                         </Box>
                     </Box>
@@ -105,6 +113,7 @@ const MetalCutting = () => {
                             src={metal_cutting_a_bandsaw_third}
                             alt="metal_cutting_a_bandsaw_third"
                             style={{ width: "100%" }}
+                            loading="lazy"
                         />
                     </Box>
                     <Box sx={{ width: "400px" }}>
@@ -112,6 +121,7 @@ const MetalCutting = () => {
                             src={metal_cutting_a_bandsaw_fourth}
                             alt="metal_cutting_a_bandsaw_fourth"
                             style={{ width: "100%" }}
+                            loading="lazy"
                         />
                     </Box>
                 </Grid>

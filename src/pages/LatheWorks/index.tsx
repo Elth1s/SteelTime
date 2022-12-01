@@ -47,12 +47,14 @@ const LatheWorks = () => {
                             <img
                                 src={lathe_works_first}
                                 alt="lathe_works_first"
+                                loading="lazy"
                             />
                         </Grid>
                         <Grid item xs={6}>
                             <img
                                 src={lathe_works_second}
                                 alt="lathe_works_second"
+                                loading="lazy"
                             />
                         </Grid>
                     </Grid>
@@ -61,12 +63,14 @@ const LatheWorks = () => {
                             <img
                                 src={lathe_works_first_medium}
                                 alt="lathe_works_first"
+                                loading="lazy"
                             />
                         </Grid>
                         <Grid item md={12}>
                             <img
                                 src={lathe_works_second_medium}
                                 alt="lathe_works_second"
+                                loading="lazy"
                             />
                         </Grid>
                     </Grid>
@@ -75,12 +79,14 @@ const LatheWorks = () => {
                             <img
                                 src={lathe_works_first_small}
                                 alt="lathe_works_first"
+                                loading="lazy"
                             />
                         </Box>
                         <Box sx={{ width: "300px", mx: "auto" }}>
                             <img
                                 src={lathe_works_second_small}
                                 alt="lathe_works_second"
+                                loading="lazy"
                             />
                         </Box>
                     </Box>

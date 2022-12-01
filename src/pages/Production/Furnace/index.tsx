@@ -6,14 +6,18 @@ import { useTranslation } from "react-i18next";
 
 import { useNavigate } from "react-router-dom"
 
-import furnace_1 from "../../../assets/backgrounds/production/furnace-1.png"
-import furnace_2 from "../../../assets/backgrounds/production/furnace-2.png"
-import furnace_3 from "../../../assets/backgrounds/production/furnace-3.png"
-import furnace_4 from "../../../assets/backgrounds/production/furnace-4.png"
-import furnace_5 from "../../../assets/backgrounds/production/furnace-5.png"
-import furnace_6 from "../../../assets/backgrounds/production/furnace-6.png"
-import arrow_left_orange from "../../../assets/icons/arrow-left-orange.svg"
 import AskOrOrderForm from "../../../components/AskOrOrderForm";
+
+import {
+    furnace_1,
+    furnace_2,
+    furnace_3,
+    furnace_4,
+    furnace_5,
+    furnace_6,
+} from "../../../assets/backgrounds/production"
+
+import arrow_left_orange from "../../../assets/icons/arrow-left-orange.svg"
 
 const Furnace = () => {
     const { t } = useTranslation();

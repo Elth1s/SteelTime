@@ -8,16 +8,18 @@ import { useNavigate } from "react-router-dom"
 
 import AskOrOrderForm from "../../../components/AskOrOrderForm";
 
-import protective_container_for_generator_1 from "../../../assets/backgrounds/production/protective-container-for-generator-1.png"
-import protective_container_for_generator_2 from "../../../assets/backgrounds/production/protective-container-for-generator-2.png"
-import protective_container_for_generator_3 from "../../../assets/backgrounds/production/protective-container-for-generator-3.png"
-import protective_container_for_generator_4 from "../../../assets/backgrounds/production/protective-container-for-generator-4.png"
-import protective_container_for_generator_5 from "../../../assets/backgrounds/production/protective-container-for-generator-5.png"
-import protective_container_for_generator_6 from "../../../assets/backgrounds/production/protective-container-for-generator-6.png"
-import protective_container_for_generator_7 from "../../../assets/backgrounds/production/protective-container-for-generator-7.png"
-import protective_container_for_generator_8 from "../../../assets/backgrounds/production/protective-container-for-generator-8.png"
-import protective_container_for_generator_9 from "../../../assets/backgrounds/production/protective-container-for-generator-9.png"
-import protective_container_for_generator_10 from "../../../assets/backgrounds/production/protective-container-for-generator-10.png"
+import {
+    protective_container_for_generator_1,
+    protective_container_for_generator_2,
+    protective_container_for_generator_3,
+    protective_container_for_generator_4,
+    protective_container_for_generator_5,
+    protective_container_for_generator_6,
+    protective_container_for_generator_7,
+    protective_container_for_generator_8,
+    protective_container_for_generator_9,
+    protective_container_for_generator_10
+} from "../../../assets/backgrounds/production"
 
 import arrow_left_orange from "../../../assets/icons/arrow-left-orange.svg"
 

@@ -6,11 +6,14 @@ import { useTranslation } from "react-i18next";
 
 import { useNavigate } from "react-router-dom"
 
-import anchor_blocks_and_foundation_bolts_1 from "../../../assets/backgrounds/production/anchor-blocks-and-foundation-bolts-1.png"
-import anchor_blocks_and_foundation_bolts_2 from "../../../assets/backgrounds/production/anchor-blocks-and-foundation-bolts-2.png"
-import anchor_blocks_and_foundation_bolts_3 from "../../../assets/backgrounds/production/anchor-blocks-and-foundation-bolts-3.png"
-import anchor_blocks_and_foundation_bolts_4 from "../../../assets/backgrounds/production/anchor-blocks-and-foundation-bolts-4.png"
-import anchor_blocks_and_foundation_bolts_5 from "../../../assets/backgrounds/production/anchor-blocks-and-foundation-bolts-5.png"
+import {
+    anchor_blocks_and_foundation_bolts_1,
+    anchor_blocks_and_foundation_bolts_2,
+    anchor_blocks_and_foundation_bolts_3,
+    anchor_blocks_and_foundation_bolts_4,
+    anchor_blocks_and_foundation_bolts_5
+} from "../../../assets/backgrounds/production"
+
 import arrow_left_orange from "../../../assets/icons/arrow-left-orange.svg"
 import AskOrOrderForm from "../../../components/AskOrOrderForm";
 

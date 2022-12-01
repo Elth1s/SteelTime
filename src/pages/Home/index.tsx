@@ -269,6 +269,7 @@ const Header = () => {
                         <img
                             src={about_us}
                             alt="about_us"
+                            loading="lazy"
                         />
                         <Box sx={{ ml: { lg: "120px", md: "50px" } }}>
                             <Typography variant="h5" fontWeight="400" fontFamily="Raleway">
@@ -286,6 +287,7 @@ const Header = () => {
                                 style={{ width: "100%", height: "100%" }}
                                 src={about_us}
                                 alt="about_us"
+                                loading="lazy"
                             />
                         </Box>
                         <Box sx={{ width: "350px", ml: "50px" }}>
@@ -309,6 +311,7 @@ const Header = () => {
                             style={{ marginTop: "15px" }}
                             src={about_us}
                             alt="about_us"
+                            loading="lazy"
                         />
                     </Box>
                 </Box>
@@ -379,6 +382,7 @@ const Header = () => {
                                     src={building_metal_structures}
                                     alt="building_metal_structures"
                                     style={{ width: "100%", height: "100%" }}
+                                    loading="lazy"
                                 />
                             </Box>
                         </Box>
@@ -391,6 +395,7 @@ const Header = () => {
                                     src={metal_products}
                                     alt="metal_products"
                                     style={{ width: "100%", height: "100%" }}
+                                    loading="lazy"
                                 />
                             </Box>
                         </Box>
@@ -403,6 +408,7 @@ const Header = () => {
                                     src={unusual_metal_structures}
                                     alt="unusual_metal_structures"
                                     style={{ width: "100%", height: "100%" }}
+                                    loading="lazy"
                                 />
                             </Box>
                         </Box>
@@ -417,6 +423,7 @@ const Header = () => {
                                 src={building_metal_structures_small}
                                 alt="building_metal_structures"
                                 style={{ marginTop: "25px" }}
+                                loading="lazy"
                             />
                         </Box>
                         <Box sx={{ p: "20px 20px 10px 20px", boxShadow: "2px 2px 10px #E55C0F", mb: "25px" }}>
@@ -427,6 +434,7 @@ const Header = () => {
                                 src={metal_products_small}
                                 alt="metal_products"
                                 style={{ marginTop: "25px" }}
+                                loading="lazy"
                             />
                         </Box>
                         <Box sx={{ p: "20px 20px 10px 20px", boxShadow: "2px 2px 10px #E55C0F" }}>
@@ -437,6 +445,7 @@ const Header = () => {
                                 src={unusual_metal_structures_small}
                                 alt="unusual_metal_structures"
                                 style={{ marginTop: "25px" }}
+                                loading="lazy"
                             />
                         </Box>
                     </Box>
@@ -466,6 +475,7 @@ const Header = () => {
                         <img
                             src={metal_cover_1}
                             alt="metal_cover_first"
+                            loading="lazy"
                         />
                         <Box sx={{ mx: "50px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                             <Box>
@@ -482,6 +492,7 @@ const Header = () => {
                                 src={metal_cover_2}
                                 alt="metal_cover_second"
                                 style={{ marginTop: "auto" }}
+                                loading="lazy"
                             />
                         </Box>
                         <Box sx={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "end" }}>
@@ -507,17 +518,20 @@ const Header = () => {
                                 src={armature_2}
                                 alt="armature_second"
                                 style={{ marginTop: "auto" }}
+                                loading="lazy"
                             />
                         </Box>
                         <img
                             src={armature_1}
                             alt="armature_first"
+                            loading="lazy"
                         />
                     </Box>
                     <Box sx={{ display: { lg: "flex", md: "none", xs: "none" }, mt: "100px" }}>
                         <img
                             src={laser_cutting_of_metal_1}
                             alt="laser_cutting_of_metal_first"
+                            loading="lazy"
                         />
                         <Box sx={{ mx: "50px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                             <Box>
@@ -534,6 +548,7 @@ const Header = () => {
                                 src={laser_cutting_of_metal_2}
                                 alt="laser_cutting_of_metal_second"
                                 style={{ marginTop: "auto" }}
+                                loading="lazy"
                             />
                         </Box>
                         <Box sx={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "end" }}>
@@ -545,6 +560,7 @@ const Header = () => {
                         <img
                             src={metal_cover_medium_1}
                             alt="metal_cover_first"
+                            loading="lazy"
                         />
                         <Box sx={{ mx: "50px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                             <Box>
@@ -561,6 +577,7 @@ const Header = () => {
                                 src={metal_cover_medium_2}
                                 alt="metal_cover_second"
                                 style={{ marginTop: "auto" }}
+                                loading="lazy"
                             />
                         </Box>
                         <Box sx={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "end" }}>
@@ -586,11 +603,13 @@ const Header = () => {
                                 src={armature_medium_2}
                                 alt="armature_second"
                                 style={{ marginTop: "auto" }}
+                                loading="lazy"
                             />
                         </Box>
                         <img
                             src={armature_medium_1}
                             alt="armature_first"
+                            loading="lazy"
                         />
                     </Box>
                     <Box sx={{ display: { lg: "none", md: "flex", xs: "none" }, mt: "100px" }}>
@@ -598,6 +617,7 @@ const Header = () => {
                             <img
                                 src={laser_cutting_of_metal_medium_1}
                                 alt="laser_cutting_of_metal_first"
+                                loading="lazy"
                             />
                         </Box>
                         <Box sx={{ mx: "50px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
@@ -615,6 +635,7 @@ const Header = () => {
                                 src={laser_cutting_of_metal_medium_2}
                                 alt="laser_cutting_of_metal_second"
                                 style={{ marginTop: "auto" }}
+                                loading="lazy"
                             />
                         </Box>
                         <Box sx={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "end" }}>
@@ -628,6 +649,7 @@ const Header = () => {
                                 src={metal_cover_small_1}
                                 alt="metal_cover_small_1"
                                 style={{ marginRight: "15px" }}
+                                loading="lazy"
                             />
                             <Box>
                                 <Typography variant="h3" fontFamily="Jura" fontWeight="600">
@@ -641,6 +663,7 @@ const Header = () => {
                         <img
                             src={metal_cover_small_2}
                             alt="metal_cover_small_2"
+                            loading="lazy"
                         />
                     </Box>
                     <Box sx={{ display: { lg: "none", md: "none", xs: "block" }, mt: "50px" }}>
@@ -657,11 +680,13 @@ const Header = () => {
                                 src={armature_small_1}
                                 alt="armature_small_1"
                                 style={{ marginLeft: "15px" }}
+                                loading="lazy"
                             />
                         </Box>
                         <img
                             src={armature_small_2}
                             alt="armature_small_2"
+                            loading="lazy"
                         />
                     </Box>
                     <Box sx={{ display: { lg: "none", md: "none", xs: "block" }, mt: "50px" }}>
@@ -670,6 +695,7 @@ const Header = () => {
                                 src={laser_cutting_of_metal_small_1}
                                 alt="laser_cutting_of_metal_small_1"
                                 style={{ marginRight: "15px" }}
+                                loading="lazy"
                             />
                             <Box>
                                 <Typography variant="h3" fontFamily="Jura" fontWeight="600">
@@ -683,6 +709,7 @@ const Header = () => {
                         <img
                             src={laser_cutting_of_metal_small_2}
                             alt="laser_cutting_of_metal_small_2"
+                            loading="lazy"
                         />
                     </Box>
                 </Box>
@@ -696,6 +723,7 @@ const Header = () => {
                             src={palette.mode === "dark" ? reviews_dark : reviews_light}
                             alt="reviews"
                             style={{ marginTop: "50px" }}
+                            loading="lazy"
                         />
                     </Box>
                     <Box sx={{ display: { lg: "none", md: "block", xs: "none" } }}>
@@ -703,6 +731,7 @@ const Header = () => {
                             src={palette.mode === "dark" ? reviews_dark_medium : reviews_light_medium}
                             alt="reviews"
                             style={{ marginTop: "50px" }}
+                            loading="lazy"
                         />
                     </Box>
                     <Box sx={{ display: { lg: "none", md: "none", xs: "flex" }, justifyContent: "center" }}>
@@ -710,6 +739,7 @@ const Header = () => {
                             src={palette.mode === "dark" ? reviews_dark_small : reviews_light_small}
                             alt="reviews"
                             style={{ marginTop: "40px" }}
+                            loading="lazy"
                         />
                     </Box>
                 </Box>

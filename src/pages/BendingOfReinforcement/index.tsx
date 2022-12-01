@@ -58,24 +58,28 @@ const BendingOfReinforcement = () => {
                             <img
                                 src={bending_of_reinforcement_first}
                                 alt="bending_of_reinforcement_first"
+                                loading="lazy"
                             />
                         </Grid>
                         <Grid item lg={6} >
                             <img
                                 src={bending_of_reinforcement_second}
                                 alt="bending_of_reinforcement_second"
+                                loading="lazy"
                             />
                         </Grid>
                         <Grid item lg={6}>
                             <img
                                 src={bending_of_reinforcement_third}
                                 alt="bending_of_reinforcement_third"
+                                loading="lazy"
                             />
                         </Grid>
                         <Grid item lg={6}>
                             <img
                                 src={bending_of_reinforcement_fourth}
                                 alt="bending_of_reinforcement_fourth"
+                                loading="lazy"
                             />
                         </Grid>
                     </Grid>
@@ -84,24 +88,28 @@ const BendingOfReinforcement = () => {
                             <img
                                 src={bending_of_reinforcement_first_small}
                                 alt="bending_of_reinforcement_first"
+                                loading="lazy"
                             />
                         </Box>
                         <Box sx={{ width: "300px", height: "200px", mb: "25px", mx: "auto" }}>
                             <img
                                 src={bending_of_reinforcement_second_small}
                                 alt="bending_of_reinforcement_second"
+                                loading="lazy"
                             />
                         </Box>
                         <Box sx={{ width: "300px", height: "200px", mb: "25px", mx: "auto" }}>
                             <img
                                 src={bending_of_reinforcement_third_small}
                                 alt="bending_of_reinforcement_third"
+                                loading="lazy"
                             />
                         </Box>
                         <Box sx={{ width: "300px", height: "200px", mx: "auto" }}>
                             <img
                                 src={bending_of_reinforcement_fourth_small}
                                 alt="bending_of_reinforcement_fourth"
+                                loading="lazy"
                             />
                         </Box>
                     </Box>
@@ -112,12 +120,14 @@ const BendingOfReinforcement = () => {
                             <img
                                 src={bending_of_reinforcement_first_small}
                                 alt="bending_of_reinforcement_first"
+                                loading="lazy"
                             />
                         </Grid>
                         <Grid item md={12} >
                             <img
                                 src={bending_of_reinforcement_second_small}
                                 alt="bending_of_reinforcement_second"
+                                loading="lazy"
                             />
                         </Grid>
                     </Grid>
@@ -128,6 +138,7 @@ const BendingOfReinforcement = () => {
                             src={bending_of_reinforcement_third_medium}
                             alt="bending_of_reinforcement_third"
                             style={{ width: "100%" }}
+                            loading="lazy"
                         />
                     </Box>
                     <Box sx={{ width: "400px" }}>
@@ -135,6 +146,7 @@ const BendingOfReinforcement = () => {
                             src={bending_of_reinforcement_fourth_medium}
                             alt="bending_of_reinforcement_fourth"
                             style={{ width: "100%" }}
+                            loading="lazy"
                         />
                     </Box>
                 </Grid>

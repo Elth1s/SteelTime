@@ -59,24 +59,28 @@ const PlasmaCuttingOfMetal = () => {
                             <img
                                 src={plasma_cutting_of_metal_first}
                                 alt="plasma_cutting_of_metal_first"
+                                loading="lazy"
                             />
                         </Grid>
                         <Grid item lg={6} md={12} sx={{ ml: { lg: "0px", md: "10px" } }}>
                             <img
                                 src={plasma_cutting_of_metal_second}
                                 alt="plasma_cutting_of_metal_second"
+                                loading="lazy"
                             />
                         </Grid>
                         <Grid item lg={6} sx={{ display: { lg: "flex", md: "none", xs: "none" } }}>
                             <img
                                 src={plasma_cutting_of_metal_third}
                                 alt="plasma_cutting_of_metal_third"
+                                loading="lazy"
                             />
                         </Grid>
                         <Grid item lg={6} sx={{ display: { lg: "flex", md: "none", xs: "none" } }}>
                             <img
                                 src={plasma_cutting_of_metal_fourth}
                                 alt="plasma_cutting_of_metal_fourth"
+                                loading="lazy"
                             />
                         </Grid>
                     </Grid>
@@ -85,24 +89,28 @@ const PlasmaCuttingOfMetal = () => {
                             <img
                                 src={plasma_cutting_of_metal_first_small}
                                 alt="plasma_cutting_of_metal_first"
+                                loading="lazy"
                             />
                         </Box>
                         <Box sx={{ width: "300px", height: "200px", mb: "25px", mx: "auto" }}>
                             <img
                                 src={plasma_cutting_of_metal_second_small}
                                 alt="plasma_cutting_of_metal_second"
+                                loading="lazy"
                             />
                         </Box>
                         <Box sx={{ width: "300px", height: "200px", mb: "25px", mx: "auto" }}>
                             <img
                                 src={plasma_cutting_of_metal_third_small}
                                 alt="plasma_cutting_of_metal_third"
+                                loading="lazy"
                             />
                         </Box>
                         <Box sx={{ width: "300px", height: "200px", mx: "auto" }}>
                             <img
                                 src={plasma_cutting_of_metal_fourth_small}
                                 alt="plasma_cutting_of_metal_fourth"
+                                loading="lazy"
                             />
                         </Box>
                     </Box>
@@ -113,6 +121,7 @@ const PlasmaCuttingOfMetal = () => {
                             src={plasma_cutting_of_metal_third}
                             alt="plasma_cutting_of_metal_third"
                             style={{ width: "100%" }}
+                            loading="lazy"
                         />
                     </Box>
                     <Box sx={{ width: "400px" }}>
@@ -120,6 +129,7 @@ const PlasmaCuttingOfMetal = () => {
                             src={plasma_cutting_of_metal_fourth}
                             alt="plasma_cutting_of_metal_fourth"
                             style={{ width: "100%" }}
+                            loading="lazy"
                         />
                     </Box>
                 </Grid>

@@ -6,18 +6,21 @@ import { useTranslation } from "react-i18next";
 
 import { useNavigate } from "react-router-dom"
 
-import reinforcement_frames_and_embedded_products_1 from "../../../assets/backgrounds/production/reinforcement-frames-and-embedded-products-1.png"
-import reinforcement_frames_and_embedded_products_2 from "../../../assets/backgrounds/production/reinforcement-frames-and-embedded-products-2.png"
-import reinforcement_frames_and_embedded_products_3 from "../../../assets/backgrounds/production/reinforcement-frames-and-embedded-products-3.png"
-import reinforcement_frames_and_embedded_products_4 from "../../../assets/backgrounds/production/reinforcement-frames-and-embedded-products-4.png"
-import reinforcement_frames_and_embedded_products_5 from "../../../assets/backgrounds/production/reinforcement-frames-and-embedded-products-5.png"
-import reinforcement_frames_and_embedded_products_6 from "../../../assets/backgrounds/production/reinforcement-frames-and-embedded-products-6.png"
-import reinforcement_frames_and_embedded_products_7 from "../../../assets/backgrounds/production/reinforcement-frames-and-embedded-products-7.png"
-import reinforcement_frames_and_embedded_products_8 from "../../../assets/backgrounds/production/reinforcement-frames-and-embedded-products-8.png"
-import reinforcement_frames_and_embedded_products_9 from "../../../assets/backgrounds/production/reinforcement-frames-and-embedded-products-9.png"
-import reinforcement_frames_and_embedded_products_10 from "../../../assets/backgrounds/production/reinforcement-frames-and-embedded-products-10.png"
-import reinforcement_frames_and_embedded_products_11 from "../../../assets/backgrounds/production/reinforcement-frames-and-embedded-products-11.png"
-import reinforcement_frames_and_embedded_products_12 from "../../../assets/backgrounds/production/reinforcement-frames-and-embedded-products-12.png"
+import {
+    reinforcement_frames_and_embedded_products_1,
+    reinforcement_frames_and_embedded_products_2,
+    reinforcement_frames_and_embedded_products_3,
+    reinforcement_frames_and_embedded_products_4,
+    reinforcement_frames_and_embedded_products_5,
+    reinforcement_frames_and_embedded_products_6,
+    reinforcement_frames_and_embedded_products_7,
+    reinforcement_frames_and_embedded_products_8,
+    reinforcement_frames_and_embedded_products_9,
+    reinforcement_frames_and_embedded_products_10,
+    reinforcement_frames_and_embedded_products_11,
+    reinforcement_frames_and_embedded_products_12,
+} from "../../../assets/backgrounds/production"
+
 import arrow_left_orange from "../../../assets/icons/arrow-left-orange.svg"
 import AskOrOrderForm from "../../../components/AskOrOrderForm";
 
