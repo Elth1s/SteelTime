@@ -75,7 +75,7 @@ interface IWorkWithUsInfo {
 }
 
 const Header = () => {
-    const { palette } = useTheme();
+    const { palette, breakpoints } = useTheme();
     const { t } = useTranslation();
     const navigate = useNavigate();
 

@@ -116,6 +116,8 @@ export default function HeaderMenu() {
         }
 
         setIsOpen(open);
+        if (open === false)
+            setIsOpenServices(false)
     };
 
     const changeLanguage = (language: Language) => {
