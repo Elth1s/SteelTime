@@ -30,7 +30,7 @@ const Footer = () => {
                 background: palette.background.default
             }}
         >
-            <Container sx={{ maxWidth: { lg: "1270px", md: "910px", xs: "350px" } }}>
+            <Container sx={{ maxWidth: { lg: "1270px", md: "910px", xs: "340px" } }}>
                 {/* lg */}
                 <Grid container sx={{ display: { lg: "flex", md: "flex", xs: "none" }, px: "5px" }}>
                     <Grid item xs={2}>
@@ -48,10 +48,10 @@ const Footer = () => {
                             {t("containers.footer.contacts")}
                         </Typography>
                         <Typography variant="h5" fontFamily="Jura" fontWeight="600" sx={{ mt: "40px", mb: "10px" }}>
-                            + 380 98 2567 85
+                            + 380 67 2345 442
                         </Typography>
                         <Typography variant="h5" fontFamily="Raleway" fontWeight="500">
-                            metalinvest@gmail.com
+                            steeltime.c@gmail.com
                         </Typography>
                     </Grid>
                     <Grid item xs={1} />
@@ -69,6 +69,7 @@ const Footer = () => {
                                 src={palette.mode === "dark" ? facebook_medium_light : facebook_medium_dark}
                                 alt="facebook"
                                 style={{ cursor: "pointer" }}
+                                onClick={() => window.open("https://www.facebook.com/steeltimellc")}
                             />
                         </Box>
                     </Grid>
@@ -80,10 +81,10 @@ const Footer = () => {
                             {t("containers.footer.contacts")}
                         </Typography>
                         <Typography variant="h4" fontFamily="Jura" fontWeight="600" sx={{ mt: "20px", mb: "5px" }}>
-                            + 380 98 2567 85
+                            + 380 67 2345 442
                         </Typography>
                         <Typography variant="h4" fontFamily="Raleway" fontWeight="500">
-                            metalinvest@gmail.com
+                            steeltime.c@gmail.com
                         </Typography>
                     </Grid>
                     <Grid item xs={2}>
@@ -100,6 +101,7 @@ const Footer = () => {
                                 src={palette.mode === "dark" ? facebook_medium_light : facebook_medium_dark}
                                 alt="facebook"
                                 style={{ cursor: "pointer" }}
+                                onClick={() => window.open("https://www.facebook.com/steeltimellc")}
                             />
                         </Box>
                     </Grid>

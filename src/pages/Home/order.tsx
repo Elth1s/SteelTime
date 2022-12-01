@@ -5,7 +5,7 @@ import AskOrOrderForm from "../../components/AskOrOrderForm"
 
 import arrow_left_orange from "../../assets/icons/arrow-left-orange.svg"
 
-const ProductionOrder = () => {
+const HomeOrder = () => {
     const navigate = useNavigate();
 
     return (
@@ -16,7 +16,7 @@ const ProductionOrder = () => {
                     alt="arrow_left_orange"
                     style={{ cursor: "pointer" }}
                     onClick={() => {
-                        navigate("/production")
+                        navigate("/")
                         window.scrollTo(0, 0);
                     }}
                 />
@@ -28,4 +28,4 @@ const ProductionOrder = () => {
     )
 }
 
-export default ProductionOrder
+export default HomeOrder

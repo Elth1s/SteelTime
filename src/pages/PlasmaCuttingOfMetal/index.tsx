@@ -3,14 +3,16 @@ import { useTranslation } from "react-i18next"
 
 import sequence_of_actions from "../../assets/icons/sequence-of-actions-plasma-cutting.svg"
 
-import plasma_cutting_of_metal_first from "../../assets/backgrounds/services/plasma-cutting-of-metal-first.png"
-import plasma_cutting_of_metal_first_small from "../../assets/backgrounds/services/plasma-cutting-of-metal-first-small.png"
-import plasma_cutting_of_metal_second from "../../assets/backgrounds/services/plasma-cutting-of-metal-second.png"
-import plasma_cutting_of_metal_second_small from "../../assets/backgrounds/services/plasma-cutting-of-metal-second-small.png"
-import plasma_cutting_of_metal_third from "../../assets/backgrounds/services/plasma-cutting-of-metal-third.png"
-import plasma_cutting_of_metal_third_small from "../../assets/backgrounds/services/plasma-cutting-of-metal-third-small.png"
-import plasma_cutting_of_metal_fourth from "../../assets/backgrounds/services/plasma-cutting-of-metal-fourth.png"
-import plasma_cutting_of_metal_fourth_small from "../../assets/backgrounds/services/plasma-cutting-of-metal-fourth-small.png"
+import {
+    plasma_cutting_of_metal_first,
+    plasma_cutting_of_metal_first_small,
+    plasma_cutting_of_metal_second,
+    plasma_cutting_of_metal_second_small,
+    plasma_cutting_of_metal_third,
+    plasma_cutting_of_metal_third_small,
+    plasma_cutting_of_metal_fourth,
+    plasma_cutting_of_metal_fourth_small
+} from "../../assets/backgrounds/services"
 
 const PlasmaCuttingOfMetal = () => {
     const { t } = useTranslation();

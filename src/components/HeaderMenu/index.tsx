@@ -196,8 +196,7 @@ export default function HeaderMenu() {
                                             underline="none"
                                             color="inherit"
                                             to={item.link}
-                                            onClick={() => { setIsOpen(false); setIsOpenServices(false) }
-                                            }
+                                            onClick={() => { setIsOpen(false); setIsOpenServices(false) }}
                                         >
                                             <Typography component="h5" fontSize="20px" fontFamily="Jura" fontWeight="600" sx={{ mt: "15px" }}>
                                                 {item.title}
@@ -245,7 +244,7 @@ export default function HeaderMenu() {
                                                         {item.title}
                                                     </Typography>
                                                 </HashLinkRouter>
-                                                : <LinkRouter key={`header_menu_item_${index}`} underline="none" color={item.isSelected ? "primary" : "inherit"} to={item.link} >
+                                                : <LinkRouter key={`header_menu_item_${index}`} underline="none" color={item.isSelected ? "primary" : "inherit"} to={item.link} onClick={toggleDrawer(false)}>
                                                     <Typography component="h5" fontSize="20px" fontFamily="Jura" fontWeight="600" sx={{ mb: "5px" }}>
                                                         {item.title}
                                                     </Typography>

@@ -8,6 +8,7 @@ import DefaultLayout from './containers/DefaultLayout';
 import BendingOfReinforcement from './pages/BendingOfReinforcement';
 
 import Home from './pages/Home';
+import HomeOrder from './pages/Home/order';
 import LatheWorks from './pages/LatheWorks';
 import MetalCutting from './pages/MetalCutting';
 import PlasmaCuttingOfMetal from './pages/PlasmaCuttingOfMetal';
@@ -62,6 +63,7 @@ const App = () => {
 
             <Route path="/" element={<Home />} />
             <Route element={<DefaultLayout />}>
+              <Route path="/order" element={<HomeOrder />} />
               <Route path="/production" element={<Production />} />
               <Route path="/production/order" element={<ProductionOrder />} />
               <Route path="/production/building-metal-structures" element={<BuildingMetalStructures />} />

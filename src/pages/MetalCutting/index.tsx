@@ -3,10 +3,12 @@ import { useTranslation } from "react-i18next"
 
 import sequence_of_actions from "../../assets/icons/sequence-of-actions-metal-cutting-a-bandsaw.svg"
 
-import metal_cutting_a_bandsaw_first from "../../assets/backgrounds/services/metal-cutting-a-bandsaw-first.png"
-import metal_cutting_a_bandsaw_second from "../../assets/backgrounds/services/metal-cutting-a-bandsaw-second.png"
-import metal_cutting_a_bandsaw_third from "../../assets/backgrounds/services/metal-cutting-a-bandsaw-third.png"
-import metal_cutting_a_bandsaw_fourth from "../../assets/backgrounds/services/metal-cutting-a-bandsaw-fourth.png"
+import {
+    metal_cutting_a_bandsaw_first,
+    metal_cutting_a_bandsaw_second,
+    metal_cutting_a_bandsaw_third,
+    metal_cutting_a_bandsaw_fourth
+} from "../../assets/backgrounds/services"
 
 const MetalCutting = () => {
     const { t } = useTranslation();

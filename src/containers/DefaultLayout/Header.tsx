@@ -98,7 +98,7 @@ const Header = () => {
                     alt="logo"
                 />
             </LinkRouter>
-            <Box sx={{ display: { lg: "flex", xs: "none" }, "&:last-child": { mr: 0 } }}>
+            <Box sx={{ display: { lg: "flex", xs: "none" }, alignItems: "center", "&:last-child": { mr: 0 } }}>
                 {links.map((item, index) => {
                     if (item.link !== "") {
                         return (
@@ -123,7 +123,7 @@ const Header = () => {
                 })}
             </Box>
             <HeaderMenu />
-        </Container>
+        </Container >
     );
 };
 

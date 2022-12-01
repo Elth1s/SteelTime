@@ -70,20 +70,21 @@ const Furnace = () => {
                     {t("pages.production.furnace-p4")}
                 </Typography>
             </Box>
-            <Box sx={{ display: "flex", flexWrap: "wrap", "&>*:nth-of-type(2n)": { mr: "0px" }, mt: { lg: "108px", xs: "20px" } }}>
+            <Box sx={{ display: "flex", justifyContent: "center", flexWrap: "wrap", "&>*:nth-of-type(2n)": { mr: "0px" }, mt: { lg: "108px", xs: "20px" } }}>
                 {images.map((item, index) => {
                     return (
-                        <Box key={`image_${index}`} sx={{ width: { lg: "629px", xs: "346px" }, height: { lg: "511px", xs: "281px" }, mb: { lg: "36px", xs: "10px" }, mr: { lg: "36px", xs: "0px" } }}>
+                        <Box key={`image_${index}`} sx={{ width: { lg: "629px", md: "400px", xs: "346px" }, height: { lg: "511px", md: "325px", xs: "281px" }, mb: { lg: "36px", md: "15px", xs: "10px" }, mr: { lg: "36px", md: "30px", xs: "0px" } }}>
                             <img
                                 style={{ width: "100%", height: "100%" }}
                                 src={item}
                                 alt={`image_${index}`}
+                                loading="lazy"
                             />
                         </Box>
                     )
                 })}
             </Box>
-            <Box sx={{ mt: { lg: "125px", xs: "80px" }, mb: { lg: "195px", xs: "80px" }, px: { lg: "347px", xs: "19px" } }}>
+            <Box sx={{ mt: { lg: "125px", xs: "80px" }, mb: { lg: "195px", xs: "80px" }, px: { lg: "347px", md: "155px", xs: "19px" } }}>
                 <AskOrOrderForm />
             </Box>
         </>

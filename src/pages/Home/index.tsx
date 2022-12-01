@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import HeaderMenu from "../../components/HeaderMenu";
@@ -23,47 +24,46 @@ import homepage_header_dark from "../../assets/backgrounds/home/homepage-header-
 import header_logo_light from "../../assets/logos/header-logo-light.svg";
 import header_logo_dark from "../../assets/logos/header-logo-dark.svg";
 
-import abous_us from "../../assets/backgrounds/home/about-us.png";
-
-import building_metal_structures from "../../assets/backgrounds/home/building-metal-structures.png"
-import building_metal_structures_small from "../../assets/backgrounds/home/building-metal-structures-small.png"
-import metal_products from "../../assets/backgrounds/home/metal-products.png"
-import metal_products_small from "../../assets/backgrounds/home/metal-products-small.png"
-import unusual_metal_structures from "../../assets/backgrounds/home/unusual-metal-structures.png"
-import unusual_metal_structures_small from "../../assets/backgrounds/home/unusual-metal-structures-small.png"
-
-import metal_cover_1 from "../../assets/backgrounds/home/metal-cover-1.png"
-import metal_cover_medium_1 from "../../assets/backgrounds/home/metal-cover-medium-1.png"
-import metal_cover_small_1 from "../../assets/backgrounds/home/metal-cover-small-1.png"
-import metal_cover_2 from "../../assets/backgrounds/home/metal-cover-2.png"
-import metal_cover_medium_2 from "../../assets/backgrounds/home/metal-cover-medium-2.png"
-import metal_cover_small_2 from "../../assets/backgrounds/home/metal-cover-small-2.png"
-import armature_1 from "../../assets/backgrounds/home/armature-1.png"
-import armature_medium_1 from "../../assets/backgrounds/home/armature-medium-1.png"
-import armature_small_1 from "../../assets/backgrounds/home/armature-small-1.png"
-import armature_2 from "../../assets/backgrounds/home/armature-2.png"
-import armature_medium_2 from "../../assets/backgrounds/home/armature-medium-2.png"
-import armature_small_2 from "../../assets/backgrounds/home/armature-small-2.png"
-import laser_cutting_of_metal_1 from "../../assets/backgrounds/home/laser-cutting-of-metal-1.png"
-import laser_cutting_of_metal_medium_1 from "../../assets/backgrounds/home/laser-cutting-of-metal-medium-1.png"
-import laser_cutting_of_metal_small_1 from "../../assets/backgrounds/home/laser-cutting-of-metal-small-1.png"
-import laser_cutting_of_metal_2 from "../../assets/backgrounds/home/laser-cutting-of-metal-2.png"
-import laser_cutting_of_metal_medium_2 from "../../assets/backgrounds/home/laser-cutting-of-metal-medium-2.png"
-import laser_cutting_of_metal_small_2 from "../../assets/backgrounds/home/laser-cutting-of-metal-small-2.png"
-
-import reviews_dark from "../../assets/backgrounds/home/reviews-dark.png"
-import reviews_light from "../../assets/backgrounds/home/reviews-light.png"
-import reviews_dark_medium from "../../assets/backgrounds/home/reviews-dark-medium.png"
-import reviews_light_medium from "../../assets/backgrounds/home/reviews-light-medium.png"
-import reviews_dark_small from "../../assets/backgrounds/home/reviews-dark-small.png"
-import reviews_light_small from "../../assets/backgrounds/home/reviews-light-small.png"
-
 import footer_logo_light from "../../assets/logos/footer-logo-light.svg"
 import footer_logo_dark from "../../assets/logos/footer-logo-dark.svg"
 import instagram_medium_light from "../../assets/icons/instagram-medium-light.svg";
 import instagram_medium_dark from "../../assets/icons/instagram-medium-dark.svg";
 import facebook_medium_light from "../../assets/icons/facebook-medium-light.svg";
 import facebook_medium_dark from "../../assets/icons/facebook-medium-dark.svg";
+
+import {
+    about_us,
+    building_metal_structures,
+    building_metal_structures_small,
+    metal_products,
+    metal_products_small,
+    unusual_metal_structures,
+    unusual_metal_structures_small,
+    metal_cover_1,
+    metal_cover_medium_1,
+    metal_cover_small_1,
+    metal_cover_2,
+    metal_cover_medium_2,
+    metal_cover_small_2,
+    armature_1,
+    armature_medium_1,
+    armature_small_1,
+    armature_2,
+    armature_medium_2,
+    armature_small_2,
+    laser_cutting_of_metal_1,
+    laser_cutting_of_metal_medium_1,
+    laser_cutting_of_metal_small_1,
+    laser_cutting_of_metal_2,
+    laser_cutting_of_metal_medium_2,
+    laser_cutting_of_metal_small_2,
+    reviews_dark,
+    reviews_light,
+    reviews_dark_medium,
+    reviews_light_medium,
+    reviews_dark_small,
+    reviews_light_small,
+} from "../../assets/backgrounds/home";
 
 import { IHeaderMenuItem } from "../../types/types";
 
@@ -77,6 +77,7 @@ interface IWorkWithUsInfo {
 const Header = () => {
     const { palette } = useTheme();
     const { t } = useTranslation();
+    const navigate = useNavigate();
 
     useEffect(() => {
         document.body.className = "body-home-style"
@@ -196,7 +197,7 @@ const Header = () => {
                                 alt="logo"
                             />
                         </LinkRouter>
-                        <Box sx={{ display: { lg: "flex", xs: "none" }, "&:last-child": { mr: 0 } }}>
+                        <Box sx={{ display: { lg: "flex", alignItems: "center", xs: "none" }, "&:last-child": { mr: 0 } }}>
                             {links.map((item, index) => {
                                 if (item.link !== "") {
                                     return (
@@ -250,6 +251,7 @@ const Header = () => {
                                     color: palette.primary.main
                                 }
                             }}
+                            onClick={() => navigate("order")}
                         >
                             {t("pages.home.calculate-the-cost")}
                         </Button>
@@ -265,7 +267,7 @@ const Header = () => {
                     {/* lg */}
                     <Box sx={{ display: { lg: "flex", md: "none", xs: "none" }, alignItems: "center", mt: "40px" }}>
                         <img
-                            src={abous_us}
+                            src={about_us}
                             alt="about_us"
                         />
                         <Box sx={{ ml: { lg: "120px", md: "50px" } }}>
@@ -282,7 +284,7 @@ const Header = () => {
                         <Box sx={{ width: "350px", height: "304px" }}>
                             <img
                                 style={{ width: "100%", height: "100%" }}
-                                src={abous_us}
+                                src={about_us}
                                 alt="about_us"
                             />
                         </Box>
@@ -305,7 +307,7 @@ const Header = () => {
                         </Typography>
                         <img
                             style={{ marginTop: "15px" }}
-                            src={abous_us}
+                            src={about_us}
                             alt="about_us"
                         />
                     </Box>
@@ -384,7 +386,7 @@ const Header = () => {
                             <Typography align="center" variant="h5" fontFamily="Raleway" fontWeight="500" textTransform="uppercase">
                                 {t("pages.home.metal-products")}
                             </Typography>
-                            <Box sx={{ width: { lg: "305px", md: "276px" }, height: { lg: "305px", md: "276px" }, mt: { lg: "36px", md: "20px" }, mx: "auto" }}>
+                            <Box sx={{ width: { lg: "295px", md: "276px" }, height: { lg: "305px", md: "276px" }, mt: { lg: "36px", md: "20px" }, mx: "auto" }}>
                                 <img
                                     src={metal_products}
                                     alt="metal_products"
@@ -727,7 +729,7 @@ const Header = () => {
                     background: palette.background.default
                 }}
             >
-                <Container sx={{ maxWidth: { lg: "1270px", md: "910px", xs: "350px" } }}>
+                <Container sx={{ maxWidth: { lg: "1270px", md: "900px", xs: "340px" } }}>
                     {/* lg,md */}
                     <Grid container sx={{ display: { lg: "flex", md: "flex", xs: "none" }, px: "5px" }}>
                         <Grid item xs={2}>
@@ -745,10 +747,10 @@ const Header = () => {
                                 {t("containers.footer.contacts")}
                             </Typography>
                             <Typography variant="h5" fontFamily="Jura" fontWeight="600" sx={{ mt: "40px", mb: "10px" }}>
-                                + 380 98 2567 85
+                                + 380 67 2345 442
                             </Typography>
                             <Typography variant="h5" fontFamily="Raleway" fontWeight="500">
-                                metalinvest@gmail.com
+                                steeltime.c@gmail.com
                             </Typography>
                         </Grid>
                         <Grid item xs={1} />
@@ -766,6 +768,7 @@ const Header = () => {
                                     src={palette.mode === "dark" ? facebook_medium_light : facebook_medium_dark}
                                     alt="facebook"
                                     style={{ cursor: "pointer" }}
+                                    onClick={() => window.open("https://www.facebook.com/steeltimellc")}
                                 />
                             </Box>
                         </Grid>
@@ -777,10 +780,10 @@ const Header = () => {
                                 {t("containers.footer.contacts")}
                             </Typography>
                             <Typography variant="h3" fontFamily="Jura" fontWeight="600" sx={{ mt: "20px", mb: "5px" }}>
-                                + 380 98 2567 85
+                                + 380 67 2345 442
                             </Typography>
                             <Typography variant="h3" fontFamily="Raleway" fontWeight="500">
-                                metalinvest@gmail.com
+                                steeltime.c@gmail.com
                             </Typography>
                         </Grid>
                         <Grid item xs={2}>
@@ -797,6 +800,7 @@ const Header = () => {
                                     src={palette.mode === "dark" ? facebook_medium_light : facebook_medium_dark}
                                     alt="facebook"
                                     style={{ cursor: "pointer" }}
+                                    onClick={() => window.open("https://www.facebook.com/steeltimellc")}
                                 />
                             </Box>
                         </Grid>

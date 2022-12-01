@@ -3,16 +3,19 @@ import { useTranslation } from "react-i18next"
 
 import sequence_of_actions from "../../assets/icons/sequence-of-actions-bending-of-reinforcement.svg"
 
-import bending_of_reinforcement_first from "../../assets/backgrounds/services/bending-of-reinforcement-first.png"
-import bending_of_reinforcement_first_small from "../../assets/backgrounds/services/bending-of-reinforcement-first-small.png"
-import bending_of_reinforcement_second from "../../assets/backgrounds/services/bending-of-reinforcement-second.png"
-import bending_of_reinforcement_second_small from "../../assets/backgrounds/services/bending-of-reinforcement-second-small.png"
-import bending_of_reinforcement_third from "../../assets/backgrounds/services/bending-of-reinforcement-third.png"
-import bending_of_reinforcement_third_medium from "../../assets/backgrounds/services/bending-of-reinforcement-third-medium.png"
-import bending_of_reinforcement_third_small from "../../assets/backgrounds/services/bending-of-reinforcement-third-small.png"
-import bending_of_reinforcement_fourth from "../../assets/backgrounds/services/bending-of-reinforcement-fourth.png"
-import bending_of_reinforcement_fourth_medium from "../../assets/backgrounds/services/bending-of-reinforcement-fourth-medium.png"
-import bending_of_reinforcement_fourth_small from "../../assets/backgrounds/services/bending-of-reinforcement-fourth-small.png"
+import {
+    bending_of_reinforcement_first,
+    bending_of_reinforcement_first_small,
+    bending_of_reinforcement_second,
+    bending_of_reinforcement_second_small,
+    bending_of_reinforcement_third,
+    bending_of_reinforcement_third_medium,
+    bending_of_reinforcement_third_small,
+    bending_of_reinforcement_fourth,
+    bending_of_reinforcement_fourth_medium,
+    bending_of_reinforcement_fourth_small
+} from "../../assets/backgrounds/services"
+
 
 const BendingOfReinforcement = () => {
     const { t } = useTranslation();
@@ -104,7 +107,7 @@ const BendingOfReinforcement = () => {
                     </Box>
                 </Grid>
                 <Grid item md={3} sx={{ display: { lg: "none", md: "block", xs: "none" } }}>
-                    <Grid container spacing="26px" sx={{ ml: "auto" }}>
+                    <Grid container rowSpacing="20px" sx={{ ml: "auto" }}>
                         <Grid item md={12} >
                             <img
                                 src={bending_of_reinforcement_first_small}
