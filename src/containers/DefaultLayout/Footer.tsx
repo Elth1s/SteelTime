@@ -22,14 +22,14 @@ const Footer = () => {
     const { t } = useTranslation();
     const { palette } = useTheme();
 
-    const [isTooltipOpen, setIsTooltipOpen] = useState(false)
+    const [isPhoneCopied, setIsPhoneCopied] = useState("+ 380 67 2345 442")
 
     const displayPhoneToolTip = () => {
-        if (!isTooltipOpen) {
-            setIsTooltipOpen(true); // show tooltip
+        if (isPhoneCopied === "+ 380 67 2345 442") {
+            setIsPhoneCopied(t("components.tooltips.copied")); // show tooltip
             setTimeout(() => {
-                setIsTooltipOpen(false); // remove/hide tooltip
-            }, 3000);
+                setIsPhoneCopied("+ 380 67 2345 442"); // remove/hide tooltip
+            }, 1000);
         }
     };
     return (
@@ -59,40 +59,22 @@ const Footer = () => {
                         <Typography variant="h5" fontFamily="Jura" fontWeight="700">
                             {t("containers.footer.contacts")}
                         </Typography>
-                        <Tooltip
-                            open={isTooltipOpen}
-                            componentsProps={{
-                                tooltip: {
-                                    sx: {
-                                        background: palette.background.default,
-                                        color: "inherit",
-                                        borderRadius: 0,
-                                        fontSize: "16px",
-                                        fontFamily: "Jura"
-                                    },
-                                },
+                        <Typography
+                            variant="h5"
+                            fontFamily="Jura"
+                            fontWeight="600"
+                            sx={{
+                                mt: "20px",
+                                mb: "5px",
+                                cursor: "pointer"
                             }}
-                            PopperProps={{
-                                modifiers: [
-                                    {
-                                        name: "offset",
-                                        options: {
-                                            offset: [-50, 0],
-                                        },
-                                    },
-                                ],
-                            }}
-                            placement="bottom"
-                            title={t("components.tooltips.copied")}
                             onClick={() => {
                                 displayPhoneToolTip();
                                 navigator.clipboard.writeText("+380672345442")
                             }}
                         >
-                            <Typography variant="h3" fontFamily="Jura" fontWeight="600" sx={{ mt: "20px", mb: "5px", cursor: "pointer" }} >
-                                + 380 67 2345 442
-                            </Typography>
-                        </Tooltip>
+                            {isPhoneCopied}
+                        </Typography>
                         <Typography variant="h5" fontFamily="Raleway" fontWeight="500">
                             steeltime.c@gmail.com
                         </Typography>
@@ -123,40 +105,22 @@ const Footer = () => {
                         <Typography variant="h2" fontFamily="Jura" fontWeight="700">
                             {t("containers.footer.contacts")}
                         </Typography>
-                        <Tooltip
-                            open={isTooltipOpen}
-                            componentsProps={{
-                                tooltip: {
-                                    sx: {
-                                        background: palette.background.default,
-                                        color: "inherit",
-                                        borderRadius: 0,
-                                        fontSize: "16px",
-                                        fontFamily: "Jura"
-                                    },
-                                },
+                        <Typography
+                            variant="h3"
+                            fontFamily="Jura"
+                            fontWeight="600"
+                            sx={{
+                                mt: "20px",
+                                mb: "5px",
+                                cursor: "pointer"
                             }}
-                            PopperProps={{
-                                modifiers: [
-                                    {
-                                        name: "offset",
-                                        options: {
-                                            offset: [-50, 0],
-                                        },
-                                    },
-                                ],
-                            }}
-                            placement="bottom"
-                            title={t("components.tooltips.copied")}
                             onClick={() => {
                                 displayPhoneToolTip();
                                 navigator.clipboard.writeText("+380672345442")
                             }}
                         >
-                            <Typography variant="h3" fontFamily="Jura" fontWeight="600" sx={{ mt: "20px", mb: "5px", cursor: "pointer" }} >
-                                + 380 67 2345 442
-                            </Typography>
-                        </Tooltip>
+                            {isPhoneCopied}
+                        </Typography>
                         <Typography variant="h4" fontFamily="Raleway" fontWeight="500">
                             steeltime.c@gmail.com
                         </Typography>
