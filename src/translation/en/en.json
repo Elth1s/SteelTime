@@ -67,7 +67,96 @@
                 "building-metal-structures-p3": "Support fasteners of tower cranes",
                 "building-metal-structures-p4": "Input group",
                 "non-standard-metal-structures-and-equipment": "Non-standard metal structures and equipment",
-                "designer-steel-products": "Designer steel products"
+                "designer-steel-products": "Designer steel products",
+                "designer-steel-products-p1": "Metallic decor looks good in any style: Either classic or hi-tech. For example, you can order an elegant table or an elegant candle light to emphasize the refinement of the interior.",
+                "designer-steel-products-p2": "Furniture and partitions in loft style",
+                "furnace": "Furnace “буржуйка”",
+                "furnace-h": "Metal furnace, from the manufacturer.",
+                "furnace-p1": "Height 550 mm",
+                "furnace-p2": "Diameter 400 mm",
+                "furnace-p3": "Weight 40 kg",
+                "furnace-p4": "Cooking surface",
+                "protective-container-for-generator": "Protective container for generator",
+                "protective-container-for-generator-h1": "Overall dimensions:",
+                "protective-container-for-generator-h1-p1": "Length - 1000 mm",
+                "protective-container-for-generator-h1-p2": "Height - 1000 (1100) mm",
+                "protective-container-for-generator-h1-p3": "Width - 1000 mm",
+                "protective-container-for-generator-h1-p4": "For petrol generators with capacity from 6 to 8 kW",
+                "protective-container-for-generator-h2": "Equipment:",
+                "protective-container-for-generator-h2-p1": "Perforation for ventilation and optimum cooling of engine compartment",
+                "protective-container-for-generator-h2-p2": "Priming and painting 80 microns, color according to RAL.",
+                "protective-container-for-generator-h2-p3": "For access to the generator (fuel filling and service) on the top and the front side there are doors",
+                "protective-container-for-generator-h3": "Packaging: A stretch film corrugated board.",
+                "protective-container-for-generator-h4": "Delivery: by a carrier in the cities of Ukraine."
+            },
+            "furnace": {
+                "name": "Буржуйка",
+                "furnace-p1": "— metal stove for heating rooms and cooking, from the manufacturer.",
+                "furnace-p2": "The height of the metal product is 550 millimeters. The diameter of the product is 400 millimeters.",
+                "furnace-p3": "The weight of the буржуйка is 40 kilograms. There is a cooking surface for cooking."
+            },
+            "building-metal-structures": {
+                "name": "Building metal structures",
+                "building-metal-structures-p": " – load-bearing elements of quickly erected buildings, such as beams, trusses, columns, wall and roof purlins.",
+                "building-metal-structures-p1": "They are made of steel profiles, including thin-walled ones, and during assembly and installation, they are securely fastened together with special parts and metal products or with the help of welding.",
+                "building-metal-structures-p2": "Building structures can have different shapes, but the main requirement for them is strength, resistance to mechanical loads and durability.",
+                "building-metal-structures-p3": "We carefully control the quality of steel profiles and all stages of production of load-bearing structural elements from them. ",
+                "building-metal-structures-p4": "Metal structures manufactured by our company fully meet the requirements and current standards."
+            },
+            "reinforcement-frames-and-embedded-products": {
+                "name": "Armature frames",
+                "reinforcement-frames-and-embedded-products-p": " – it is the leading element of reinforced concrete piles, thanks to which their strength and stability is ensured.",
+                "reinforcement-frames-and-embedded-products-p1": "Boring and injection piles with a diameter of 150 to 1500 mm are an indispensable supporting element of buildings and structures in modern construction.",
+                "reinforcement-frames-and-embedded-products-p2": "The reinforcing frame prevents pile deformation and significantly reduces the risk of the structure collapsing. ",
+                "reinforcement-frames-and-embedded-products-p3": "Frames are manufactured by our company from steel smooth or ribbed rod, strip and wire on special equipment according to the technological standard. ",
+                "reinforcement-frames-and-embedded-products-p4": "In the manufacturing process, we control the quality of raw materials and the final product, taking into account the current requirements for similar metal structures that experience high mechanical loads during operation."
+            },
+            "anchor-blocks-and-foundation-bolts": {
+                "name": "Anchor blocks and bolts",
+                "anchor-blocks-and-foundation-bolts-p": "– elements that are laid during the arrangement of the foundation base and are intended for fastening production equipment and metal structures. ",
+                "anchor-blocks-and-foundation-bolts-p1": "These fastening elements ensure the stability of equipment and structures during operation, reliably fix them on the base, but if necessary, do not prevent the removal and transfer of units and frames to another place. ",
+                "anchor-blocks-and-foundation-bolts-p2": "Collateral parts are made of rolled steel (sheet, armature, etc.). ",
+                "anchor-blocks-and-foundation-bolts-p3": "Our company manufactures to order anchor bolts and foundation blocks of any complexity according to GOST or non-standard parameters according to the customer's drawings. ",
+                "anchor-blocks-and-foundation-bolts-p4": "During production, the quality of raw materials and the final product, its compliance with the requirements of the standard and reliability under heavy mechanical loads and climatic conditions are strictly controlled."
+            },
+            "support-fasteners-of-tower-cranes": {
+                "name": "tower crane construction and maintenance",
+                "support-fasteners-of-tower-cranes-pf": "Designed to ensure stability",
+                "support-fasteners-of-tower-cranes-ps": "it in a vertical position.",
+                "support-fasteners-of-tower-cranes-p1": "For this, anchors are used for fastening to the base from below and horizontal supports that hold the main structure in a vertical position. ",
+                "support-fasteners-of-tower-cranes-p2": "Anchors and horizontal supports from beams - ties, tie rods, crane ties, frames are made of rolled steel - corner, channel, pipe, sheet or I-beam. ",
+                "support-fasteners-of-tower-cranes-p3": "Our company manufactures tower cranes of any configuration and complexity from high-quality materials to order according to the customer's individual drawings. ",
+                "support-fasteners-of-tower-cranes-p4": "We guarantee the strength and reliability of our products, as well as their compliance with current standards."
+            },
+            "input-group": {
+                "name": "Stairs, porch, railing, canopy, ramp, doors and other elements",
+                "input-group-p": "belong to the entrance group and are located at the entrance to the building, including its inner hall.",
+                "input-group-p1": "Such elements, united by a single design, are very popular in trade, office, commercial production companies that seek to emphasize their own corporate style and attract the attention of the target audience. ",
+                "input-group-p2": "Our company is ready to manufacture elements of the entrance group from metal according to sketches. For this, we have at our disposal the necessary equipment and experienced personnel, ready to perform the most difficult tasks. ",
+                "input-group-p3": "During the production of metal products, we strictly control the quality of raw materials and the finished product, striving to fully satisfy the wishes of the customer. ",
+                "input-group-p4": "Thanks to many years of experience and hard work, we have taken key positions in the market and gained a reputation as a reliable partner that fulfills its obligations."
+            },
+            "non-standard-metal-structures-and-equipment": {
+                "name": "non-standard metal structures",
+                "non-standard-metal-structures-and-equipment-pf": "Production",
+                "non-standard-metal-structures-and-equipment-ps": "assumes that the manufacturer, without going beyond the accepted rules, creates new constructive solutions and models.",
+                "non-standard-metal-structures-and-equipment-p1": "Such designs are widely popular among creative architects and designers who want to implement exclusive ideas.",
+                "non-standard-metal-structures-and-equipment-p2": "Our company manufactures non-standard metal structures according to your drawings, using high-quality rolled steel - L, Z, C, U, T configuration profiles, round and profiled pipes, circle, square, sheet, strip and other assortment of shaped and graded or reinforced rolled products. ",
+                "non-standard-metal-structures-and-equipment-p3": "Our designs are reliable, stable and durable. ",
+                "non-standard-metal-structures-and-equipment-p4": "Extensive experience in the field of manufacturing metal structures makes us a leading player in this field, which is trusted and constantly uses its services.",
+                "non-standard-metal-structures-and-equipment-p5": "Often in industry, agriculture and other industries there is a need to manufacture non-standard equipment to replace worn out unique equipment and structural elements that are part of the technological lines. ",
+                "non-standard-metal-structures-and-equipment-p6": "Our company manufactures non-standard equipment with non-standard dimensions and technical data to order according to your drawings.",
+                "non-standard-metal-structures-and-equipment-p7": "We will manufacture containers, tanks, bunkers, silo groups, production containers and other equipment.",
+                "non-standard-metal-structures-and-equipment-p8": "By ordering the manufacture of equipment from us, you can be sure of reliability and functionality, as well as the high quality of the final product. ",
+                "non-standard-metal-structures-and-equipment-p9": "We have an equipped production base with the necessary machines and units that allow us to manufacture equipment of any configuration and size."
+            },
+            "loft-style-furniture-and-partitions": {
+                "name": "Industrial interior style,",
+                "loft-style-furniture-and-partitions-p": "invented in the middle of the last century, does not lose its popularity to this day.",
+                "loft-style-furniture-and-partitions-p1": "This style is truly universal and democratic, both luxury and simplicity are acceptable in it. ",
+                "loft-style-furniture-and-partitions-p2": "We offer the manufacture of partitions and furniture in the style of a loft made of metal, filled with glass and other materials. ",
+                "loft-style-furniture-and-partitions-p3": "Deaf partitions, as well as equipped with hinged, sliding or folding doors in an «accordion», are appropriate both in residential and in office, retail, and industrial premises. ",
+                "loft-style-furniture-and-partitions-p4": "With the help of partitions, you can carry out successful zoning, and with loft-style furniture you can create coziness and a unique atmosphere."
             },
             "plasma-cutting-of-metal": {
                 "first-p": "Processing of metal blanks up to 30 mm thick using plasma cutting.",
@@ -99,7 +188,9 @@
         "components": {
             "buttons": {
                 "more": "More",
-                "order": "Order"
+                "order": "Order",
+                "details": "Details",
+                "expand": "Expand"
             },
             "header-menu": {
                 "social-networks": "Social networks",
@@ -112,6 +203,13 @@
             "phone": "Phone number",
             "email": "Email",
             "message": "Message"
+        },
+        "validationMessages": {
+            "is-required-first": "is required",
+            "is-required-second": "is required",
+            "is-required-third": "is required",
+            "is-not-valid-first": "is not valid",
+            "is-not-valid-second": "is not valid"
         }
     }
 }

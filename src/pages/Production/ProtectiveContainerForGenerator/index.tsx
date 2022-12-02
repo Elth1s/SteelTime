@@ -118,6 +118,8 @@ const ProtectiveContainerForGenerator = () => {
                                     />
                                 </Box>
                             )
+                        else
+                            return <></>
                     })}
                 </Box>
                 <Box sx={{ display: { lg: "none", md: "none", xs: "flex" }, justifyContent: "center", flexWrap: "wrap", "&>*:nth-of-type(2n)": { mr: "0px" }, mt: { lg: "80px", xs: "30px" } }}>
@@ -133,6 +135,8 @@ const ProtectiveContainerForGenerator = () => {
                                     />
                                 </Box>
                             )
+                        else
+                            return <></>
                     })}
                 </Box>
                 {!showAllImages && <Box

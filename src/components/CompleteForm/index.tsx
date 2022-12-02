@@ -3,10 +3,10 @@ import { FC } from "react"
 
 import complete from "../../assets/icons/complete.svg"
 
-interface CompleteForm {
+interface CompleteFormProps {
     open: boolean
 }
-const CompleteForm: FC<CompleteForm> = ({ open }) => {
+const CompleteForm: FC<CompleteFormProps> = ({ open }) => {
     return (
         <Dialog
             open={open}

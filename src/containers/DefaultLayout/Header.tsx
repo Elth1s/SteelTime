@@ -68,8 +68,7 @@ const Header = () => {
         },
         {
             title: t("containers.header.gallery"),
-            link: "/#gallery",
-            isId: true
+            link: "/order"
         },
     ];
 

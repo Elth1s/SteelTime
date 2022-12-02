@@ -14,7 +14,7 @@ body {
 .body-default-container-style {
   background-image: url("./assets/backgrounds/body-background.png");
   background-repeat: repeat-y;
-  background-position: top 220px center;
+  background-position: top 220px left 80%;
 }
 
 /* Scrollbar */

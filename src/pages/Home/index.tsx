@@ -6,7 +6,6 @@ import {
     hexToRgb,
     keyframes,
     styled,
-    Tooltip,
     Typography,
     useTheme,
 } from "@mui/material";
@@ -74,6 +73,7 @@ import {
 import { IHeaderMenuItem } from "../../types/types";
 
 import "../../index.css"
+import { Helmet } from "react-helmet";
 
 interface IWorkWithUsInfo {
     title: string,
@@ -101,7 +101,7 @@ const Header = () => {
     const { t } = useTranslation();
     const navigate = useNavigate();
 
-    const [isPhoneCopied, setIsPhoneCopied] = useState("+ 380 67 2345 442")
+    const [isPhoneCopied, setIsPhoneCopied] = useState(false)
 
     const aboutUsRef = useRef<HTMLDivElement>(null)
 
@@ -147,8 +147,7 @@ const Header = () => {
         },
         {
             title: t("containers.header.contacts"),
-            link: "/#contacts",
-            isId: true
+            link: "/order"
         },
         {
             title: t("containers.header.gallery"),
@@ -185,16 +184,21 @@ const Header = () => {
     ]
 
     const displayPhoneToolTip = () => {
-        if (isPhoneCopied === "+ 380 67 2345 442") {
-            setIsPhoneCopied(t("components.tooltips.copied")); // show tooltip
+        if (!isPhoneCopied) {
+            setIsPhoneCopied(true); // show tooltip
             setTimeout(() => {
-                setIsPhoneCopied("+ 380 67 2345 442"); // remove/hide tooltip
-            }, 1000);
+                setIsPhoneCopied(false); // remove/hide tooltip
+            }, 2000);
         }
     };
 
     return (
         <>
+            <Helmet>
+                <title>Steel Time LLC.Обробка металу. Київ. Україна</title>
+                <meta name="description"
+                    content="Обробка металу, металічні конструкції, Буржуйки, Контейнери для генераторів, дизайнерські вироби, дизайн декору, вхідні матеріали. + 380 67 2345 442" />
+            </Helmet>
             <Box component="header" sx={{
                 width: "100%",
                 height: { lg: "960px", md: "710px", xs: "541px" },
@@ -842,8 +846,9 @@ const Header = () => {
                                     displayPhoneToolTip();
                                     navigator.clipboard.writeText("+380672345442")
                                 }}
+                                color={isPhoneCopied ? "primary" : "inherit"}
                             >
-                                {isPhoneCopied}
+                                + 380 67 2345 442
                             </Typography>
                             <Typography variant="h5" fontFamily="Raleway" fontWeight="500">
                                 steeltime.c@gmail.com

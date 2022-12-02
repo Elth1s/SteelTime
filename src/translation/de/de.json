@@ -67,7 +67,96 @@
                 "building-metal-structures-p3": "Stützbefestigungen von Turmdrehkranen",
                 "building-metal-structures-p4": "Eingangsgruppe",
                 "non-standard-metal-structures-and-equipment": "Nicht standardmäßige Metallkonstruktionen und -ausrüstungen",
-                "designer-steel-products": "Designerprodukte aus Stahl"
+                "designer-steel-products": "Designerprodukte aus Stahl",
+                "designer-steel-products-p1": "Metallic-Dekor macht sich in jedem Stil gut: Ob klassisch oder Hightech. Sie können zum Beispiel einen eleganten Tisch oder ein elegantes Kerzenlicht bestellen, um die Raffinesse des Interieurs zu betonen.",
+                "designer-steel-products-p2": "Möbel und Trennwände im Loft-Stil",
+                "furnace": "Schmelzofen “буржуйка”",
+                "furnace-h": "Metallofen, vom Hersteller.",
+                "furnace-p1": "Höhe 550 mm",
+                "furnace-p2": "Durchmesser 400 mm",
+                "furnace-p3": "Gewicht 40 kg",
+                "furnace-p4": "Kochfläche",
+                "protective-container-for-generator": "Schutzbehälter für Generator",
+                "protective-container-for-generator-h1": "Gesamtabmessungen:",
+                "protective-container-for-generator-h1-p1": "Länge - 1000 mm",
+                "protective-container-for-generator-h1-p2": "Höhe - 1000 (1100) mm",
+                "protective-container-for-generator-h1-p3": "Breite - 1000 mm",
+                "protective-container-for-generator-h1-p4": "Für Benzingeneratoren mit einer Leistung von 6 bis 8 kW",
+                "protective-container-for-generator-h2": "Ausrüstung:",
+                "protective-container-for-generator-h2-p1": "Perforation zur Belüftung und optimalen Kühlung des Motorraums",
+                "protective-container-for-generator-h2-p2": "Grundierung und Lackierung 80 µm, Farbe nach RAL.",
+                "protective-container-for-generator-h2-p3": "Für den Zugang zum Generator (Kraftstoffbefüllung und Service) befinden sich an der Ober- und Vorderseite Türen",
+                "protective-container-for-generator-h3": "Verpackung: Wellpappe mit Stretchfolie.",
+                "protective-container-for-generator-h4": "Lieferung: durch einen Spediteur in den Städten der Ukraine."
+            },
+            "furnace": {
+                "name": "Буржуйка",
+                "furnace-p1": "— Metallofen zum Heizen von Räumen und Kochen, vom Hersteller.",
+                "furnace-p2": "Die Höhe des Metallprodukts beträgt 550 Millimeter. Der Durchmesser des Produkts beträgt 400 Millimeter.",
+                "furnace-p3": "Das Gewicht der буржуйка beträgt 40 Kilogramm. Es gibt eine Kochfläche zum Kochen."
+            },
+            "building-metal-structures": {
+                "name": "Aufbau von Metallkonstruktionen",
+                "building-metal-structures-p": " – tragende Elemente schnell errichteter Gebäude wie Balken, Binder, Stützen, Wand- und Dachpfetten.",
+                "building-metal-structures-p1": "Sie bestehen aus Stahlprofilen, auch aus dünnwandigen, und werden während der Montage und Installation mit speziellen Teilen und Metallprodukten oder mit Hilfe von Schweißen sicher miteinander verbunden.",
+                "building-metal-structures-p2": "Gebäudestrukturen können unterschiedliche Formen haben, aber die Hauptanforderung an sie ist Festigkeit, Widerstandsfähigkeit gegen mechanische Belastungen und Haltbarkeit.",
+                "building-metal-structures-p3": "Wir kontrollieren sorgfältig die Qualität von Stahlprofilen und alle Phasen der Herstellung von tragenden Konstruktionselementen daraus. ",
+                "building-metal-structures-p4": "Die von unserer Firma hergestellten Metallkonstruktionen entsprechen voll und ganz den Anforderungen und aktuellen Normen."
+            },
+            "reinforcement-frames-and-embedded-products": {
+                "name": "Ankerrahmen",
+                "reinforcement-frames-and-embedded-products-p": " – Es ist das führende Element von Stahlbetonpfählen, wodurch ihre Festigkeit und Stabilität gewährleistet ist.",
+                "reinforcement-frames-and-embedded-products-p1": "Bohr- und Injektionspfähle mit einem Durchmesser von 150 bis 1500 mm sind ein unverzichtbares tragendes Element von Gebäuden und Bauwerken im modernen Bauwesen.",
+                "reinforcement-frames-and-embedded-products-p2": "Der Verstärkungsrahmen verhindert eine Verformung des Pfahls und reduziert das Risiko eines Einsturzes der Struktur erheblich. ",
+                "reinforcement-frames-and-embedded-products-p3": "Rahmen werden von unserer Firma aus glatten oder gerippten Stäben, Bändern und Drähten auf speziellen Anlagen nach technologischem Standard hergestellt. ",
+                "reinforcement-frames-and-embedded-products-p4": "Im Herstellungsprozess kontrollieren wir die Qualität der Rohstoffe und des Endprodukts unter Berücksichtigung der aktuellen Anforderungen an ähnliche Metallkonstruktionen, die während des Betriebs hohen mechanischen Belastungen ausgesetzt sind."
+            },
+            "anchor-blocks-and-foundation-bolts": {
+                "name": "Ankerblöcke und Bolzen",
+                "anchor-blocks-and-foundation-bolts-p": "– Elemente, die während der Anordnung der Fundamentbasis verlegt werden und zur Befestigung von Produktionsanlagen und Metallkonstruktionen bestimmt sind. ",
+                "anchor-blocks-and-foundation-bolts-p1": "Diese Befestigungselemente gewährleisten die Stabilität von Geräten und Strukturen während des Betriebs, fixieren sie zuverlässig auf der Basis, verhindern jedoch bei Bedarf nicht das Entfernen und Übertragen von Einheiten und Rahmen an einen anderen Ort. ",
+                "anchor-blocks-and-foundation-bolts-p2": "Nebenteile sind aus gewalztem Stahl (Blech, Bewehrung usw.). ",
+                "anchor-blocks-and-foundation-bolts-p3": "Unsere Firma fertigt auf Bestellung Ankerbolzen und Fundamentblöcke beliebiger Komplexität nach GOST oder nicht standardmäßigen Parametern nach Kundenzeichnung. ",
+                "anchor-blocks-and-foundation-bolts-p4": "Während der Produktion werden die Qualität der Rohstoffe und des Endprodukts, die Einhaltung der Anforderungen der Norm und die Zuverlässigkeit unter starken mechanischen Belastungen und klimatischen Bedingungen streng kontrolliert."
+            },
+            "support-fasteners-of-tower-cranes": {
+                "name": "Bau und Wartung von Turmdrehkranen",
+                "support-fasteners-of-tower-cranes-pf": "Entwickelt, um Stabilität zu gewährleisten",
+                "support-fasteners-of-tower-cranes-ps": "es in senkrechter Position.",
+                "support-fasteners-of-tower-cranes-p1": "Dazu werden Anker zur Befestigung am Untergrund von unten und horizontale Stützen verwendet, die die Hauptstruktur in vertikaler Position halten. ",
+                "support-fasteners-of-tower-cranes-p2": "Anker und horizontale Stützen aus Balken - Schwellen, Zugstangen, Kranbinder, Rahmen bestehen aus gewalztem Stahl - Ecke, Kanal, Rohr, Blech oder I-Träger. ",
+                "support-fasteners-of-tower-cranes-p3": "Unser Unternehmen fertigt Turmdrehkrane jeder Konfiguration und Komplexität aus hochwertigen Materialien auf Bestellung nach individuellen Kundenzeichnungen. ",
+                "support-fasteners-of-tower-cranes-p4": "Wir garantieren die Stärke und Zuverlässigkeit unserer Produkte sowie deren Einhaltung der geltenden Normen."
+            },
+            "input-group": {
+                "name": "Treppen, Veranda, Geländer, Vordach, Rampe, Türen und andere Elemente",
+                "input-group-p": "gehören zur Eingangsgruppe und befinden sich am Eingang des Gebäudes einschließlich der inneren Halle.",
+                "input-group-p1": "Solche Elemente, die durch ein einheitliches Design vereint sind, sind sehr beliebt in Handels-, Büro- und kommerziellen Produktionsunternehmen, die den eigenen Unternehmensstil unterstreichen und die Aufmerksamkeit der Zielgruppe erregen möchten. ",
+                "input-group-p2": "Unsere Firma ist bereit, Elemente der Eingangsgruppe aus Metall nach Skizzen herzustellen. Dafür verfügen wir über die notwendige Ausrüstung und erfahrenes Personal, das bereit ist, die schwierigsten Aufgaben zu erfüllen. ",
+                "input-group-p3": "Bei der Herstellung von Metallprodukten kontrollieren wir streng die Qualität der Rohstoffe und des Endprodukts und bemühen uns, die Wünsche des Kunden vollständig zu erfüllen. ",
+                "input-group-p4": "Dank langjähriger Erfahrung und harter Arbeit haben wir Schlüsselpositionen im Markt eingenommen und uns einen Ruf als zuverlässiger Partner erarbeitet, der seinen Verpflichtungen nachkommt."
+            },
+            "non-standard-metal-structures-and-equipment": {
+                "name": "nicht standardmäßige Metallkonstruktionen",
+                "non-standard-metal-structures-and-equipment-pf": "Produktion",
+                "non-standard-metal-structures-and-equipment-ps": "geht davon aus, dass der Hersteller, ohne über die anerkannten Regeln hinauszugehen, neue konstruktive Lösungen und Modelle schafft.",
+                "non-standard-metal-structures-and-equipment-p1": "Solche Entwürfe erfreuen sich großer Beliebtheit bei kreativen Architekten und Designern, die exklusive Ideen umsetzen wollen.",
+                "non-standard-metal-structures-and-equipment-p2": "Unsere Firma fertigt nicht standardmäßige Metallkonstruktionen nach Ihren Zeichnungen unter Verwendung von hochwertigem Walzstahl - L-, Z-, C-, U-, T-Konfigurationsprofile, runde und profilierte Rohre, Kreis-, Vierkant-, Blech-, Band- und andere Sortimente von geformten und gradierte oder verstärkte Walzprodukte. ",
+                "non-standard-metal-structures-and-equipment-p3": "Unsere Designs sind zuverlässig, stabil und langlebig. ",
+                "non-standard-metal-structures-and-equipment-p4": "Umfangreiche Erfahrung im Bereich der Herstellung von Metallkonstruktionen macht uns zu einem führenden Akteur in diesem Bereich, dem man vertraut und der ständig seine Dienste in Anspruch nimmt.",
+                "non-standard-metal-structures-and-equipment-p5": "In der Industrie, der Landwirtschaft und anderen Branchen besteht häufig die Notwendigkeit, nicht standardmäßige Geräte herzustellen, um abgenutzte einzigartige Geräte und Strukturelemente zu ersetzen, die Teil der technologischen Linien sind. ",
+                "non-standard-metal-structures-and-equipment-p6": "Unser Unternehmen fertigt Sondergeräte mit Sonderabmessungen und technischen Daten auf Bestellung nach Ihren Zeichnungen.",
+                "non-standard-metal-structures-and-equipment-p7": "Wir fertigen Behälter, Tanks, Bunker, Silogruppen, Produktionsbehälter und andere Einrichtungen.",
+                "non-standard-metal-structures-and-equipment-p8": "Wenn Sie die Herstellung von Geräten bei uns in Auftrag geben, können Sie sich auf Zuverlässigkeit und Funktionalität sowie auf die hohe Qualität des Endprodukts verlassen. ",
+                "non-standard-metal-structures-and-equipment-p9": "Wir verfügen über eine ausgestattete Produktionsbasis mit den erforderlichen Maschinen und Einheiten, die es uns ermöglichen, Geräte jeder Konfiguration und Größe herzustellen."
+            },
+            "loft-style-furniture-and-partitions": {
+                "name": "Industrieller Einrichtungsstil,",
+                "loft-style-furniture-and-partitions-p": "Mitte des letzten Jahrhunderts erfunden, verliert bis heute nicht an Popularität.",
+                "loft-style-furniture-and-partitions-p1": "Dieser Stil ist wirklich universell und demokratisch, sowohl Luxus als auch Einfachheit sind darin akzeptabel. ",
+                "loft-style-furniture-and-partitions-p2": "Wir bieten die Herstellung von Trennwänden und Möbeln im Stil eines Lofts aus Metall, gefüllt mit Glas und anderen Materialien.",
+                "loft-style-furniture-and-partitions-p3": "Gehörlose Trennwände, sowie mit Scharnier-, Schiebe- oder Falttüren in einem «Akkordeon» ausgestattet, sind sowohl in Wohn- als auch in Büro-, Einzelhandels- und Industrieräumen geeignet. ",
+                "loft-style-furniture-and-partitions-p4": "Mit Trennwänden gelingt eine gelungene Zonierung und mit Möbeln im Loft-Stil schaffen Sie Gemütlichkeit und eine einzigartige Atmosphäre."
             },
             "plasma-cutting-of-metal": {
                 "first-p": "Bearbeitung von bis zu 30 mm dicken Metallplatinen durch Plasmaschneiden.",
@@ -98,7 +187,10 @@
         },
         "components": {
             "buttons": {
-                "more": "Mehr"
+                "more": "Mehr",
+                "order": "Befehl",
+                "details": "Einzelheiten",
+                "expand": "Erweitern"
             },
             "header-menu": {
                 "social-networks": "Soziale Netzwerke",
@@ -111,6 +203,13 @@
             "phone": "Telefonnummer",
             "email": "Email",
             "message": "Nachricht"
+        },
+        "validationMessages": {
+            "is-required-first": "ist nötig",
+            "is-required-second": "ist nötig",
+            "is-required-third": "ist nötig",
+            "is-not-valid-first": "ist ungültig",
+            "is-not-valid-second": "ist ungültig"
         }
     }
 }
