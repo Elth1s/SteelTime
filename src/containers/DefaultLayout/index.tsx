@@ -7,8 +7,11 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 import "../../index.css"
+import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
 const DefaultLayout = () => {
+    const { i18n } = useTranslation();
 
     useEffect(() => {
         document.body.className = "body-default-container-style"
@@ -24,6 +27,9 @@ const DefaultLayout = () => {
                 width: "100%"
             }}
         >
+            <Helmet>
+                <html lang={i18n.language} />
+            </Helmet>
             <Header />
             <Container component="main" sx={{ maxWidth: { lg: "lg", md: "910px", xs: "350px" } }}>
                 <Outlet />

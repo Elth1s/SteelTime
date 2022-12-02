@@ -1,6 +1,7 @@
 import { ThemeProvider, CssBaseline } from '@mui/material';
 
 import { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { Routes, Route } from 'react-router-dom';
 // import { ToastContainer } from 'react-toastify';
 
@@ -28,13 +29,13 @@ import DarkTheme from './UISettings/DarkTheme';
 import LightTheme from './UISettings/LightTheme';
 import { ThemeContext } from './UISettings/ThemeContext';
 
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 
 
 
 const App = () => {
-  //   const { t } = useTranslation();
+  const { i18n } = useTranslation();
 
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(localStorage.darkTheme === "true");
 
@@ -48,17 +49,9 @@ const App = () => {
       <ThemeContext.Provider value={{ darkTheme: isDarkTheme, setDarkTheme: setIsDarkTheme }}>
         <ThemeProvider theme={isDarkTheme ? DarkTheme : LightTheme}>
           <CssBaseline />
-          {/* <ToastContainer
-          position="bottom-right"
-          autoClose={5000}
-          hideProgressBar={true}
-          newestOnTop
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light" /> */}
+          <Helmet>
+            <html lang={i18n.language} />
+          </Helmet>
           <Routes>
 
             <Route path="/" element={<Home />} />
@@ -80,8 +73,6 @@ const App = () => {
               <Route path="/bending-of-reinforcement" element={<BendingOfReinforcement />} />
               <Route path="/lathe-works" element={<LatheWorks />} />
             </Route>
-
-            {/* <Route path="*" element={<NotFound />} /> */}
           </Routes>
         </ThemeProvider>
       </ThemeContext.Provider>

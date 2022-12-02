@@ -90,10 +90,10 @@
                 "protective-container-for-generator-h4": "Delivery: by a carrier in the cities of Ukraine."
             },
             "furnace": {
-                "name": "Буржуйка",
+                "name": "Burzhuyka",
                 "furnace-p1": "— metal stove for heating rooms and cooking, from the manufacturer.",
                 "furnace-p2": "The height of the metal product is 550 millimeters. The diameter of the product is 400 millimeters.",
-                "furnace-p3": "The weight of the буржуйка is 40 kilograms. There is a cooking surface for cooking."
+                "furnace-p3": "The weight of the burzhuyka is 40 kilograms. There is a cooking surface for cooking."
             },
             "building-metal-structures": {
                 "name": "Building metal structures",
@@ -210,6 +210,12 @@
             "is-required-third": "is required",
             "is-not-valid-first": "is not valid",
             "is-not-valid-second": "is not valid"
+        },
+        "meta-info": {
+            "home": {
+                "title": "Steel Time LLC. Metal processing. Kyiv. Ukraine",
+                "description": "Metal processing, metal constructions, Burzuyki, Containers for generators, design products, decor design, input materials. + 380 67 2345 442"
+            }
         }
     }
 }
