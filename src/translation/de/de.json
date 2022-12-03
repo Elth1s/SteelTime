@@ -210,6 +210,29 @@
             "is-required-third": "ist nötig",
             "is-not-valid-first": "ist ungültig",
             "is-not-valid-second": "ist ungültig"
-        }
+        },
+        "meta-info": {
+            "home": {
+                "title": "Steel Time LLC. Metall Verarbeitung. Kiew. Ukraine",
+                "description": "Metallverarbeitung, Metallkonstruktionen, Burzuyki, Container für Generatoren, Designprodukte, Dekordesign, Inputmaterialien. + 380 67 2345 442"
+            },
+            "production": {
+                "title": "Hergestellt von Steel Time LLC, Kiew, Ukraine.",
+                "description": "Stahlbaukonstruktionen, Designer-Stahlprodukte, Ofen “Burzuyka”, Schutzbehälter für den Generator."
+            },
+            "plasma-cutting-of-metal": {
+                "description": "Bearbeitung von bis zu 30 mm dicken Metallplatinen durch Plasmaschneiden. Das Schneidwerkzeug ist ein Plasmastrahl, der durch einen Lichtbogen erzeugt wird. Wir bearbeiten Eisen- und Nichteisenmetalle und -legierungen mit hoher Präzision für jede Schnittkonfiguration. "
+            },
+            "bending-of-reinforced": {
+                "description": "Glatte und gerippte Stahlbewehrung, die die erforderliche Form erhält, Ausführung einer ungewöhnlichen Konfiguration, erfordert keine Korrektur der Ecken nach dem Biegen, der Abstand zwischen den Enden ist minimal, bereit für weitere Schweißarbeiten, die Rippen der Bewehrung werden nicht verformt , die Integrität der Stange wird nicht beschädigt."
+            },
+            "lathe-works": {
+                "description": "Wir bearbeiten Werkstücke jeder Komplexität – Gewindeschneiden, Senken, Planen, Fasen, Nuten, Nuten, Bohren von Löchern und andere. Bearbeitung der Außen- und Innenflächen des Werkstücks. Fräsen von Nuten, Plan- und Spiralflächen. "
+            },
+            "metal-cutting-with-bandsaw": {
+                "description": "Künstliches Schneiden von Walzmetall auf einer halbautomatischen Guillotine-Maschine “Mit1-03N” mit einer Bandsäge. Bearbeitung von profiliertem, abgestuftem, geformtem Walzmetall - Rohre, Kanäle, Ecken, I-Träger, Kreise, Quadrate, Formstücke usw. Die Verwendung von Rohlingen aus verschiedenen Stahlsorten, Nichteisenmetallen, Leichtmetallen und Gusseisen ist zulässig ."
+            }
+        },
+        "key-words": {}
     }
 }

@@ -31,6 +31,8 @@ const BendingOfReinforcement = () => {
                     content={t("meta-info.bending-of-reinforced.description")} />
                 <meta name="og:description"
                     content={t("meta-info.bending-of-reinforced.description")} />
+                <meta name="keywords"
+                    content={t("key-words.bending-of-reinforced")} />
                 <link rel="canonical" href="/bending-of-reinforcement" />
             </Helmet>
             <Box sx={{ mt: { lg: "103px", md: "80px", xs: "60px" }, mb: { lg: "176px", md: "80px", xs: "25px" } }}>

@@ -202,6 +202,8 @@ const Header = () => {
                     content={t("meta-info.home.description")} />
                 <meta name="og:description"
                     content={t("meta-info.home.description")} />
+                <meta name="keywords"
+                    content={t("key-words.home")} />
                 <link rel="canonical" href="/" />
             </Helmet>
             <Box component="header" sx={{

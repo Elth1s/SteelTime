@@ -26,6 +26,8 @@ const LatheWorks = () => {
                     content={t("meta-info.lathe-works.description")} />
                 <meta name="og:description"
                     content={t("meta-info.lathe-works.description")} />
+                <meta name="keywords"
+                    content={t("key-words.lathe-works")} />
                 <link rel="canonical" href="/lathe-works" />
             </Helmet>
             <Box sx={{ mt: { lg: "103px", md: "80px", xs: "60px" }, mb: "99px" }}>

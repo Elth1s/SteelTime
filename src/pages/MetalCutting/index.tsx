@@ -24,6 +24,8 @@ const MetalCutting = () => {
                     content={t("meta-info.metal-cutting-with-bandsaw.description")} />
                 <meta name="og:description"
                     content={t("meta-info.metal-cutting-with-bandsaw.description")} />
+                <meta name="keywords"
+                    content={t("key-words.metal-cutting-with-bandsaw")} />
                 <link rel="canonical" href="/metal-cutting-a-bandsaw" />
             </Helmet>
             <Box sx={{ mt: { lg: "103px", md: "80px", xs: "46px" }, mb: { lg: "274px", md: "80px", xs: "31px" } }}>

@@ -28,6 +28,8 @@ const PlasmaCuttingOfMetal = () => {
                     content={t("meta-info.plasma-cutting-of-metal.description")} />
                 <meta name="og:description"
                     content={t("meta-info.plasma-cutting-of-metal.description")} />
+                <meta name="keywords"
+                    content={t("key-words.plasma-cutting-of-metal")} />
                 <link rel="canonical" href="/plasma-cutting" />
             </Helmet>
             <Box sx={{ mt: { lg: "103px", md: "80px", xs: "60px" }, mb: { lg: "343px", md: "80px", xs: "103px" } }}>

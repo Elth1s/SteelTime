@@ -215,7 +215,24 @@
             "home": {
                 "title": "Steel Time LLC. Metal processing. Kyiv. Ukraine",
                 "description": "Metal processing, metal constructions, Burzuyki, Containers for generators, design products, decor design, input materials. + 380 67 2345 442"
+            },
+            "production": {
+                "title": "Manufactured by Steel Time LLC, Kyiv, Ukraine.",
+                "description": "Steel building structures, Designer steel products, Stove “burzuyka”, Protective container for the generator."
+            },
+            "plasma-cutting-of-metal": {
+                "description": "Processing of metal blanks up to 30 mm thick using plasma cutting. The cutting tool is a plasma jet, which is created by an electric arc. We process ferrous and non-ferrous metals and alloys with high precision for any cut configuration. "
+            },
+            "bending-of-reinforced": {
+                "description": "Steel smooth and ribbed reinforcement, which is given the required shape, execution of an unusual configuration, does not require correction of corners after bending, the distance between the ends is minimal, ready for further welding work, the ribs of the reinforcement are not deformed, the integrity of the rod is not damaged."
+            },
+            "lathe-works": {
+                "description": "We process workpieces of any complexity - thread cutting, countersinking, facing, chamfering, grooving, grooves, drilling holes and others. Processing of both external and internal surfaces of the workpiece. Milling of grooves, flat and helical surfaces. "
+            },
+            "metal-cutting-with-bandsaw": {
+                "description": "Artificial cutting of rolled metal on a semi-automatic guillotine machine “Mit1-03N” with a band saw. Processing of profiled, graded, shaped rolled metal - pipes, channels, corners, I-beams, circles, squares, fittings, etc. The use of blanks from various steel grades, non-ferrous metals, light alloys, and cast iron is allowed."
             }
-        }
+        },
+        "key-words": {}
     }
 }

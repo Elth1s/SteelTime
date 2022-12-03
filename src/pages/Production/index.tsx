@@ -29,6 +29,8 @@ const Production = () => {
                     content={t("meta-info.production.description")} />
                 <meta name="og:description"
                     content={t("meta-info.production.description")} />
+                <meta name="keywords"
+                    content={t("key-words.home")} />
                 <link rel="canonical" href="/production" />
             </Helmet>
             <Grid
