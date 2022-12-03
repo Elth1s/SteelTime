@@ -35,6 +35,7 @@ import {
 import arrow_left_orange from "../../../assets/icons/arrow-left-orange.svg"
 import arrow_down_orange from "../../../assets/icons/arrow-down-orange.svg"
 import AskOrOrderForm from "../../../components/AskOrOrderForm";
+import { Helmet } from "react-helmet";
 
 const NonStandardMetalStructuresAndEquipment = () => {
     const { t } = useTranslation();
@@ -70,6 +71,16 @@ const NonStandardMetalStructuresAndEquipment = () => {
 
     return (
         <>
+            <Helmet>
+                <title>{t("pages.production.non-standard-metal-structures-and-equipment")}</title>
+                <meta name="og:title"
+                    content={t("pages.production.non-standard-metal-structures-and-equipment")} />
+                <meta name="description"
+                    content={`${t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-pf")} ${t("pages.non-standard-metal-structures-and-equipment.name")} ${t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-ps")}`} />
+                <meta name="og:description"
+                    content={`${t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-pf")} ${t("pages.non-standard-metal-structures-and-equipment.name")} ${t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-ps")}`} />
+                <link rel="canonical" href="/production/non-standard-metal-structures-and-equipment" />
+            </Helmet>
             <Box sx={{ display: "flex", mt: { lg: "80px", xs: "50px" } }}>
                 <img
                     src={arrow_left_orange}

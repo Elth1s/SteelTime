@@ -2,6 +2,7 @@ import {
     Box,
     Typography
 } from "@mui/material";
+import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 
 import { useNavigate } from "react-router-dom"
@@ -26,6 +27,16 @@ const SupportFastenersOfTowerCranes = () => {
 
     return (
         <>
+            <Helmet>
+                <title>{t("pages.production.building-metal-structures-p3")}</title>
+                <meta name="og:title"
+                    content={t("pages.production.building-metal-structures-p3")} />
+                <meta name="description"
+                    content={`${t("pages.support-fasteners-of-tower-cranes.support-fasteners-of-tower-cranes-pf")} ${t("pages.support-fasteners-of-tower-cranes.name")} ${t("pages.support-fasteners-of-tower-cranes.support-fasteners-of-tower-cranes-ps")}`} />
+                <meta name="og:description"
+                    content={`${t("pages.support-fasteners-of-tower-cranes.support-fasteners-of-tower-cranes-pf")} ${t("pages.support-fasteners-of-tower-cranes.name")} ${t("pages.support-fasteners-of-tower-cranes.support-fasteners-of-tower-cranes-ps")}`} />
+                <link rel="canonical" href="/production/support-fasteners-of-tower-cranes" />
+            </Helmet>
             <Box sx={{ display: "flex", mt: { lg: "80px", xs: "50px" } }}>
                 <img
                     src={arrow_left_orange}

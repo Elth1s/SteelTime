@@ -196,10 +196,12 @@ const Header = () => {
         <>
             <Helmet>
                 <title>{t("meta-info.home.title")}</title>
+                <meta name="og:title"
+                    content={t("meta-info.home.title")} />
                 <meta name="description"
                     content={t("meta-info.home.description")} />
-                <meta name="keywords"
-                    content="стіл тайм, ллс, llc, LLC, steel time, STEEL TIME LLC, Steel Time LLC, СТІЛ ТАЙМ, метал, обробка металу, арматура, каркаси, каркас, сходи, двері, металічні двері, металічні ручки, нестандартні вироби, вироби, стиль лофт, стиль loft, меблі в стилі лофт, меблі в стилі loft, люстри, вирізка лазером, лазерна вирізка металу, лазер, метал лазер, стіл тайм лазер метал, накриття, гараж, металічне накриття, виготовлення, будівельні металоконструкції, металоконструкції, метал, будівельний метал, конструкції" />
+                <meta name="og:description"
+                    content={t("meta-info.home.description")} />
                 <link rel="canonical" href="/" />
             </Helmet>
             <Box component="header" sx={{

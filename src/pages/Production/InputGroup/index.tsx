@@ -28,6 +28,7 @@ import {
 import arrow_left_orange from "../../../assets/icons/arrow-left-orange.svg"
 import arrow_down_orange from "../../../assets/icons/arrow-down-orange.svg"
 import AskOrOrderForm from "../../../components/AskOrOrderForm";
+import { Helmet } from "react-helmet";
 
 const InputGroup = () => {
     const { t } = useTranslation();
@@ -55,6 +56,16 @@ const InputGroup = () => {
 
     return (
         <>
+            <Helmet>
+                <title>{t("pages.production.building-metal-structures-p4")}</title>
+                <meta name="og:title"
+                    content={t("pages.production.building-metal-structures-p4")} />
+                <meta name="description"
+                    content={`${t("pages.input-group.name")} ${t("pages.input-group.input-group-p")}`} />
+                <meta name="og:description"
+                    content={`${t("pages.input-group.name")} ${t("pages.input-group.input-group-p")}`} />
+                <link rel="canonical" href="/production/input-group" />
+            </Helmet>
             <Box sx={{ display: "flex", mt: { lg: "80px", xs: "50px" } }}>
                 <img
                     src={arrow_left_orange}

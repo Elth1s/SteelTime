@@ -63,7 +63,7 @@ const App = () => {
               <Route path="/production/reinforcement-frames-and-embedded-products" element={<ReinforcementFramesAndEmbeddedProducts />} />
               <Route path="/production/anchor-blocks-and-foundation-bolts" element={<AnchorBlocksAndFoundationBolts />} />
               <Route path="/production/support-fasteners-of-tower-cranes" element={<SupportFastenersOfTowerCranes />} />
-              <Route path="/production/input-goup" element={<InputGroup />} />
+              <Route path="/production/input-group" element={<InputGroup />} />
               <Route path="/production/non-standard-metal-structures-and-equipment" element={<NonStandardMetalStructuresAndEquipment />} />
               <Route path="/production/loft-style-furniture-and-partitions" element={<LoftStyleFurnitureAndPartitions />} />
               <Route path="/production/furnace" element={<Furnace />} />

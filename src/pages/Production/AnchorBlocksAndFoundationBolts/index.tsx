@@ -2,6 +2,7 @@ import {
     Box,
     Typography
 } from "@mui/material";
+import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 
 import { useNavigate } from "react-router-dom"
@@ -32,6 +33,16 @@ const AnchorBlocksAndFoundationBolts = () => {
 
     return (
         <>
+            <Helmet>
+                <title>{t("pages.production.building-metal-structures-p2")}</title>
+                <meta name="og:title"
+                    content={t("pages.production.building-metal-structures-p2")} />
+                <meta name="description"
+                    content={`${t("pages.anchor-blocks-and-foundation-bolts.name")} ${t("pages.anchor-blocks-and-foundation-bolts.anchor-blocks-and-foundation-bolts-p")}`} />
+                <meta name="og:description"
+                    content={`${t("pages.anchor-blocks-and-foundation-bolts.name")} ${t("pages.anchor-blocks-and-foundation-bolts.anchor-blocks-and-foundation-bolts-p")}`} />
+                <link rel="canonical" href="/production/anchor-blocks-and-foundation-bolts" />
+            </Helmet>
             <Box sx={{ display: "flex", mt: { lg: "80px", xs: "50px" } }}>
                 <img
                     src={arrow_left_orange}

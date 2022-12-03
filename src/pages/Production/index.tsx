@@ -22,10 +22,13 @@ const Production = () => {
     return (
         <>
             <Helmet>
-                <title>Виробництво Steel Time LLC, Київ, Україна.</title>
-                <meta name="description" content="Сталеві будівельні конструкції, Дизайнерські сталеві вироби, Піч “буржуйка”, Захисний контейнер для генератора." />
-                <meta name="keywords"
-                    content="стіл тайм, ллс, llc, LLC, steel time, STEEL TIME LLC, Steel Time LLC, СТІЛ ТАЙМ, метал, обробка металу, арматура, каркаси, каркас, сходи, двері, металічні двері, металічні ручки, нестандартні вироби, вироби, стиль лофт, стиль loft, меблі в стилі лофт, меблі в стилі loft, люстри, вирізка лазером, лазерна вирізка металу, лазер, метал лазер, стіл тайм лазер метал, накриття, гараж, металічне накриття, виготовлення, будівельні металоконструкції, металоконструкції, метал, будівельний метал, конструкції" />
+                <title>{t("meta-info.production.title")}</title>
+                <meta name="og:title"
+                    content={t("meta-info.production.title")} />
+                <meta name="description"
+                    content={t("meta-info.production.description")} />
+                <meta name="og:description"
+                    content={t("meta-info.production.description")} />
                 <link rel="canonical" href="/production" />
             </Helmet>
             <Grid
@@ -101,7 +104,7 @@ const Production = () => {
                                 {t("pages.production.building-metal-structures-p3")}
                             </Typography>
                         </LinkRouter>
-                        <LinkRouter underline="always" color="inherit" to="input-goup" onClick={() => window.scrollTo(0, 0)} sx={{ "&:hover": { color: palette.primary.main } }}>
+                        <LinkRouter underline="always" color="inherit" to="input-group" onClick={() => window.scrollTo(0, 0)} sx={{ "&:hover": { color: palette.primary.main } }}>
                             <Typography variant="h5" fontWeight="400" fontFamily="Raleway" >
                                 {t("pages.production.building-metal-structures-p4")}
                             </Typography>

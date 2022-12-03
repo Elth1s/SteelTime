@@ -24,6 +24,7 @@ import {
 
 import arrow_left_orange from "../../../assets/icons/arrow-left-orange.svg"
 import arrow_down_orange from "../../../assets/icons/arrow-down-orange.svg"
+import { Helmet } from "react-helmet";
 
 const ProtectiveContainerForGenerator = () => {
     const { t } = useTranslation();
@@ -47,6 +48,16 @@ const ProtectiveContainerForGenerator = () => {
 
     return (
         <>
+            <Helmet>
+                <title>{t("pages.production.protective-container-for-generator")}</title>
+                <meta name="og:title"
+                    content={t("pages.production.protective-container-for-generator")} />
+                <meta name="description"
+                    content={`${t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-pf")} ${t("pages.non-standard-metal-structures-and-equipment.name")} ${t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-ps")}`} />
+                <meta name="og:description"
+                    content={`${t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-pf")} ${t("pages.non-standard-metal-structures-and-equipment.name")} ${t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-ps")}`} />
+                <link rel="canonical" href="/production/protective-container-for-generator" />
+            </Helmet>
             <Box sx={{ display: "flex", mt: { lg: "80px", xs: "50px" } }}>
                 <img
                     src={arrow_left_orange}

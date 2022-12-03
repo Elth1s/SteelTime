@@ -18,6 +18,7 @@ import {
 } from "../../../assets/backgrounds/production"
 
 import arrow_left_orange from "../../../assets/icons/arrow-left-orange.svg"
+import { Helmet } from "react-helmet";
 
 const Furnace = () => {
     const { t } = useTranslation();
@@ -35,6 +36,16 @@ const Furnace = () => {
 
     return (
         <>
+            <Helmet>
+                <title>{t("pages.production.furnace")}</title>
+                <meta name="og:title"
+                    content={t("pages.production.furnace")} />
+                <meta name="description"
+                    content={`${t("pages.furnace.name")} ${t("pages.furnace.furnace-p1")}`} />
+                <meta name="og:description"
+                    content={`${t("pages.furnace.name")} ${t("pages.furnace.furnace-p1")}`} />
+                <link rel="canonical" href="/production/furnace" />
+            </Helmet>
             <Box sx={{ display: "flex", mt: { lg: "80px", xs: "50px" } }}>
                 <img
                     src={arrow_left_orange}

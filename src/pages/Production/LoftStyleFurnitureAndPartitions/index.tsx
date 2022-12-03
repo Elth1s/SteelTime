@@ -28,6 +28,7 @@ import {
 import arrow_left_orange from "../../../assets/icons/arrow-left-orange.svg"
 import arrow_down_orange from "../../../assets/icons/arrow-down-orange.svg"
 import AskOrOrderForm from "../../../components/AskOrOrderForm";
+import { Helmet } from "react-helmet";
 
 const LoftStyleFurnitureAndPartitions = () => {
     const { t } = useTranslation();
@@ -56,6 +57,16 @@ const LoftStyleFurnitureAndPartitions = () => {
 
     return (
         <>
+            <Helmet>
+                <title>{t("pages.production.designer-steel-products-p2")}</title>
+                <meta name="og:title"
+                    content={t("pages.production.designer-steel-products-p2")} />
+                <meta name="description"
+                    content={`${t("pages.loft-style-furniture-and-partitions.name")} ${t("pages.loft-style-furniture-and-partitions.loft-style-furniture-and-partitions-p")}`} />
+                <meta name="og:description"
+                    content={`${t("pages.loft-style-furniture-and-partitions.name")} ${t("pages.loft-style-furniture-and-partitions.loft-style-furniture-and-partitions-p")}`} />
+                <link rel="canonical" href="/production/loft-style-furniture-and-partitions" />
+            </Helmet>
             <Box sx={{ display: "flex", mt: { lg: "80px", xs: "50px" } }}>
                 <img
                     src={arrow_left_orange}
