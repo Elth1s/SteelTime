@@ -83,9 +83,9 @@
                 "protective-container-for-generator-h1-p3": "Ширина - 1000 мм",
                 "protective-container-for-generator-h1-p4": "Під бензинові генератори потужністю від 6 до 8 кВт",
                 "protective-container-for-generator-h2": "Комплектація:",
-                "protective-container-for-generator-h2-p1": "Перфорація для забезпечення вентиляції та для оптимального охолодження моторного відсіку",
+                "protective-container-for-generator-h2-p1": "Перфорація для забезпечення вентиляції та для оптимального охолодження моторного відсіку.",
                 "protective-container-for-generator-h2-p2": "Ґрунтування та фарбування 80 мкм, колір згідно RAL.",
-                "protective-container-for-generator-h2-p3": "Для доступу до генератора (заливання палива та обслуговування)  зверху та з лицьової сторони передбачені дверцята",
+                "protective-container-for-generator-h2-p3": "Для доступу до генератора (заливання палива та обслуговування)  зверху та з лицьової сторони передбачені дверцята.",
                 "protective-container-for-generator-h3": "Пакування: стрейч плівка + гофрокартон.",
                 "protective-container-for-generator-h4": "Доставлення: перевізником по містах України."
             },
@@ -238,8 +238,7 @@
             "plasma-cutting-of-metal": "стіл тайм, ллс, llc, LLC, steel time, STEEL TIME LLC, Steel Time LLC, СТІЛ ТАЙМ, метал, обробка металу, вирізка лазером, лазерна вирізка металу, лазер, метал лазер, стіл тайм лазер метал, метал.",
             "bending-of-reinforced": "стіл тайм, ллс, llc, LLC, steel time, STEEL TIME LLC, Steel Time LLC, СТІЛ ТАЙМ, арматура, будівельні металоконструкції, металоконструкції, будівельний метал, конструкції.",
             "lathe-works": "стіл тайм, ллс, llc, LLC, steel time, STEEL TIME LLC, Steel Time LLC, СТІЛ ТАЙМ, метал, обробка металу, нестандартні вироби, вироби, стиль лофт, стиль loft, виготовлення, метал.",
-            "metal-cutting-with-bandsaw": "стіл тайм, ллс, llc, LLC, steel time, STEEL TIME LLC, Steel Time LLC, СТІЛ ТАЙМ, метал, обробка металу, каркаси, каркас, нестандартні вироби, вироби, будівельні металоконструкції, металоконструкції, метал, будівельний метал, конструкції.",
-            "": ""
+            "metal-cutting-with-bandsaw": "стіл тайм, ллс, llc, LLC, steel time, STEEL TIME LLC, Steel Time LLC, СТІЛ ТАЙМ, метал, обробка металу, каркаси, каркас, нестандартні вироби, вироби, будівельні металоконструкції, металоконструкції, метал, будівельний метал, конструкції."
         }
     }
 }

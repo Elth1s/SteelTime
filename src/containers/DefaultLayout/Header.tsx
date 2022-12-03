@@ -63,12 +63,12 @@ const Header = () => {
         },
         {
             title: t("containers.header.contacts"),
-            link: "/#contacts",
-            isId: true
+            link: "/order"
         },
         {
             title: t("containers.header.gallery"),
-            link: "/order"
+            link: "/#gallery",
+            isId: true
         },
     ];
 

@@ -53,9 +53,9 @@ const ProtectiveContainerForGenerator = () => {
                 <meta name="og:title"
                     content={t("pages.production.protective-container-for-generator")} />
                 <meta name="description"
-                    content={`${t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-pf")} ${t("pages.non-standard-metal-structures-and-equipment.name")} ${t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-ps")}`} />
+                    content={`${t("pages.production.protective-container-for-generator-h2")} ${t("pages.production.protective-container-for-generator-h2-p1")} ${t("pages.production.protective-container-for-generator-h2-p2")} ${t("pages.production.protective-container-for-generator-h2-p3")}`} />
                 <meta name="og:description"
-                    content={`${t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-pf")} ${t("pages.non-standard-metal-structures-and-equipment.name")} ${t("pages.non-standard-metal-structures-and-equipment.non-standard-metal-structures-and-equipment-ps")}`} />
+                    content={`${t("pages.production.protective-container-for-generator-h2")} ${t("pages.production.protective-container-for-generator-h2-p1")} ${t("pages.production.protective-container-for-generator-h2-p2")} ${t("pages.production.protective-container-for-generator-h2-p3")}`} />
                 <link rel="canonical" href="/production/protective-container-for-generator" />
             </Helmet>
             <Box sx={{ display: "flex", mt: { lg: "80px", xs: "50px" } }}>
